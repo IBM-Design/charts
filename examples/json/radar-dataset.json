@@ -1,0 +1,2326 @@
+[{
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 1493.757145864799
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 69.2145674499285
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 636.4100065087159
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 553.6217765502345
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 1936.5489485386202
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 1792.8395090450833
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 201.8733367448977
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 271.5861599533058
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2438.660743583356
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 315.1027961972277
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 24.41956414827917
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 1050.1440299792284
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2869.5376085010453
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2971.4104145388987
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2390.804263657619
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 3746.2545505657063
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 3056.8121324417048
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2539.399692601943
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2089.9866109159266
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 887.9845981129355
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2125.43431716162
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2850.4918460013846
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 864.9440092725368
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 3612.975923825112
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 82.2148216913865
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 3841.2686414238387
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2641.012417646553
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 3095.815750908061
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2150.27693483347
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 218.73511869634132
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Clothings",
+  "value": 2480.7225048650803
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 448.1733813339002
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 19.59918263248195
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 318.04217848480397
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 3453.726791455474
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 162.93917693395167
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2820.26409362786
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2926.794582389608
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2908.160817742898
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1906.813131126141
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1772.268905382343
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1644.0350159196832
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1674.7830915830368
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2888.923024865771
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 719.3253604193508
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2943.4458437185604
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1833.7424142928196
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1367.0956468154359
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1818.3730626696456
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 85.99197627916944
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 3677.0184860230293
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2541.1547325516494
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 293.43553025877077
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 2604.718105626805
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 3949.2331306488823
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 3501.8551133080587
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 129.22207848204437
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 3942.3076425422064
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1760.6241965586714
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 1510.8833144949347
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 648.2021966523765
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Crafts",
+  "value": 178.1007017921512
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2564.323065180779
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3380.3597562064633
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 73.78204914347552
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1429.2638940554054
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1808.797409060846
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 413.5494223797265
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3086.731959169719
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 17.172655609761556
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2201.1927170588547
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 646.1485214691667
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2025.7797935868734
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2918.001461918702
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2999.0823405663623
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1368.7849942811577
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1406.2002888390462
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 229.1470478931208
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2049.464862074818
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1984.1937838404772
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3758.40334290615
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 250.05646458731422
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3392.362979811523
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1823.9480615291025
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 943.110173046815
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3096.9429092360883
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3126.3037930805704
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2668.4836921024075
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 1928.674573092448
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 304.02029451213866
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2348.476370418736
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 2800.25563098336
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Eletronics",
+  "value": 3849.243476059784
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 14.403973987771934
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2793.667952800388
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1996.498731400344
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1578.8945736127876
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1694.81368891294
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 622.166208691274
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2766.949753308314
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1286.8564644600785
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 3640.008140194282
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 584.5123776250754
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 208.63416640791854
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1036.4768059547416
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1784.3171280667204
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 564.0849545466997
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1580.833944671152
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1953.2098755410557
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 439.08939392318655
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2662.099225866566
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2038.4071918775044
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2425.9923549167393
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2623.386483899939
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1396.919572244733
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2098.599715291141
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2899.9149988215704
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1758.861905724448
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 1285.6615933850853
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 3613.906717858244
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 2508.4201823147955
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 3173.9827207399926
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 757.6985545391724
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Health",
+  "value": 3564.309841950732
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 594.9946927072211
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3273.0800731424433
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3268.024071385436
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1423.8221248609016
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 766.7568503243381
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 194.476025279247
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1939.858145770181
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1141.5944852094028
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 255.02498410536577
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3361.1597217402255
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3927.845984949327
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 774.4030568862561
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3517.741063518164
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1458.834219403247
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 2852.852156582918
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 2359.181538654834
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1308.2536129486853
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 889.0436409764941
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 287.5371687508723
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3011.260550662488
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 3738.808754356077
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 756.857874777122
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 227.73126158203638
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1518.4877005611295
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 2087.825213289257
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1803.2892657892248
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 50.43319102747379
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 2643.0773321475813
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 322.23054628463024
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1432.2768721105517
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "EMEA",
+  "axis": "Food",
+  "value": 1815.4783563978992
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1561.196947641692
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 3975.4814728917527
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 557.3475234145038
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1696.9171662793262
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 190.06598570278487
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 2224.5955785674037
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 274.7943645406501
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 180.5527381849208
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 223.65995344118693
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 797.2502453784722
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 459.0155704924764
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 516.8157677152045
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1240.23530520747
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1294.155652037772
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 785.5776300014236
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1138.3563715964167
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 482.51813990398864
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1459.9320686975598
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 745.6543782165302
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1141.9898511424876
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1600.5497262865758
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 267.66368144435046
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 221.868452265677
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 620.134257015481
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 587.6486387301247
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1445.4158297205063
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 30.932094536227694
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 1079.5106321625035
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 736.3682598121218
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 748.1166606437534
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Clothings",
+  "value": 250.31950307078608
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1133.51221902119
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1034.945932158215
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 157.4110781975291
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2563.9729948317768
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1249.4930155117202
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2295.0386972296224
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 3624.6088279742467
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2407.344959051059
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 3934.8302610575993
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1068.7957414746786
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 990.5824826892307
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 800.2206195031976
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 3995.923051542349
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 260.21228572491407
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 48.88155323693333
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2688.0690962000217
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1833.6412027426538
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2038.1797383990258
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1330.0164701389222
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1301.7451747708337
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 649.1163808083993
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 3461.623683787291
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 490.3681831219311
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1034.7991061205582
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 850.8004695174786
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 3874.6314000474936
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2663.779685553943
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 3270.170745351338
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 2692.333937233217
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1837.2725653747466
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Crafts",
+  "value": 1175.0648005963403
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1112.5119122363296
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3105.043316896115
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2718.548214440524
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1047.8336241079437
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3080.1372234803994
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1023.2886012108357
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1077.1640265233532
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1420.1656069038818
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3274.6676597277446
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2067.53925960071
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 603.3923858472078
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2747.665894710903
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2260.157144755597
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2012.5300198523241
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 602.201370430171
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 914.1558072683988
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2130.2202140859736
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1802.2602201127338
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2569.3341575396175
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1890.9933423354764
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3176.5757164351216
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1359.1885587916383
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3721.8949145733777
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2877.083850397529
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2889.8858645759374
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2146.0921597644315
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3600.3718516841354
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 851.3883933527993
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 2132.4988428822753
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 1848.8544773399217
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Eletronics",
+  "value": 3118.4063606843024
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1854.1922960022453
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1471.388849706539
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1913.342179687507
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 2279.087555223317
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 2760.058576850266
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1881.793092002364
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 533.8978274287917
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1220.8524473032965
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 778.6059900751319
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1417.9766330255213
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1912.984215509975
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1119.9642441346577
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 478.7608555030165
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1489.9920050745
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1622.6000131291044
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 958.823549970769
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 319.91993520827225
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 2377.673385379441
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 900.8843769882668
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1147.874193300235
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 984.3954191464288
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1426.6584448914825
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 2629.855504396864
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 306.8731618569567
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1239.5721018022634
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 63.74585056336901
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1457.23047578498
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1473.2158039781202
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1059.1894161484793
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 912.1112061268786
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Health",
+  "value": 1075.8368602619066
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2405.9939627001263
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1896.6250519444277
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2148.2821769600396
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 3209.233386114471
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 115.89658955018845
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1640.0017413658697
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1993.7216867457155
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1541.989307152421
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1334.8501023779286
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2813.9858289962117
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1817.5961135780303
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 3925.918091849623
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2720.686111994418
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2980.1063779963124
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1593.3006524446166
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 342.3645185766615
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1530.923227918774
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2430.447475189573
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1511.210836329928
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1814.519797325655
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 513.8750430294614
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2940.083585861678
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 384.65046953371564
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 132.81162293140713
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 3392.820904638783
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 2725.9028449340094
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 1434.0584505915172
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 473.470895405387
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 3297.4468168304797
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 989.5718311304718
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "Americas",
+  "axis": "Food",
+  "value": 403.4644628465154
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 3495.448125066816
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 685.8782521314905
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 2707.348522250021
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 3245.487366526139
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1700.5244818487633
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 604.3932337626599
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1157.6130124933436
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 3136.556337333284
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1080.3254930193812
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 3419.606029909575
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 2170.6695681412452
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 3664.1641870486305
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 2953.487217281065
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1278.5861391664168
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1382.5338304031386
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 46.333316207375574
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 777.8070093591803
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 742.8183438998843
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 360.52803759488404
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 417.6987133845138
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1257.75704259605
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 3242.99174101649
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1820.704004653324
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 784.7807685019878
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1448.7875125246505
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 2341.3751907027436
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1199.4056902449036
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 1747.5063325283652
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 2438.685173468318
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 2929.774006313014
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Clothings",
+  "value": 864.0431903256349
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3002.3375899310745
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1091.4391309830469
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3417.1153804099877
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2362.6885434204955
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 589.417176729663
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2088.090311844512
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3713.3285790335854
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1702.5189364086639
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2089.0865387785525
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3804.2279103450064
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3834.44284458783
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 354.0548411665254
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1806.3808963407819
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1617.7691528663604
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1869.2724656027133
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3808.2929161903694
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3822.9663490354656
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2093.125576304095
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 224.32828237907287
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1594.911130791089
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2949.0644302855403
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1766.1609599949816
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3276.9008445996164
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3940.8640412222107
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1940.0218412270203
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2677.479163914252
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1394.2979210817282
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2550.832181198623
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 2897.520457166788
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 3484.5138927219023
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Crafts",
+  "value": 1727.8653157047402
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2224.7299265072666
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1607.0141138301724
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2672.852244060005
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2195.6219301109636
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 662.6243472398521
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1526.9160265505545
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 498.87505712615354
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 3605.0267667939534
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2235.0468167644094
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 128.4870523158732
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2944.212798073033
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2115.0601328879743
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2787.30683304601
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 3953.8570895565445
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 3598.7599524837924
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2980.2840616303642
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 3301.629318528419
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 31.014887641672928
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1936.2724792102267
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1843.0457491220745
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2059.563918776914
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1118.8906631445032
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2651.352104626593
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 409.6139412408153
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1894.6116667148658
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 2177.0543036841314
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 3307.161697023009
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1204.5579084409299
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 382.0638095895381
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 3941.418973651878
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Eletronics",
+  "value": 1128.1235812150596
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 291.7798938372469
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1270.575574987178
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 927.6107736648696
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1834.1676123949205
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1246.889898430925
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1771.9894134034994
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1271.4851230049826
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 781.6072042497312
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1359.0115136173483
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 599.8242529250914
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1426.439551105675
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 2254.1095754300036
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 2453.7429572659485
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 2489.5685560554775
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 543.912703266397
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 478.235315434846
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1822.3947456625788
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 462.3378643628726
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1002.8932718512165
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1833.210416737793
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 883.2215015050951
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 877.3134760049617
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1426.6606006874226
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 79.0703866929876
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 825.2639363295816
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 1434.285958401041
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 671.7845014949511
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 0
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 337.4238038395676
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 495.152513143746
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Health",
+  "value": 2947.8941335576164
+}, {
+  "date": "2016-01-01T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 71.24062828686384
+}, {
+  "date": "2016-01-02T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 2279.7202945208887
+}, {
+  "date": "2016-01-03T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 541.3779259567564
+}, {
+  "date": "2016-01-04T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 388.1237075500303
+}, {
+  "date": "2016-01-05T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1040.7150679415845
+}, {
+  "date": "2016-01-06T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1695.650832434874
+}, {
+  "date": "2016-01-07T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1310.2098375593264
+}, {
+  "date": "2016-01-08T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 887.6821119039537
+}, {
+  "date": "2016-01-09T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 773.8314003049638
+}, {
+  "date": "2016-01-10T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1235.447417381848
+}, {
+  "date": "2016-01-11T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1248.4808857317137
+}, {
+  "date": "2016-01-12T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1979.2755871782467
+}, {
+  "date": "2016-01-13T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1388.4267043294517
+}, {
+  "date": "2016-01-14T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 3126.21590301457
+}, {
+  "date": "2016-01-15T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 136.2597723757011
+}, {
+  "date": "2016-01-16T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 3223.7383960089705
+}, {
+  "date": "2016-01-17T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1614.0894307368862
+}, {
+  "date": "2016-01-18T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1072.3435426479095
+}, {
+  "date": "2016-01-19T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1066.0017014025645
+}, {
+  "date": "2016-01-20T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 467.6818439236463
+}, {
+  "date": "2016-01-21T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 337.19459858143176
+}, {
+  "date": "2016-01-22T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 76.47161263665403
+}, {
+  "date": "2016-01-23T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 591.360369302233
+}, {
+  "date": "2016-01-24T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 66.75560035260908
+}, {
+  "date": "2016-01-25T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1028.625075852732
+}, {
+  "date": "2016-01-26T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 2176.690438825781
+}, {
+  "date": "2016-01-27T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 2191.0054699001266
+}, {
+  "date": "2016-01-28T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1517.7955058738376
+}, {
+  "date": "2016-01-29T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 3377.8314600817253
+}, {
+  "date": "2016-01-30T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1104.431126316454
+}, {
+  "date": "2016-01-31T00:00:00.000Z",
+  "area": "APAC",
+  "axis": "Food",
+  "value": 1392.7025281808874
+}]

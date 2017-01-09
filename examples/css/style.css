@@ -1,0 +1,778 @@
+* {
+    font-family: "Helvetica Neue", Helvetica;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 16px;
+    color: #5F92CD;
+    margin: 10px auto;
+    text-align: left;
+    width: 800px;
+}
+
+.menu {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.label {
+    font-size: 14px;
+    color: #808080;
+    margin: 10px 0;
+}
+
+.scatterplot .slider {
+    background-color: #464646;
+    height: 42px;
+    width: 270px;
+    margin: 10px auto;
+    opacity: 0;
+}
+
+.scatterplot .search-container {
+    border: 0;
+    margin: 25px auto;
+    height: 20px;
+    width: 325px;
+    display: flex;
+    opacity: 0;
+    position: relative;
+}
+
+.scatterplot .erase {
+  justify-content: center;
+  align-items: center;
+}
+
+.scatterplot .erase svg {
+  cursor: pointer;
+}
+
+.scatterplot .menuEl, .scatterplot .menuEl2 {
+    display: inline-block;
+    width: 170px;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.scatterplot .menuEl.active, .menuEl2.active {
+    border-bottom: 3px solid #000;
+    opacity: 1;
+}
+
+.scatterplot .search {
+    border: 0;
+    width: 290px;
+    height: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #c3c3c3;
+    display: inline-block;
+    padding: 5px;
+}
+
+.scatterplot .search:focus {
+    outline: none;
+}
+
+.scatterplot .focus-line {
+    width: 290px;
+    height: 1px;
+    top: 29px;
+    left: 0px;
+    position: absolute;
+}
+
+.scatterplot .focus-line.active {
+    border-bottom: 2px solid #000;
+}
+
+.scatterplot .label {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.scatterplot .labelEl, .labelEl2 {
+    opacity: 0;
+    height: 0;
+}
+
+.scatterplot .visible {
+    height: 20px;
+    opacity: 1;
+}
+
+.scatterplot .tooltip-text {
+    fill: white;
+    text-anchor: middle;
+    font-size: 13px;
+}
+
+.scatterplot .tick line {
+    stroke: rgb(100, 220, 205);
+    opacity: 0.2;
+}
+
+.scatterplot .tick text {
+  font-size: 12px;
+  fill: #5f92cd;
+}
+
+.scatterplot .axis--y .tick text {
+  text-anchor: end;
+}
+
+
+.scatterplot .axis--x .tick:nth-of-type(1) text {
+    text-anchor: start;
+}
+
+.scatterplot .axis--x .tick:last-of-type text {
+    text-anchor: end;
+}
+
+.scatterplot  path.domain {
+    fill: none;
+    stroke: none;
+    stroke-width: 1px;
+}
+
+.scatterplot  text.pasttext {
+    transition: opacity .6s;
+}
+
+.scatterplot g.data {
+    transition: opacity .3s;
+}
+
+.scatterplot .xHoverline,.scatterplot  .yHoverline,.scatterplot  .xHoverlineText,.scatterplot  .yHoverlineText {
+    transition: opacity .6s;
+}
+
+.scatterplot .xHoverlineText, .scatterplot  .yHoverlineText {
+    font-weight: bold;
+}
+
+.scatterplot circle.turnover {
+    fill: none;
+    stroke: #2b357f;
+    stroke-width: 0.4;
+    opacity: 0.0;
+    stroke-dasharray: 2 3;
+}
+
+.scatterplot circle.turnover-background {
+    opacity: 0.85;
+}
+
+.scatterplot circle.turnover-background.IE {
+    fill: #878787;
+    opacity: 0.08;
+}
+
+.scatterplot circle.patent {
+    fill: #fff;
+    stroke: none;
+    stroke-width: 0;
+    pointer-events: none;
+}
+
+.scatterplot circle.top {
+    fill: #64DCCD;
+    stroke: none;
+    stroke-width: 1;
+    display: block;
+}
+
+.scatterplot line.class-line {
+    stroke-width: 10;
+    pointer-events: none;
+    /*stroke:none !important;*/
+}
+
+.scatterplot line.class-line.data_01 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_02 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_03 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_04 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_05 {
+    stroke: #006d5d;
+}
+
+.scatterplot line.class-line.data_06 {
+    stroke: #008571;
+}
+
+.scatterplot line.class-line.data_07 {
+    stroke: #00b4a0;
+}
+
+.scatterplot line.class-line.data_08 {
+    stroke: #41d6c3;
+}
+
+.scatterplot line.class-line.data_09 {
+    stroke: #6eedd8;
+}
+
+.scatterplot line.class-line.data_10 {
+    stroke: #a7fae6;
+}
+
+.scatterplot line.class-line.data_11 {
+    stroke: #fde876;
+}
+
+.scatterplot line.class-line.data_12 {
+    stroke: #fdd600;
+}
+
+.scatterplot line.class-line.data_13 {
+    stroke: #efc100;
+}
+
+.scatterplot line.class-line.data_14 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_15 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_16 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_17 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot line.class-line.data_18 {
+    stroke: #000000;
+    stroke-width: 1;
+}
+
+.scatterplot text.company-name {
+    fill: #3a4f5a;
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    font-weight: normal;
+    display: none;
+}
+
+.scatterplot .move-gif {
+    width: 100%;
+    height: 60vw;
+    background: url('./move_chart.gif') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+.scatterplot .move2-gif {
+    width: 100%;
+    height: 60vw;
+    background: url('./move2_chart.gif') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+.scatterplot .frame-gif {
+    width: 100%;
+    height: 60vw;
+    background: url('./frame_chart.gif') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+.scatterplot .find-gif {
+    width: 100%;
+    height: 60vw;
+    background: url('./find_chart.gif') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+.scatterplot .filter-gif {
+    width: 100%;
+    height: 60vw;
+    background: url('./filter_chart.gif') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+.scatterplot .details-gif {
+    width: 100%;
+    height: 60vw;
+    background: url('./details_chart.gif') no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+
+
+/* BRUSH CHART */
+
+.hoverable0 {
+    fill: #F6F6F6;
+}
+
+.hoverable1 {
+    fill: none;
+    stroke: #AE8DC2;
+    stroke-miterlimit: 10;
+}
+
+.hoverable2 {
+    fill: #AE8DC2;
+}
+
+.hoverable3 {
+    fill: #AE8DC2;
+    stroke: #F6F6F6;
+    stroke-miterlimit: 1;
+}
+
+.hover1, .hover2, .hover3, .hover4, .hover5, .hover6 {
+    transition: .3s all;
+}
+
+.brush {
+  padding: 50px 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.brush .brush-gif {
+    width: 100%;
+    background: url('./brush_chart.gif') no-repeat center center;
+    background-size: contain;
+    height: 45vw;
+    margin-bottom: 30px;
+}
+
+
+/* RADAR CSS */
+
+.radar {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.radar #chart {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.radar .radarChart {
+    position: relative;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radar .barChart {
+    width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.radar .legend {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    z-index: 2;
+}
+
+.radar .radar-gif {
+    width: 100%;
+    background: url('./radar_chart.gif') no-repeat center center;
+    background-size: contain;
+    height: 85vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* PARALLEL COORDINATES */
+
+.parallel-coordinates {
+  padding-top: 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parallel-coordinates-container {
+    margin-top: 25px;
+}
+
+.parallel-coordinates .background path {
+    fill: none;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.parallel-coordinates .foreground path {
+    fill: none;
+    stroke: #BF6292;
+    stroke-width: 2px;
+}
+
+.parallel-coordinates .axis line, .parallel-coordinates .axis path {
+    fill: none;
+    stroke: #5F92CD;
+    shape-rendering: crispEdges;
+}
+
+.parallel-coordinates .axis text {
+    fill: #5F92CD;
+    /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
+    cursor: move;
+    font-size: 12px;
+}
+
+.parallel-coordinates .axis .axis-title {
+    font-size: 14px;
+    fill: #3C6492 !important;
+    pointer-events: none;
+}
+
+.parallel-coordinates .axis-title-background {
+    fill: #FDE390;
+}
+
+.parallel-coordinates .axis-title-background:hover {
+  fill: #f9d35b
+}
+
+.parallel-coordinates .parallel-coordinates-gif {
+    width: 100%;
+    background: url('./parallel_chart.gif') no-repeat center center;
+    background-size: contain;
+    height: 60vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* SMART TOOLTIPS */
+
+.smart-tooltips {
+  padding-top: 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.smart-tooltips-container {
+    width: 800px;
+    height: 470px;
+    background-color: white;
+}
+
+.smart-tooltips #Layer_1 {
+    width: 24px;
+    pointer-events: none;
+}
+
+.smart-tooltips .main-container {
+    width: 800px;
+    display: flex;
+}
+
+.smart-tooltips .hoverable-menu {
+    position: absolute;
+    width: 400px;
+    left: 200px;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 1s all;
+    z-index: 2;
+}
+
+.smart-tooltips .hoverable-menu-el-container {
+    display: none;
+    justify-content: space-between;
+}
+
+.smart-tooltips .rect-title {
+    font-size: 14px;
+    color: #B2B2B2;
+}
+
+.smart-tooltips .rect-subtitle {
+    font-size: 14px;
+}
+
+.smart-tooltips .hoverable-menu-rect-el {
+    width: 80px;
+    height: 30px;
+    margin: 20px;
+    background-color: #464646;
+    padding: 7px;
+    color: white;
+    opacity: 0;
+}
+
+.smart-tooltips .hoverable-menu-el {
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    box-shadow: 1px 1px 10px #b2b2b2;
+    margin: 5px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smart-tooltips .smart-tooltips-placeholder {
+    font-size: 14px;
+    color: #808080;
+    text-align: left;
+}
+
+.smart-tooltips .smart-tooltips-explanation {
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    color: #808080;
+    width: 480px;
+    left: 50%;
+    margin-left: -240px;
+    top: 100px;
+}
+
+.smart-tooltips .smart-tooltips-title {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+.smart-tooltips .viz-title {
+    font-size: 16px;
+    padding: 25px 0;
+    font-weight: 500;
+    color: #5f92cd;
+}
+
+.smart-tooltips .clicked {
+  display: none;
+}
+
+.smart-tooltips .smart-tooltips-gif {
+    width: 100%;
+    background: url('./smart_tooltip_chart.gif') no-repeat center center;
+    background-size: contain;
+    height: 484px;
+}
+
+
+/* MEDIA QUERIES */
+
+.gif-container, .gif-container2 {
+    display: none;
+}
+
+.brush-gif-container {
+    display: none;
+}
+
+.radar-gif-container {
+    display: none;
+}
+
+.parallel-coordinates-gif-container {
+    display: none;
+}
+
+.smart-tooltips-gif-container {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .title {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .scatterplot .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .scatterplot .gif-container, .scatterplot .gif-container2 {
+        display: block;
+    }
+    .scatterplot .search-container {
+      display: none;
+    }
+    .scatterplot .svg-container, .scatterplot .svg-container2 {
+        display: none;
+    }
+    .scatterplot .menuEl, .scatterplot .menuEl2 {
+        width: 26%;
+        font-size: 12px;
+    }
+    .scatterplot .slider {
+      display: none;
+    }
+    .brush .container {
+        display: none;
+    }
+    .brush-gif-container {
+        display: block;
+    }
+    .radar .container {
+        display: none;
+    }
+    .radar-gif-container {
+        display: block;
+    }
+    .parallel-coordinates .container {
+        display: none;
+    }
+    .parallel-coordinates-gif-container {
+        display: block;
+    }
+    .smart-tooltips .container {
+        display: none;
+    }
+    .smart-tooltips-gif-container {
+        display: block;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .title {
+      margin: 10px auto;
+      text-align: left;
+      width: 800px;
+  }
+  .label {
+      width: 400px;
+      margin: 0 auto;
+  }
+  .menu {
+    max-width: 1000px;
+  }
+  .scatterplot .container {
+      width: 100%;
+      margin: 0 auto;
+  }
+  .scatterplot .gif-container, .scatterplot .gif-container2, .scatterplot .move-gif, .scatterplot .move2-gif {
+      display: block;
+  }
+  .scatterplot .move-gif, .scatterplot .move2-gif, .scatterplot .frame-gif, .scatterplot .find-gif, .scatterplot .filter-gif, .scatterplot .details-gif {
+    width: 800px !important;
+    height: 600px !important;
+    margin: 0 auto;
+  }
+  .scatterplot .search-container {
+    display: none;
+  }
+  .scatterplot .svg-container, .scatterplot .svg-container2 {
+      display: none;
+  }
+  .scatterplot .menuEl, .scatterplot .menuEl2 {
+      width: 26%;
+      font-size: 12px;
+  }
+  .scatterplot .slider {
+    display: none;
+  }
+  .brush .container {
+      display: none;
+  }
+  .brush-gif-container {
+      display: block;
+  }
+  .brush-gif {
+    width: 800px !important;
+    height: 600px !important;
+    margin: 0 auto;
+  }
+  .radar .container {
+      display: none;
+  }
+  .radar-gif-container {
+      display: block;
+  }
+  .radar-gif {
+    width: 800px !important;
+    height: 600px !important;
+    margin: 0 auto;
+  }
+  .parallel-coordinates .container {
+      display: none;
+  }
+  .parallel-coordinates-gif-container {
+      display: block;
+  }
+  .parallel-coordinates-gif {
+    width: 800px !important;
+    height: 600px !important;
+    margin: 0 auto;
+  }
+  .smart-tooltips .container {
+      display: none;
+  }
+  .smart-tooltips-gif-container {
+      display: block;
+  }
+  .smart-tooltips-gif {
+    width: 800px !important;
+    height: 600px !important;
+    margin: 0 auto;
+  }
+}
