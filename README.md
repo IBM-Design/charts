@@ -1,4 +1,4 @@
-# `ibm-design-data-vis`
+# `ibm-design-charts`
 
 ## Design
 
@@ -8,7 +8,7 @@ The project currently leverages [Lerna](https://lernajs.io/) in order to manage 
 
 At the moment, we only have `./examples` to show what our desired output is. This page uses inaccessible work and is only examples instead of reusable pieces. To run:
 
-1. `git clone https://github.com/IBM-Design/data-vis.git`
+1. `git clone https://github.com/IBM-Design/charts.git`
 2. `cd data-vis`
 3. `yarn install`
 4. `npm run examples`
