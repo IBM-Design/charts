@@ -1,18 +1,17 @@
 {
   "name": "ibm-design-data-vis",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Code implementations of the IBM Design Language's data visualization guidance.",
-  "main": "index.js",
   "repository": {
     "url": "https://github.com/IBM-Design/data-vis.git",
     "type": "git"
   },
-  "author": "James Y. Rauhut <jamesrauhut@us.ibm.com>",
   "license": "Apache-2.0",
   "scripts": {
     "examples": "node examples/server.js"
   },
-  "dependencies": {
-    "express": "^4.14.0"
+  "devDependencies": {
+    "express": "^4.14.0",
+    "lerna": "2.0.0-beta.32"
   }
 }
