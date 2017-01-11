@@ -1,3 +1,13 @@
+# Contributing
+
+## Development Workflow
+
+After cloning `ibm-design-charts`, run `yarn` to fetch its dependencies.
+
+Then, you can run several commands:
+
+- `yarn run lint` checks the code style.
+
 ## Lerna
 
 For full documentation, make sure to check out [lerna](lernajs.io).
