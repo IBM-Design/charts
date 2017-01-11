@@ -1,0 +1,37 @@
+{
+  "name": "@ibm-design/charts-react-line",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run clean && babel -d lib --ignore '__tests__/**','*.story.js' src",
+    "clean": "rimraf lib",
+    "storybook": "start-storybook -p 3001 -s ../../public"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "d3-array": "^1.0.2",
+    "d3-scale": "^1.0.4",
+    "d3-shape": "^1.0.4",
+    "d3-time-format": "^2.0.3",
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.3.0",
+    "@kadira/react-storybook-decorator-centered": "^1.0.0",
+    "@kadira/storybook": "^2.35.2",
+    "babel-cli": "^6.18.0",
+    "css-loader": "^0.26.1",
+    "dsv-loader": "^2.0.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "resolve-url-loader": "^1.6.1",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0"
+  }
+}
