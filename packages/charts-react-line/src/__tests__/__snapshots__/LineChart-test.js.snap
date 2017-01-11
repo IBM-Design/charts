@@ -1,0 +1,22 @@
+exports[`LineChart Component should render 1`] = `
+<svg
+  height={500}
+  width={960}>
+  <g
+    style={
+      Object {
+        "transform": "translate(50px, 20px)",
+      }
+    }>
+    <path
+      d="M0,450Z"
+      style={
+        Object {
+          "fill": "none",
+          "stroke": "#5392ff",
+          "strokeWidth": 1.5,
+        }
+      } />
+  </g>
+</svg>
+`;
