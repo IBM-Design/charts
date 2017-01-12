@@ -5,7 +5,8 @@
   "scripts": {
     "build": "npm run clean && babel -d lib --ignore '__tests__/**','*.story.js' src",
     "clean": "rimraf lib",
-    "storybook": "start-storybook -p 3001 -s ../../public"
+    "storybook": "start-storybook -p 3001 -s ../../public",
+    "storybook:build": "build-storybook -o ../../_gh-pages/react/line -s ../../public -c .storybook"
   },
   "license": "Apache-2.0",
   "dependencies": {
