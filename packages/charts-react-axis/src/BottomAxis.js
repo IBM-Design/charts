@@ -7,6 +7,7 @@ const pathStyle = {
   shapeRendering: 'crispEdges',
 };
 
+/* eslint-disable react/display-name */
 const renderTickWith = (interval) => (_, i) => {
   const offset = interval * (i + 1);
   // TODO: Label
@@ -20,6 +21,7 @@ const renderTickWith = (interval) => (_, i) => {
     />
   );
 };
+/* eslint-enable react/display-name */
 
 const BottomAxis = (props, context) => {
   const { tickCount } = props;

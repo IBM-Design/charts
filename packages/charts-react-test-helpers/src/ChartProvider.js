@@ -7,6 +7,11 @@ import React from 'react';
  * without adding extra nodes to the snapshot output.
  */
 export default class ChartProvider extends React.PureComponent {
+  static propTypes = {
+    // eslint-disable-next-line react/forbid-prop-types
+    children: React.PropTypes.any,
+  }
+
   static childContextTypes = {
     chart: React.PropTypes.object,
   }

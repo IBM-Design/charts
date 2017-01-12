@@ -8,6 +8,7 @@ const path = {
 
 export default class Line extends React.PureComponent {
   static propTypes = {
+    // eslint-disable-next-line react/forbid-prop-types
     data: PropTypes.array.isRequired,
     line: PropTypes.func.isRequired,
   }

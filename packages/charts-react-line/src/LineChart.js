@@ -4,17 +4,7 @@ import Chart from '@ibm-design/charts-react-chart';
 import { LeftAxis, BottomAxis } from '@ibm-design/charts-react-axis';
 import Line from './Line';
 
-const path = {
-  fill: 'none',
-  stroke: '#5392ff',
-  strokeWidth: 1.5,
-};
-
 export default class LineChart extends React.PureComponent {
-  static contextTypes = {
-    chart: PropTypes.any,
-  }
-
   static propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     data: PropTypes.array.isRequired,
@@ -34,6 +24,10 @@ export default class LineChart extends React.PureComponent {
     domainX: PropTypes.array,
     // eslint-disable-next-line react/forbid-prop-types
     domainY: PropTypes.array,
+  }
+
+  static contextTypes = {
+    chart: PropTypes.any,
   }
 
   static defaultProps = {

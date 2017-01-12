@@ -1,6 +1,19 @@
 import React, { PropTypes } from 'react';
 
 export default class Chart extends React.PureComponent {
+  static propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.node,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    margin: PropTypes.shape({
+      top: PropTypes.number,
+      right: PropTypes.number,
+      bottom: PropTypes.number,
+      left: PropTypes.number,
+    }),
+  }
+
   // Let's place the container styling in context for layout
   static childContextTypes = {
     chart: PropTypes.shape({
@@ -12,17 +25,6 @@ export default class Chart extends React.PureComponent {
         bottom: PropTypes.number,
         left: PropTypes.number,
       }),
-    }),
-  }
-
-  static propTypes = {
-    width: PropTypes.number,
-    height: PropTypes.number,
-    margin: PropTypes.shape({
-      top: PropTypes.number,
-      right: PropTypes.number,
-      bottom: PropTypes.number,
-      left: PropTypes.number,
     }),
   }
 
