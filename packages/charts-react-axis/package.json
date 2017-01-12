@@ -13,6 +13,7 @@
   "devDependencies": {
     "@ibm-design/charts-react-test-helpers": "~0.0.0",
     "babel-cli": "^6.18.0",
+    "react": "^15.4.2",
     "react-test-renderer": "^15.4.2",
     "rimraf": "^2.5.4"
   }
