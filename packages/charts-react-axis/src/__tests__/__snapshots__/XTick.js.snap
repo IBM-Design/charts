@@ -1,0 +1,18 @@
+exports[`XTick Component should render 1`] = `
+<g
+  className="tick"
+  transform="translate(250,0)">
+  <line
+    stroke="#000"
+    x1="0.5"
+    x2="0.5"
+    y2="6" />
+  <text
+    dy="0.71em"
+    fill="#000"
+    x="0.5"
+    y="9">
+    Label
+  </text>
+</g>
+`;
