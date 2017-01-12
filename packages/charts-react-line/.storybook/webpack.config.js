@@ -1,8 +1,9 @@
-
 'use strict';
 
 module.exports = function (storybookBaseConfig, configType) {
-  storybookBaseConfig.output.publicPath = 'http://localhost:3001/';
+  storybookBaseConfig.output.publicPath = configType === 'PRODUCTION'
+    ? ''
+    : 'http://localhost:3001/';
 
   storybookBaseConfig.module.loaders.push([
     {
