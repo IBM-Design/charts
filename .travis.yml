@@ -10,8 +10,7 @@ cache:
     - node_modules
 
 before_script:
-  - yarn run lerna -- bootstrap
-  - yarn run lerna -- run build
+  - yarn run bootstrap
 
 script:
   - yarn run lint
