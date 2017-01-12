@@ -8,6 +8,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
+    "bootstrap": "lerna run build && lerna bootstrap",
     "examples": "node examples/server.js",
     "lerna": "lerna",
     "lint": "eslint packages",
