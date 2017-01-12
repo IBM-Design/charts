@@ -1,0 +1,18 @@
+{
+  "name": "@ibm-design/charts-react-chart",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run clean && babel -d lib src",
+    "clean": "rimraf lib"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "react-test-renderer": "^15.4.2",
+    "rimraf": "^2.5.4"
+  }
+}
