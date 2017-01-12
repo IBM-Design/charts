@@ -9,6 +9,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "examples": "node examples/server.js",
+    "lerna": "lerna",
     "lint": "eslint packages",
     "test": "jest"
   },
