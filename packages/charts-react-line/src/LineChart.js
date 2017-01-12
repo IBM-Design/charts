@@ -1,11 +1,8 @@
 import React, { PropTypes } from 'react';
 import * as shape from 'd3-shape';
-
-const path = {
-  fill: 'none',
-  stroke: '#5392ff',
-  strokeWidth: 1.5,
-};
+import Chart from '@ibm-design/charts-react-chart';
+import { LeftAxis, BottomAxis } from '@ibm-design/charts-react-axis';
+import Line from './Line';
 
 export default class LineChart extends React.PureComponent {
   static propTypes = {
@@ -27,6 +24,10 @@ export default class LineChart extends React.PureComponent {
     domainX: PropTypes.array,
     // eslint-disable-next-line react/forbid-prop-types
     domainY: PropTypes.array,
+  }
+
+  static contextTypes = {
+    chart: PropTypes.any,
   }
 
   static defaultProps = {
@@ -72,16 +73,13 @@ export default class LineChart extends React.PureComponent {
   render() {
     const { line, props } = this;
     const { data, margin, width, height } = props;
-    const containerOffset = {
-      transform: `translate(${margin.left}px, ${margin.top}px)`,
-    };
 
     return (
-      <svg width={width} height={height}>
-        <g style={containerOffset}>
-          <path style={path} d={line(data)} />
-        </g>
-      </svg>
+      <Chart width={width} height={height} margin={margin}>
+        <LeftAxis tickCount={5} />
+        <BottomAxis tickCount={5} />
+        <Line line={line} data={data} />
+      </Chart>
     );
   }
 }

@@ -1,0 +1,20 @@
+{
+  "name": "@ibm-design/charts-react-axis",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run clean && babel -d lib src",
+    "clean": "rimraf lib"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.4.2"
+  },
+  "devDependencies": {
+    "@ibm-design/charts-react-test-helpers": "~0.0.0",
+    "babel-cli": "^6.18.0",
+    "react": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "rimraf": "^2.5.4"
+  }
+}

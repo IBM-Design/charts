@@ -1,0 +1,84 @@
+exports[`LeftAxis Component should render 1`] = `
+<g
+  className="axis axis--y"
+  fill="none"
+  fontFamily="sans-serif"
+  fontSize="10"
+  textAnchor="end">
+  <path
+    className="domain"
+    d="M-6,500H0V0.5H-6"
+    stroke="#000"
+    style={
+      Object {
+        "fill": "none",
+        "shapeRendering": "crispEdges",
+        "strokeWidth": 1,
+      }
+    } />
+  <g
+    className="tick"
+    transform="translate(0,100)">
+    <line
+      stroke="#000"
+      x2="-6"
+      y1="0.5"
+      y2="0.5" />
+    <text
+      dy="0.32em"
+      fill="#000"
+      x="-9"
+      y="0.5">
+      Label
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(0,200)">
+    <line
+      stroke="#000"
+      x2="-6"
+      y1="0.5"
+      y2="0.5" />
+    <text
+      dy="0.32em"
+      fill="#000"
+      x="-9"
+      y="0.5">
+      Label
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(0,300)">
+    <line
+      stroke="#000"
+      x2="-6"
+      y1="0.5"
+      y2="0.5" />
+    <text
+      dy="0.32em"
+      fill="#000"
+      x="-9"
+      y="0.5">
+      Label
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(0,400)">
+    <line
+      stroke="#000"
+      x2="-6"
+      y1="0.5"
+      y2="0.5" />
+    <text
+      dy="0.32em"
+      fill="#000"
+      x="-9"
+      y="0.5">
+      Label
+    </text>
+  </g>
+</g>
+`;

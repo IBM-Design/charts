@@ -9,6 +9,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@ibm-design/charts-react-axis": "~0.0.0",
+    "@ibm-design/charts-react-chart": "~0.0.0",
     "d3-array": "^1.0.2",
     "d3-scale": "^1.0.4",
     "d3-shape": "^1.0.4",

@@ -1,0 +1,9 @@
+exports[`Chart Component should render 1`] = `
+<svg
+  className={undefined}
+  height={500}
+  width={960}>
+  <g
+    transform="translate(50,20)" />
+</svg>
+`;
