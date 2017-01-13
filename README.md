@@ -4,7 +4,8 @@
 
 - Clone or fork this repository
 - Make sure you have the following technologies installed on your computer:
-  - [node.js](https://nodejs.org/) Requires node.js 6.x, for example [node.js v6.6.0](https://nodejs.org/dist/v6.6.0/).
+  - [node.js](https://nodejs.org/) - Requires node.js 6.0.0 or greater
+  - [Watchman](https://facebook.github.io/watchman/) - A file watching service
   - [Yarn Package Manager](https://yarnpkg.com/en/docs/install)
 - run `yarn` to install dependencies
 - run `yarn run bootstrap` to bootstrap the project, link dependencies, and do the initial build step for each package
@@ -20,6 +21,6 @@ The project currently leverages [Lerna](https://lernajs.io/) in order to manage 
 At the moment, we only have `./examples` to show what our desired output is. This page uses inaccessible work and is only examples instead of reusable pieces. To run:
 
 1. `git clone https://github.com/IBM-Design/charts.git`
-2. `cd data-vis`
+2. `cd charts`
 3. `yarn install`
 4. `npm run examples`
