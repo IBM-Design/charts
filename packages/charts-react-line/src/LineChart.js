@@ -34,6 +34,7 @@ export default class LineChart extends React.PureComponent {
   }
 
   static defaultProps = {
+    lines: [],
     width: 960,
     height: 500,
     margin: {
