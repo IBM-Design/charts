@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react';
 import * as shape from 'd3-shape';
 import Chart from '@ibm-design/charts-react-chart';
+import Colors from 'ibm-design-colors/ibm-colors.json';
 import { LeftAxis, BottomAxis } from '@ibm-design/charts-react-axis';
 import Line from './Line';
 
 export default class LineChart extends React.PureComponent {
   static propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
-    data: PropTypes.array.isRequired,
+    lines: PropTypes.array.isRequired,
     width: PropTypes.number,
     height: PropTypes.number,
     margin: PropTypes.shape({
@@ -24,6 +25,8 @@ export default class LineChart extends React.PureComponent {
     domainX: PropTypes.array,
     // eslint-disable-next-line react/forbid-prop-types
     domainY: PropTypes.array,
+    // eslint-disable-next-line react/forbid-prop-types
+    strokes: PropTypes.array,
   }
 
   static contextTypes = {
@@ -39,6 +42,16 @@ export default class LineChart extends React.PureComponent {
       bottom: 30,
       left: 50,
     },
+    strokes: [
+      Colors.blue['40'],
+      Colors.aqua['20'],
+      Colors.green['30'],
+      Colors.lime['20'],
+      Colors.gold['20'],
+      Colors.peach['30'],
+      Colors.magenta['40'],
+      Colors.indigo['40'],
+    ]
   }
 
   componentWillMount() {
@@ -72,13 +85,21 @@ export default class LineChart extends React.PureComponent {
 
   render() {
     const { line, props } = this;
-    const { data, margin, width, height } = props;
+    const { data, margin, strokes, width, height } = props;
+    const lines = this.props.lines.map((data, index) =>
+      <Line
+        line = {line}
+        data = {data}
+        key={index}
+        stroke={strokes[index % strokes.length]}
+      />
+    );
 
     return (
       <Chart width={width} height={height} margin={margin}>
         <LeftAxis tickCount={5} />
         <BottomAxis tickCount={5} />
-        <Line line={line} data={data} />
+        {lines}
       </Chart>
     );
   }
