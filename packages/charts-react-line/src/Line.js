@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 
 const path = {
   fill: 'none',
-  stroke: '#000',
   strokeWidth: 1.5,
 };
 
@@ -14,9 +13,12 @@ export default class Line extends React.PureComponent {
     stroke: PropTypes.string,
   }
 
+  static defaultProps = {
+    stroke: '#000',
+  }
+
   render() {
-    const { data, line } = this.props,
-      stroke = this.props.stroke ? this.props.stroke : path.stroke;
+    const { data, line, stroke } = this.props;
 
     return (
       <path
