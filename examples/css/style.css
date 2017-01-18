@@ -67,14 +67,13 @@ body {
 }
 
 .scatterplot .menuEl, .scatterplot .menuEl2 {
-    display: inline-block;
-    width: 170px;
-    font-size: 14px;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    opacity: 0.5;
-    cursor: pointer;
+  display: inline-block;
+  width: 170px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .scatterplot .search {
@@ -618,7 +617,8 @@ body {
 }
 /* Tabs */
 
-.scatterplot .menuEl, .scatterplot .menuEl2 {
+.scatterplot .menuEl,
+.scatterplot .menuEl2 {
   display: inline-block;
   width: 150px;
   font-size: 14px;
@@ -665,16 +665,16 @@ body {
 
 .scatterplot .dv-tab-item {
   float: left;
-}
-
-.scatterplot .dv-tab-item a {
   text-decoration: none;
   color: #323232;
   outline: 0;
+  list-style-type: none;
+}
+.scatterplot .dv-tab-item:focus {
+  background-color: #f3f3f3;
 }
 
-.scatterplot .menu:hover .active-bar-horizontal, 
-.scatterplot .menu:focus .active-bar-horizontal {
+.scatterplot .menu:hover .active-bar-horizontal {
   height: 3px;
   background-color: #5a3ec8;
 }
@@ -684,8 +684,9 @@ body {
   transition: transform 500ms cubic-bezier(0.8, 0.005, 0.2, 1);
 }
 
-.scatterplot .menuEl.active, .menuEl2.active {
-  background-color: #ececec;
+.scatterplot .menuEl.active,
+.scatterplot .menuEl2.active {
+  background-color: #eaeaea;
   opacity: 1;
 }
 
