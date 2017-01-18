@@ -11,7 +11,7 @@
     chart.updateData(scatterplotDataset, false, false, true, false, this.value)
   })
 
-  d3.select('.erase').on("click", function () {
+  d3.select('.erase').on("click focus", function () {
     chart.updateData(scatterplotDataset, false, false, false, false, null)
     document.getElementById('searchField').value = ''
   })
