@@ -17,11 +17,12 @@
     <!-- SCATTERPLOT GRAPHS -->
     <div class="scatterplot">
       <div class="container">
-          <div class="menu">
-              <div class="menuEl active">MOVE</div>
-              <div class="menuEl" type='zoom'>FRAME</div>
-              <div class="menuEl" type='find'>FIND</div>
-          </div>
+          <ul class="menu">
+              <li class="menuEl dv-tab-item dv-tab-item-1 active"><a href="#" onclick="return false"><strong><span>Move</span></strong></a></li>
+              <li class="menuEl dv-tab-item dv-tab-item-2" type='zoom'><a href="#" onclick="return false"><strong><span>Frame</span></strong></a></li>
+              <li class="menuEl dv-tab-item dv-tab-item-3" type='find'><a href="#" onclick="return false"><strong><span>Find</span></strong></a></li>
+              <div class="active-bar-horizontal"></div>
+          </ul>
           <div class="search-container">
               <input class="search" id="searchField" type="text" placeholder="Search for a US state (e.g. Colorado)" onfocus="onFocus()" onfocusout="onFocusOut()"/>
               <div class="focus-line"></div>
@@ -53,11 +54,11 @@
           </div>
       </div>
       <div class="container">
-          <div class="menu">
-              <div class="menuEl2 active">OVERVIEW</div>
-              <div class="menuEl2" type='zoom'>FILTER</div>
-              <div class="menuEl2" type='find'>DETAILS ON DEMAND</div>
-          </div>
+          <ul class="menu">
+              <li class="menuEl2 dv-tab-item dv-tab-item-1 active"><strong><span>Overview</span></strong></li>
+              <li class="menuEl2 dv-tab-item dv-tab-item-2" type='zoom'><strong><span>Filter</span></strong></li>
+              <li class="menuEl2 dv-tab-item dv-tab-item-3" type='find'><strong><span>Details on demand</span></strong></li>
+          </ul>
           <div style="margin: 20px auto; height: 23px;" class="search-container">
 
           </div>

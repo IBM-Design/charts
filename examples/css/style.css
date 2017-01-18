@@ -28,6 +28,9 @@ body {
     margin: 0 auto;
     margin-bottom: 10px;
     border-bottom: 1px solid #F6F6F6;
+    height: 41px;
+    position: relative;
+    padding: 0;
 }
 
 .label {
@@ -72,11 +75,6 @@ body {
     font-weight: bold;
     opacity: 0.5;
     cursor: pointer;
-}
-
-.scatterplot .menuEl.active, .menuEl2.active {
-    border-bottom: 3px solid #000;
-    opacity: 1;
 }
 
 .scatterplot .search {
@@ -617,6 +615,78 @@ body {
     background: url('./smart_tooltip_chart.gif') no-repeat center center;
     background-size: contain;
     height: 484px;
+}
+/* Tabs */
+
+.scatterplot .menuEl, .scatterplot .menuEl2 {
+  display: inline-block;
+  width: 150px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0;
+  height: 100%;
+}
+
+.scatterplot .menu.pos-0 .active-bar-horizontal {
+  display: block;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+.scatterplot .menu.pos-1 .active-bar-horizontal {
+  display: block;
+  -webkit-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  transform: translateX(150px);
+}
+
+.scatterplot .menu.pos-2 .active-bar-horizontal {
+  display: block;
+  -webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+.scatterplot .active-bar-horizontal {
+  bottom: 0;
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transition: height 200ms cubic-bezier(0.8, 0.005, 0.2, 1);
+  transition: height 200ms cubic-bezier(0.8, 0.005, 0.2, 1);
+  width: 150px;
+  z-index: 1;
+}
+
+.scatterplot .dv-tab-item {
+  float: left;
+}
+
+.scatterplot .dv-tab-item a {
+  text-decoration: none;
+  color: #323232;
+  outline: 0;
+}
+
+.scatterplot .menu:hover .active-bar-horizontal, 
+.scatterplot .menu:focus .active-bar-horizontal {
+  height: 3px;
+  background-color: #5a3ec8;
+}
+
+.scatterplot .active-bar-horizontal {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.8, 0.005, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.8, 0.005, 0.2, 1);
+}
+
+.scatterplot .menuEl.active, .menuEl2.active {
+  background-color: #ececec;
+  opacity: 1;
 }
 
 

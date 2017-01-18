@@ -754,4 +754,24 @@ function Scatterplot(el, component, svgClass) {
     return str.replace(' ', '').toLowerCase()
   }
 }
+
+  var tab1 = document.querySelector('.dv-tab-item-1');
+  var tab2 = document.querySelector('.dv-tab-item-2');
+  var tab3 = document.querySelector('.dv-tab-item-3');
+  // var dvTab = document.querySelector('.dv-tab-item-link');
+  // var horizontalBar = dvTab.closest('.active-bar-horizontal');
+  // console.log(horizontalBar);
+  tab1.addEventListener("mouseover", function(e){
+    this.parentNode.classList.remove('pos-1', 'pos-2');
+    this.parentNode.classList.add('pos-0');
+  });
+  tab2.addEventListener("mouseover", function(e){
+    this.parentNode.classList.remove('pos-0', 'pos-2');
+    this.parentNode.classList.add('pos-1');
+  });
+  tab3.addEventListener("mouseover", function(e){
+    this.parentNode.classList.remove('pos-0', 'pos-1');
+    this.parentNode.classList.add('pos-2');
+  });
+
 /* exported Scatterplot */
