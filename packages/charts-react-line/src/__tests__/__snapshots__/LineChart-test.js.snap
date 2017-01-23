@@ -170,15 +170,6 @@ exports[`LineChart Component should render 1`] = `
         </text>
       </g>
     </g>
-    <path
-      d="M0,450Z"
-      style={
-        Object {
-          "fill": "none",
-          "stroke": "#5392ff",
-          "strokeWidth": 1.5,
-        }
-      } />
   </g>
 </svg>
 `;

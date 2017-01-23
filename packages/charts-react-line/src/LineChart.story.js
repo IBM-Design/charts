@@ -17,7 +17,7 @@ const data = rawData.map((d) => ({
 storiesOf('LineChart', module)
   .add('default', () => (
     <LineChart
-      data={data}
+      lines={[data]}
       width={960}
       height={500}
       margin={{
