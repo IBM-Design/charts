@@ -761,7 +761,6 @@ function Scatterplot(el, component, svgClass) {
   var scatterplot2Tab1 = document.querySelector('.scatterplot-2-tab-1');
   var scatterplot2Tab2 = document.querySelector('.scatterplot-2-tab-2');
   var scatterplot2Tab3 = document.querySelector('.scatterplot-2-tab-3');
-  var dvLink = document.querySelector('.dv-tab-item');
 
   scatterplot1Tab1.addEventListener("mouseover", function(){
     this.parentNode.classList.remove('pos-1', 'pos-2');
@@ -776,21 +775,6 @@ function Scatterplot(el, component, svgClass) {
     this.parentNode.classList.add('pos-2');
   });
 
-  scatterplot1Tab1.addEventListener("focus", function(){
-    this.parentNode.classList.remove('pos-1', 'pos-2');
-    this.parentNode.classList.add('pos-0');
-  });
-  scatterplot1Tab2.addEventListener("focus", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-2');
-    this.parentNode.classList.add('pos-1');
-  });
-  scatterplot1Tab3.addEventListener("focus", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-1');
-    this.parentNode.classList.add('pos-2');
-  });
-
-
-
   scatterplot2Tab1.addEventListener("mouseover", function(){
     this.parentNode.classList.remove('pos-1', 'pos-2');
     this.parentNode.classList.add('pos-0');
@@ -800,19 +784,6 @@ function Scatterplot(el, component, svgClass) {
     this.parentNode.classList.add('pos-1');
   });
   scatterplot2Tab3.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-1');
-    this.parentNode.classList.add('pos-2');
-  });
-
-  scatterplot2Tab1.addEventListener("focus", function(){
-    this.parentNode.classList.remove('pos-1', 'pos-2');
-    this.parentNode.classList.add('pos-0');
-  });
-  scatterplot2Tab2.addEventListener("focus", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-2');
-    this.parentNode.classList.add('pos-1');
-  });
-  scatterplot2Tab3.addEventListener("focus", function(){
     this.parentNode.classList.remove('pos-0', 'pos-1');
     this.parentNode.classList.add('pos-2');
   });

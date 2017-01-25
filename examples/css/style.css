@@ -60,6 +60,14 @@ body {
 .scatterplot .erase {
   justify-content: center;
   align-items: center;
+  height: 30px;
+}
+.scatterplot .erase:focus a {
+  outline: 0;
+}
+.scatterplot .erase:hover .erase-fill-element,
+.scatterplot .erase:focus .erase-fill-element {
+  fill: #5a3ec8;
 }
 
 .scatterplot .erase svg {
@@ -99,7 +107,7 @@ body {
 }
 
 .scatterplot .focus-line.active {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #5a3ec8;
 }
 
 .scatterplot .label {
