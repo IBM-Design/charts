@@ -18,9 +18,18 @@
     <div class="scatterplot">
       <div class="container">
           <ul class="menu">
-              <a href="#" onclick="return false" class="menuEl dv-tab-item scatterplot-1-tab-1 active"><li><strong><span>Move</span></strong></li></a>
-              <a href="#" onclick="return false" class="menuEl dv-tab-item scatterplot-1-tab-2"><li type='zoom'><strong><span>Frame</span></strong></li></a>
-              <a href="#" onclick="return false" class="menuEl dv-tab-item scatterplot-1-tab-3"><li type='find'><strong><span>Find</span></strong></li></a>
+              <form action="" class="tabs effect-3">
+                <input type="radio" name="tab-effect-3" checked="checked" class="active tab-1">
+                <span class="span-1 menuEl">Move</span>
+                <input type="radio" class="tab-2" name="tab-effect-3">
+                <span class="span-2 menuEl">Frame</span>
+                <input type="radio" class="tab-3" name="tab-effect-3">
+                <span class="span-3 menuEl">Find</span>
+                <div class="line ease"></div>
+              </form>
+              <!-- <a href="#" onclick="return false" class="menuEl dv-tab-item scatterplot-1-tab-1 active left"><li><strong><span>Move</span></strong></li></a> -->
+              <!-- <a href="#" onclick="return false" class="menuEl dv-tab-item scatterplot-1-tab-2 middle"><li type='zoom'><strong><span>Frame</span></strong></li></a> -->
+              <!-- <a href="#" onclick="return false" class="menuEl dv-tab-item scatterplot-1-tab-3 right"><li type='find'><strong><span>Find</span></strong></li></a> -->
               <div class="active-bar-horizontal"></div>
           </ul>
           <div class="search-container">
@@ -65,13 +74,21 @@
       </div>
       <div class="container">
           <ul class="menu">
-              <a href="#" onclick="return false" class="menuEl2 dv-tab-item scatterplot-2-tab-1 active"><li><strong><span>Overview</span></strong></li></a>
+              <form action="" class="tabs effect-3">
+                <input type="radio" name="tab-effect-3" checked="checked" class="active tab-1">
+                <span class="span-1 menuEl">Overview</span>
+                <input type="radio" class="tab-2" name="tab-effect-3">
+                <span class="span-2 menuEl">Filter</span>
+                <input type="radio" class="tab-3" name="tab-effect-3">
+                <span class="span-3 menuEl">Details on demand</span>
+                <div class="line ease"></div>
+              </form>
+              <!-- <a href="#" onclick="return false" class="menuEl2 dv-tab-item scatterplot-2-tab-1 active"><li><strong><span>Overview</span></strong></li></a>
               <a href="#" onclick="return false" class="menuEl2 dv-tab-item scatterplot-2-tab-2"><li type='zoom'><strong><span>Filter</span></strong></li></a>
-              <a href="#" onclick="return false" class="menuEl2 dv-tab-item scatterplot-2-tab-3"><li type='find'><strong><span>Details on demand</span></strong></li></a>
+              <a href="#" onclick="return false" class="menuEl2 dv-tab-item scatterplot-2-tab-3"><li type='find'><strong><span>Details on demand</span></strong></li></a> -->
               <div class="active-bar-horizontal"></div>
           </ul>
           <div style="margin: 20px auto; height: 23px;" class="search-container">
-
           </div>
           <div class="svg-container2" style="width: 100%;"></div>
           <div class="gif-container2" style="width: 100%;">

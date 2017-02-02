@@ -755,37 +755,4 @@ function Scatterplot(el, component, svgClass) {
   }
 }
 
-  var scatterplot1Tab1 = document.querySelector('.scatterplot-1-tab-1');
-  var scatterplot1Tab2 = document.querySelector('.scatterplot-1-tab-2');
-  var scatterplot1Tab3 = document.querySelector('.scatterplot-1-tab-3');
-  var scatterplot2Tab1 = document.querySelector('.scatterplot-2-tab-1');
-  var scatterplot2Tab2 = document.querySelector('.scatterplot-2-tab-2');
-  var scatterplot2Tab3 = document.querySelector('.scatterplot-2-tab-3');
-
-  scatterplot1Tab1.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-1', 'pos-2');
-    this.parentNode.classList.add('pos-0');
-  });
-  scatterplot1Tab2.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-2');
-    this.parentNode.classList.add('pos-1');
-  });
-  scatterplot1Tab3.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-1');
-    this.parentNode.classList.add('pos-2');
-  });
-
-  scatterplot2Tab1.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-1', 'pos-2');
-    this.parentNode.classList.add('pos-0');
-  });
-  scatterplot2Tab2.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-2');
-    this.parentNode.classList.add('pos-1');
-  });
-  scatterplot2Tab3.addEventListener("mouseover", function(){
-    this.parentNode.classList.remove('pos-0', 'pos-1');
-    this.parentNode.classList.add('pos-2');
-  });
-
 /* exported Scatterplot */
