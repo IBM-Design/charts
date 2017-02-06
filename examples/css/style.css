@@ -639,11 +639,6 @@ body {
   line-height: 40px;
 }
 
-
-/* effect-3 */
-
-
-
 .ease {
   -webkit-transition: left .5s;
      -moz-transition: left .5s;
@@ -714,10 +709,7 @@ body {
   left: 300px;
 }
 
-
-/* effect-3 */
-
-.effect-3 .line{
+.tab-container .line{
   background: #5a3ec8;
   width: 150px;
   height: 4px;
@@ -803,6 +795,9 @@ body {
     .scatterplot .menuEl, .scatterplot .menuEl2 {
         width: 26%;
         font-size: 12px;
+    }
+    .tab-container .line {
+      width: 26%;
     }
     .scatterplot .slider {
       display: none;
