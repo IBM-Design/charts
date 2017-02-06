@@ -754,4 +754,5 @@ function Scatterplot(el, component, svgClass) {
     return str.replace(' ', '').toLowerCase()
   }
 }
+
 /* exported Scatterplot */
