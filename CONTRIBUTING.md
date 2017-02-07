@@ -24,7 +24,7 @@ Then, you can run several commands:
 
 ## Lerna
 
-For full documentation, make sure to check out [lerna](lernajs.io).
+For full documentation, make sure to check out [Lerna](https://lernajs.io/).
 
 ### Process
 

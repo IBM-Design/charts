@@ -35,6 +35,10 @@ module.exports = function (storybookBaseConfig, configType) {
       test: /\.(csv|dsv)$/,
       loader: 'dsv',
     },
+    {
+      test: /\.json$/,
+      loader: "json-loader"
+    },
   ]);
 
   return storybookBaseConfig;

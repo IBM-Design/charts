@@ -14,6 +14,10 @@
 
 ## Design
 
+You can find all Sketch files that define the visual specs of a chart in [charts-design](./packages/charts-design/).
+
+## Structure
+
 The project currently leverages [Lerna](https://lernajs.io/) in order to manage multiple packages contained within this project. To learn more about this, please view our [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
 ## Examples
