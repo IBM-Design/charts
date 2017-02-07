@@ -33,10 +33,13 @@
     d3.selectAll('.gif-container > div').style('display', 'none')
     if (i === 0) {
       d3.select('.move-gif').style('display', 'block')
+      d3.select('.move-gif').style('visibility', 'initial')
     } else if (i === 1) {
       d3.select('.frame-gif').style('display', 'block')
+      d3.select('.frame-gif').style('visibility', 'initial')
     } else if (i === 2) {
       d3.select('.find-gif').style('display', 'block')
+      d3.select('.find-gif').style('visibility', 'initial')
     }
   })
 
@@ -94,10 +97,13 @@
     d3.selectAll('.gif-container2 > div').style('display', 'none')
     if (i === 0) {
       d3.select('.move2-gif').style('display', 'block')
+      d3.select('.move2-gif').style('visibility', 'initial')
     } else if (i === 1) {
       d3.select('.filter-gif').style('display', 'block')
+      d3.select('.filter-gif').style('visibility', 'initial')
     } else if (i === 2) {
       d3.select('.details-gif').style('display', 'block')
+      d3.select('.details-gif').style('visibility', 'initial')
     }
   })
 
