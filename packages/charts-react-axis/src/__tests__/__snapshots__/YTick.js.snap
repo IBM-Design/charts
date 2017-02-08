@@ -3,7 +3,7 @@ exports[`YTick Component should render 1`] = `
   className="tick"
   transform="translate(0,250)">
   <path
-    d="M0,0 Lundefined,0"
+    d="M0,0 L960,0"
     fill="none"
     stroke="#CDDBF1"
     strokeWidth="1" />

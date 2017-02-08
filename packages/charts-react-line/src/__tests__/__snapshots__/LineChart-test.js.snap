@@ -11,79 +11,100 @@ exports[`LineChart Component should render 1`] = `
       fontFamily="sans-serif"
       fontSize="10"
       textAnchor="end">
-      <path
-        className="domain"
-        d="M-6,450H0V0.5H-6"
-        stroke="#000"
-        style={
-          Object {
-            "fill": "none",
-            "shapeRendering": "crispEdges",
-            "strokeWidth": 1,
-          }
-        } />
       <g
         className="tick"
-        transform="translate(0,90)">
-        <line
-          stroke="#000"
-          x2="-6"
-          y1="0.5"
-          y2="0.5" />
+        transform="translate(0,0)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.32em"
           fill="#000"
           x="-9"
           y="0.5">
-          Label
+          500
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0,90)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x="-9"
+          y="0.5">
+          400
         </text>
       </g>
       <g
         className="tick"
         transform="translate(0,180)">
-        <line
-          stroke="#000"
-          x2="-6"
-          y1="0.5"
-          y2="0.5" />
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.32em"
           fill="#000"
           x="-9"
           y="0.5">
-          Label
+          300
         </text>
       </g>
       <g
         className="tick"
         transform="translate(0,270)">
-        <line
-          stroke="#000"
-          x2="-6"
-          y1="0.5"
-          y2="0.5" />
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.32em"
           fill="#000"
           x="-9"
           y="0.5">
-          Label
+          200
         </text>
       </g>
       <g
         className="tick"
         transform="translate(0,360)">
-        <line
-          stroke="#000"
-          x2="-6"
-          y1="0.5"
-          y2="0.5" />
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.32em"
           fill="#000"
           x="-9"
           y="0.5">
-          Label
+          100
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0,450)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x="-9"
+          y="0.5">
+          0
         </text>
       </g>
     </g>
@@ -94,82 +115,208 @@ exports[`LineChart Component should render 1`] = `
       fontSize="10"
       textAnchor="middle"
       transform="translate(0,450)">
-      <path
-        className="domain"
-        d="M0,6V0H890V6"
-        stroke="#000"
-        style={
-          Object {
-            "fill": "none",
-            "shapeRendering": "crispEdges",
-            "strokeWidth": 1,
-          }
-        } />
       <g
         className="tick"
-        transform="translate(178,0)">
-        <line
-          stroke="#000"
-          x1="0.5"
-          x2="0.5"
-          y2="6" />
+        transform="translate(0,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.71em"
           fill="#000"
           x="0.5"
           y="9">
-          Label
+          Jan
         </text>
       </g>
       <g
         className="tick"
-        transform="translate(356,0)">
-        <line
-          stroke="#000"
-          x1="0.5"
-          x2="0.5"
-          y2="6" />
+        transform="translate(80.9090909090909,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.71em"
           fill="#000"
           x="0.5"
           y="9">
-          Label
+          Feb
         </text>
       </g>
       <g
         className="tick"
-        transform="translate(534,0)">
-        <line
-          stroke="#000"
-          x1="0.5"
-          x2="0.5"
-          y2="6" />
+        transform="translate(161.8181818181818,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.71em"
           fill="#000"
           x="0.5"
           y="9">
-          Label
+          Mar
         </text>
       </g>
       <g
         className="tick"
-        transform="translate(712,0)">
-        <line
-          stroke="#000"
-          x1="0.5"
-          x2="0.5"
-          y2="6" />
+        transform="translate(242.72727272727272,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
         <text
           dy="0.71em"
           fill="#000"
           x="0.5"
           y="9">
-          Label
+          Apr
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(323.6363636363636,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          May
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(404.5454545454545,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          June
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(485.45454545454544,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          July
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(566.3636363636364,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          Aug
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(647.2727272727273,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          Sep
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(728.1818181818181,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          Oct
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(809.090909090909,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          Nov
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(890,0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x="0.5"
+          y="9">
+          Dec
         </text>
       </g>
     </g>
+    <path
+      d="M0,450Z"
+      style={
+        Object {
+          "fill": "none",
+          "stroke": "#5392ff",
+          "strokeWidth": 1.5,
+        }
+      } />
   </g>
 </svg>
 `;

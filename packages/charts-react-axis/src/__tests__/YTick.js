@@ -5,7 +5,10 @@ import YTick from '../YTick';
 describe('YTick Component', () => {
   it('should render', () => {
     const tree = renderer.create(
-      <YTick offset={250} label="Label" />
+      <YTick
+        label="Label"
+        offset={250}
+        width={960} />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

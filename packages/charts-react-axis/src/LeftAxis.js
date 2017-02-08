@@ -55,7 +55,6 @@ const LeftAxis = (props, context) => {
 LeftAxis.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
-  text: PropTypes.array, // eslint-disable-line react/forbid-prop-types
   tickCount: PropTypes.number,
 };
 

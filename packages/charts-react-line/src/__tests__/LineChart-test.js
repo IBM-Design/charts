@@ -17,7 +17,7 @@ describe('LineChart Component', () => {
   it('should render', () => {
     const tree = renderer.create(
       <LineChart
-        data={data}
+        lines={[data]}
         width={960}
         height={500}
         margin={{
@@ -32,6 +32,16 @@ describe('LineChart Component', () => {
         domainY={extent(data, (d) => d.close)}
         x={(d) => d.date}
         y={(d) => d.close}
+        grid={[
+          {
+            text: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          },
+          {
+            min: 0,
+            max: 500,
+            tickCount: 5,
+          },
+        ]}
       />
     ).toJSON();
     expect(tree).toMatchSnapshot();
