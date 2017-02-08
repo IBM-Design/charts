@@ -8,7 +8,8 @@ describe('XTick Component', () => {
       <XTick
         height={500}
         label="Label"
-        offset={250} />
+        offset={250}
+      />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -21,7 +21,8 @@ describe('Chart Component', () => {
           min: 0,
           max: 500,
           tickCount: 5,
-        }} />
+        }}
+      />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -52,11 +52,16 @@ const LeftAxis = (props, context) => {
   );
 };
 
+/* eslint-disable react/forbid-prop-types */
+
 LeftAxis.propTypes = {
   max: PropTypes.number,
   min: PropTypes.number,
+  text: PropTypes.array,
   tickCount: PropTypes.number,
 };
+
+/* eslint-enable react/forbid-prop-types */
 
 LeftAxis.contextTypes = {
   chart: PropTypes.object,

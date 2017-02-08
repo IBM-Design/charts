@@ -8,7 +8,8 @@ describe('YTick Component', () => {
       <YTick
         label="Label"
         offset={250}
-        width={960} />
+        width={960}
+      />
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });
