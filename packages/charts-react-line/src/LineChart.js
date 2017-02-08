@@ -4,6 +4,7 @@ import Chart from '@ibm-design/charts-react-chart';
 import Colors from 'ibm-design-colors/ibm-colors';
 import { LeftAxis, BottomAxis } from '@ibm-design/charts-react-axis';
 import Line from './Line';
+import Legend from './Legend';
 
 export default class LineChart extends React.PureComponent {
   static propTypes = {
@@ -98,6 +99,7 @@ export default class LineChart extends React.PureComponent {
 
     return (
       <Chart width={width} height={height} margin={margin}>
+        <Legend offset={600} categories={['Category 1', 'Category 2', 'Category 3']}/>
         <LeftAxis tickCount={5} />
         <BottomAxis tickCount={5} />
         {lines}
