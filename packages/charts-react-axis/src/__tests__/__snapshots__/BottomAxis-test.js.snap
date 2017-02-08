@@ -6,79 +6,100 @@ exports[`BottomAxis Component should render 1`] = `
   fontSize="10"
   textAnchor="middle"
   transform="translate(0,500)">
-  <path
-    className="domain"
-    d="M0,6V0H500V6"
-    stroke="#000"
-    style={
-      Object {
-        "fill": "none",
-        "shapeRendering": "crispEdges",
-        "strokeWidth": 1,
-      }
-    } />
   <g
     className="tick"
-    transform="translate(100,0)">
-    <line
-      stroke="#000"
-      x1="0.5"
-      x2="0.5"
-      y2="6" />
+    transform="translate(0,0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
     <text
       dy="0.71em"
       fill="#000"
       x="0.5"
       y="9">
-      Label
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(100,0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x="0.5"
+      y="9">
+      NaN
     </text>
   </g>
   <g
     className="tick"
     transform="translate(200,0)">
-    <line
-      stroke="#000"
-      x1="0.5"
-      x2="0.5"
-      y2="6" />
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
     <text
       dy="0.71em"
       fill="#000"
       x="0.5"
       y="9">
-      Label
+      NaN
     </text>
   </g>
   <g
     className="tick"
     transform="translate(300,0)">
-    <line
-      stroke="#000"
-      x1="0.5"
-      x2="0.5"
-      y2="6" />
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
     <text
       dy="0.71em"
       fill="#000"
       x="0.5"
       y="9">
-      Label
+      NaN
     </text>
   </g>
   <g
     className="tick"
     transform="translate(400,0)">
-    <line
-      stroke="#000"
-      x1="0.5"
-      x2="0.5"
-      y2="6" />
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
     <text
       dy="0.71em"
       fill="#000"
       x="0.5"
       y="9">
-      Label
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(500,0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x="0.5"
+      y="9">
+      NaN
     </text>
   </g>
 </g>

@@ -1,34 +1,45 @@
 import React, { PropTypes } from 'react';
 import YTick from './YTick';
 
-const pathStyle = {
-  fill: 'none',
-  strokeWidth: 1,
-  shapeRendering: 'crispEdges',
+/* eslint-disable react/display-name */
+const calcLabels = (max, min, tickCount) => {
+  let labels = [];
+  for (let i = tickCount; i > -1; i--) {
+    labels.push(i * (max - min) / tickCount + min);
+  }
+  return labels;
 };
 
-/* eslint-disable react/display-name */
-const renderTickWith = (interval) => (_, i) => {
-  const offset = interval * (i + 1);
+const renderTickWith = (interval, labels, width) => (_, i) => {
+  const offset = interval * i;
 
   return (
     <YTick
       key={i}
-      label="Label"
+      label={labels[i].toString()}
       offset={offset}
+      width={width}
     />
   );
 };
 /* eslint-enable react/display-name */
 
 const LeftAxis = (props, context) => {
-  const { tickCount } = props;
+  const {
+    max,
+    min,
+    text,
+    tickCount,
+  } = props;
   const { chart } = context;
-
-  const path = `M-6,${chart.height}H0V0.5H-6`;
-  const interval = chart.height / tickCount;
-  const renderTick = renderTickWith(interval);
-
+  const totalTicks = text
+    ? text.length - 1
+    : tickCount;
+  const interval = chart.height / totalTicks;
+  const labels = text
+    ? text.reverse()
+    : calcLabels(max, min, tickCount);
+  const renderTick = renderTickWith(interval, labels, chart.width);
   return (
     <g
       className="axis axis--y"
@@ -36,18 +47,24 @@ const LeftAxis = (props, context) => {
       fontSize="10"
       fontFamily="sans-serif"
       textAnchor="end">
-      <path className="domain" d={path} stroke="#000" style={pathStyle} />
-      {Array.from(Array(tickCount - 1)).map(renderTick)}
+      {Array.from(Array(totalTicks + 1)).map(renderTick)}
     </g>
   );
 };
 
 LeftAxis.propTypes = {
+  max: PropTypes.number,
+  min: PropTypes.number,
+  text: PropTypes.array, // eslint-disable-line react/forbid-prop-types
   tickCount: PropTypes.number,
 };
 
 LeftAxis.contextTypes = {
   chart: PropTypes.object,
+};
+
+LeftAxis.defaultProps = {
+  min: 0,
 };
 
 export default LeftAxis;

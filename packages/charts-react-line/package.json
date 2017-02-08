@@ -10,7 +10,6 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@ibm-design/charts-react-axis": "~0.0.0",
     "@ibm-design/charts-react-chart": "~0.0.0",
     "d3-array": "^1.0.2",
     "d3-scale": "^1.0.4",
@@ -27,6 +26,7 @@
     "css-loader": "^0.26.1",
     "dsv-loader": "^2.0.0",
     "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
     "node-sass": "^4.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",

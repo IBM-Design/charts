@@ -1,22 +1,23 @@
 import React, { PropTypes } from 'react';
 import XTick from './XTick';
 
-const pathStyle = {
-  fill: 'none',
-  strokeWidth: 1,
-  shapeRendering: 'crispEdges',
+/* eslint-disable react/display-name */
+const calcLabels = (max, min, tickCount) => {
+  let labels = [];
+  for (let i = 0; i < tickCount + 1; i++) {
+    labels.push(i * (max - min) / tickCount + min);
+  }
+  return labels;
 };
 
-/* eslint-disable react/display-name */
-const renderTickWith = (interval) => (_, i) => {
-  const offset = interval * (i + 1);
-  // TODO: Label
-  // const label = x(offset);
+const renderTickWith = (interval, labels, height) => (_, i) => {
+  const offset = interval * i;
 
   return (
     <XTick
+      height={height}
       key={i}
-      label="Label"
+      label={labels[i].toString()}
       offset={offset}
     />
   );
@@ -24,14 +25,22 @@ const renderTickWith = (interval) => (_, i) => {
 /* eslint-enable react/display-name */
 
 const BottomAxis = (props, context) => {
-  const { tickCount } = props;
+  const {
+    max,
+    min,
+    text,
+    tickCount,
+  } = props;
   const { chart } = context;
-
-  const path = `M0,6V0H${chart.width}V6`;
-  const interval = chart.width / tickCount;
+  const totalTicks = text
+    ? text.length - 1
+    : tickCount;
+  const interval = chart.width / totalTicks;
+  const labels = text
+    ? text
+    : calcLabels(max, min, tickCount);
   const transform = `translate(0,${chart.height})`;
-
-  const renderTick = renderTickWith(interval);
+  const renderTick = renderTickWith(interval, labels, chart.height);
 
   return (
     <g
@@ -41,18 +50,24 @@ const BottomAxis = (props, context) => {
       fontFamily="sans-serif"
       textAnchor="middle"
       transform={transform}>
-      <path className="domain" d={path} stroke="#000" style={pathStyle} />
-      {Array.from(Array(tickCount - 1)).map(renderTick)}
+      {Array.from(Array(totalTicks + 1)).map(renderTick)}
     </g>
   );
 };
 
 BottomAxis.propTypes = {
+  max: PropTypes.number,
+  min: PropTypes.number,
+  text: PropTypes.array, // eslint-disable-line react/forbid-prop-types
   tickCount: PropTypes.number,
 };
 
 BottomAxis.contextTypes = {
   chart: PropTypes.object,
+};
+
+BottomAxis.defaultProps = {
+  min: 0,
 };
 
 export default BottomAxis;

@@ -2,11 +2,11 @@ exports[`XTick Component should render 1`] = `
 <g
   className="tick"
   transform="translate(250,0)">
-  <line
-    stroke="#000"
-    x1="0.5"
-    x2="0.5"
-    y2="6" />
+  <path
+    d="M0,0 L0,-undefined"
+    fill="none"
+    stroke="#CDDBF1"
+    strokeWidth="1" />
   <text
     dy="0.71em"
     fill="#000"
