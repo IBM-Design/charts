@@ -26,14 +26,5 @@ const data = [
   {axis:"Large Screen",value:0.04},
   {axis:"Price Of Device",value:0.41},
   {axis:"To Be A Smartphone",value:0.30}
-  ],[//Nokia Smartphone
-  {axis:"Battery Life",value:0.1},
-  {axis:"Brand",value:0.1},
-  {axis:"Contract Cost",value:0.1},
-  {axis:"Design And Quality",value:0.1},
-  {axis:"Have Internet Connectivity",value:0.1},
-  {axis:"Large Screen",value:0.1},
-  {axis:"Price Of Device",value:0.1},
-  {axis:"To Be A Smartphone",value:0.1}
   ]
 ];
