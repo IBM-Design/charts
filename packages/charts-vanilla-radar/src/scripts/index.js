@@ -10,11 +10,11 @@ class Radar {
     this.axis = {}
 
     this.cfg = (()=>{
-      let w = 500,
+      let w = 800,
           h = w,
           numAxis = data[0].length,
-          margin = {top: 20, right: 20, bottom: 20, left: 20},
-          r = w / 2 - margin.top - margin.bottom;
+          margin = {top: 50, right: 50, bottom: 50, left: 40},
+          r = w / 2 - d3.max([margin.top + margin.bottom, margin.right + margin.left]),
 
       return {
         w: w,
@@ -42,7 +42,19 @@ class Radar {
 
 
   draw(){
+    this.scalesAndLinesFunctions()
+    this.wrapper = this.setupRadar()
 
+    var shapes = this.wrapper.append('g').attr('class','shapes')
+    for(var i = 0; i < data.length; i++){
+       shapes.append('path').datum(data[i]).attrs({
+                    'stroke-width': 1.5,
+                    'fill': 'red',
+                    'opacity': 1,
+                    'd' : a.line,
+                    'class': 'iphone'
+                  })
+    }
   }
 
   scalesAndLinesFunctions(){
@@ -59,9 +71,13 @@ class Radar {
   }
 
   setupRadar(){
-    this.target.style({
+    this.target.styles({
       width: this.cfg.w,
       height: this.cfg.h,
+    })
+    let globalGroup = this.target.append('g').attrs({
+      'class': 'chart',
+      'transform': `translate(${this.cfg.w/2} ${this.cfg.h/2})`
     })
 
     this.axis.names = data[0].map( el => el.axis)
@@ -69,21 +85,18 @@ class Radar {
 
 
     //puts 0,0 in the center of the svg
-    this.globalGroup = this.target.append('g').attrs({
-      'class': 'chart',
-      'transform': `translate(${this.cfg.w/2} ${this.cfg.h/2})`
-    })
+
 
     // draws the axis
     if(this.cfg.axisStyle){
-      this.axisGroup = this.globalGroup.append('g').attr('class','axis-lines')
+      this.axisGroup = globalGroup.append('g').attr('class','axis-lines')
       this.axisGroup.selectAll('.axis-line').data(this.axis.names).enter().append('line')
              .attrs({
                'x1': 0,
                'y1': 0,
                // `+ Math.PI/2 to make the Axis line up with the correct Data`
-               'x2': (d,i)=>{ return this.scale(this.cfg.max * 1.1) * Math.cos( this.cfg.angleSlice*i + Math.PI/2)},
-               'y2': (d,i)=>{ return this.scale(this.cfg.max * 1.1) * Math.sin( this.cfg.angleSlice*i + Math.PI/2)},
+               'x2': (d,i)=>{ return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice*i + Math.PI/2)},
+               'y2': (d,i)=>{ return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice*i + Math.PI/2)},
                'class': 'axis-line',
              }).styles(this.cfg.axisStyle)
     }
@@ -93,7 +106,7 @@ class Radar {
       let ringInterval = this.cfg.max / this.cfg.levels
       var ringRadiusValues = d3.range(ringInterval, this.cfg.max+1, ringInterval).reverse() //add 1 so you include the MAX
       console.log(ringRadiusValues)
-      let g = this.globalGroup.append('g').attr('class', 'grid-circle')
+      let g = globalGroup.append('g').attr('class', 'grid-circle')
       g.selectAll('.level').data(ringRadiusValues).enter().append('circle').attrs({
         'fill': 'none',
         'cx': 0,
@@ -122,6 +135,7 @@ class Radar {
     } else if(this.cfg.shape =='square'){
       //TODO
     }
+    return globalGroup
   }
 
   //customize this function to fit data model you want
@@ -139,40 +153,35 @@ class Radar {
 let a;
 function test(data){
   a = new Radar('svg', data)
-  a.scalesAndLinesFunctions()
-  a.target.attrs({
-    width: a.cfg.w,
-    height: a.cfg.h
-  })
-  a.setupRadar()
+  a.draw()
 
-  let g = a.globalGroup.append('g').attr('class', 'lines')
-        g.append('path')
-                  .datum(data[1])
-                  .attrs({
-                    'stroke-width': 1.5,
-                    'fill': 'red',
-                    'opacity': 1,
-                    'd' : a.line,
-                    'class': 'iphone'
-                  })
-        g.append('path')
-                  .datum(data[2])
-                  .attrs({
-                    'stroke-width': 1.5,
-                    'fill': 'blue',
-                    'opacity': 1,
-                    'd' : a.line
-                  })
-        g.append('path')
-                  .datum(data[0])
-                  .attrs({
-                    'stroke-width': 1.5,
-                    'fill': 'green',
-                    'opacity': 1,
-                    'd' : a.line,
-                    'class': 'iphone'
-                  })
+  // let g = a.globalGroup.append('g').attr('class', 'lines')
+  //       g.append('path')
+  //                 .datum(data[1])
+  //                 .attrs({
+  //                   'stroke-width': 1.5,
+  //                   'fill': 'red',
+  //                   'opacity': 1,
+  //                   'd' : a.line,
+  //                   'class': 'iphone'
+  //                 })
+  //       g.append('path')
+  //                 .datum(data[2])
+  //                 .attrs({
+  //                   'stroke-width': 1.5,
+  //                   'fill': 'blue',
+  //                   'opacity': 1,
+  //                   'd' : a.line
+  //                 })
+  //       g.append('path')
+  //                 .datum(data[0])
+  //                 .attrs({
+  //                   'stroke-width': 1.5,
+  //                   'fill': 'green',
+  //                   'opacity': 1,
+  //                   'd' : a.line,
+  //                   'class': 'iphone'
+  //                 })
 }
 
 
