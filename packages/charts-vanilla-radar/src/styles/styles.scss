@@ -7,4 +7,10 @@ body {
 
 .radar {
   border: 1px solid black;
+
+  path {
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+  }
 }
+
