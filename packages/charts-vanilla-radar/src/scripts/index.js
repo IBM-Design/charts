@@ -1,36 +1,38 @@
 'use strict'
 class Radar {
 
-  constructor(graphNode, data){
+  constructor(graphNode, data, opts){
     this.data = this.formatData(data)
     this.target = d3.select(graphNode)
 
     this.scale;
     this.line;
+    this.color = d3.scaleOrdinal()
+        .range(opts.colors)
     this.axis = {}
 
     this.cfg = (()=>{
-      let w = 800,
+      let w = opts.size || 500,
           h = w,
           numAxis = data[0].length,
-          margin = {top: 50, right: 50, bottom: 50, left: 40},
-          r = w / 2 - d3.max([margin.top + margin.bottom, margin.right + margin.left]),
+          margin = opts.margins,
+          r = w / 2 - d3.max([margin.top + margin.bottom, margin.right + margin.left]);
 
       return {
         w: w,
         h: h,
         r: r,
         margin: margin,
-        levels: 5,
+        units: opts.units,
+        levels: opts.levels,
         max: null, // will be determined by data
-        labelFactor: 60,  // how much further outside the radius does the label appears
-        wrapWidth: null, // word wrap after this number of pixels
-        opacityArea: 0.4,
+        labelFactor: opts.labelFactor,  // how much further outside the radius does the label appears
+        wrapWidth: opts.wrapWidth || 60, // word wrap after this number of pixels
+        opacityArea: opts.opacityArea,
         strokeWidth: 2,
-        color: 'blue',
         numAxis: numAxis,
         angleSlice: Math.PI * 2 / numAxis, // angle of slice in radians
-        shape: 'circle', //circle, polygon, square,
+        shape: opts.shape || 'circle', //circle, polygon, square,
         dotSize: 4, //if not set, dots will not be drawn.
         axisStyle: {
           'stroke': 'black',
@@ -38,24 +40,38 @@ class Radar {
         }
       }
     })()
-  }
+  } // constructor
 
 
   draw(){
+    //setup
     this.scalesAndLinesFunctions()
     this.wrapper = this.setupRadar()
 
-    var shapes = this.wrapper.append('g').attr('class','shapes')
-    for(var i = 0; i < data.length; i++){
-       shapes.append('path').datum(data[i]).attrs({
-                    'stroke-width': 1.5,
-                    'fill': 'red',
-                    'opacity': 1,
-                    'd' : a.line,
-                    'class': 'iphone'
-                  })
+    //draw blobs & dots
+    var blobs = this.wrapper.append('g').attr('class','blobs')
+    for(let i = 0; i < data.length; i++){
+      //blob
+       let g = blobs.append('g').attr('class','blob-'+i)
+       g.append('path').datum(data[i]).attrs({
+          'stroke-width': 1.5,
+          'd' : a.line,
+          'fill': () => { return this.color(i)}
+        })
+       //dots
+       g.selectAll('.dot').data(data[i]).enter().append('circle').attrs({
+          'stroke-width': 1.5,
+          'cx': (d,i) => {  return this.scale( d.value) * Math.sin(this.cfg.angleSlice * i + Math.PI/2)},
+          'cy': (d,i) => { return this.scale( d.value) * Math.cos(this.cfg.angleSlice * i +  Math.PI/2)},
+          'r': this.cfg.dotSize,
+          'fill': () => { return this.color(i)},
+          'opacity': 0.4,
+          'class': 'dot',
+       })
     }
-  }
+
+
+  }//draw
 
   scalesAndLinesFunctions(){
     let that = this
@@ -68,7 +84,7 @@ class Radar {
                       .angle((d, i)=>{ return -(i * that.cfg.angleSlice) + Math.PI / 2;})
                       .radius((d)=>{ return that.scale(d.value)})
 
-  }
+  }//scalesAndLinesFunctions
 
   setupRadar(){
     this.target.styles({
@@ -95,8 +111,9 @@ class Radar {
                'x1': 0,
                'y1': 0,
                // `+ Math.PI/2 to make the Axis line up with the correct Data`
-               'x2': (d,i)=>{ return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice*i + Math.PI/2)},
-               'y2': (d,i)=>{ return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice*i + Math.PI/2)},
+               'x2': (d,i)=>{ return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice*i + Math.PI/2)},
+               'y2': (d,i)=>{ return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice*i + Math.PI/2)},
+               'opacity': 0.3,
                'class': 'axis-line',
              }).styles(this.cfg.axisStyle)
     }
@@ -105,38 +122,58 @@ class Radar {
       //draw rings
       let ringInterval = this.cfg.max / this.cfg.levels
       var ringRadiusValues = d3.range(ringInterval, this.cfg.max+1, ringInterval).reverse() //add 1 so you include the MAX
-      console.log(ringRadiusValues)
+
       let g = globalGroup.append('g').attr('class', 'grid-circle')
-      g.selectAll('.level').data(ringRadiusValues).enter().append('circle').attrs({
-        'fill': 'none',
-        'cx': 0,
-        'cy': 0,
-        'class': 'label',
-        'r': (d) => {return this.scale(d)},
-        'stroke': 'black',
-        'stroke-width': 1,
-        'stroke-dasharray': '1 3',
-        'opacity': 0.5
-      })
+      g.append('g').attr('class', 'rings')
+            .selectAll('.ring').data(ringRadiusValues)
+            .enter().append('circle').attrs({
+              'fill': 'none',
+              'cx': 0,
+              'cy': 0,
+              'class': 'label',
+              'r': (d) => {return this.scale(d)},
+              'stroke': 'black',
+              'stroke-width': 1,
+              'stroke-dasharray': '1 3',
+              'opacity': 0.5,
+              'class': 'ring'
+            })
 
-      g.selectAll('.axis-label').data(ringRadiusValues).enter().append('text').attrs({
-        'class': 'axis-label',
-        'x': '0',
-        'y': (d) =>  {return  -this.scale(d)},
-        'dy': '-0.3em',
-        'dx': '0.5em',
-        'font-size': '0.8em',
-        'fill': 'grey',
-      }).text((d) => {return d+'%'})
+      //add the unit labels on the rings
+      g.append('g').attr('class', 'rings-labels')
+            .selectAll('.ring-label').data(ringRadiusValues)
+            .enter().append('text').attrs({
+              'class': 'ring-label',
+              'x': '0',
+              'y': (d) =>  {return  -this.scale(d)},
+              'dy': '-0.3em',
+              'dx': '0.5em',
+              'font-size': '0.8em',
+              'fill': 'grey',
+              'opacity': 0.4
+            })
+            .text((d) => {return d + this.cfg.units})
+      g.append('g').attr('class', 'legend')
+            .selectAll('.axis-label').data(data[0]).enter().append('text').attrs({
+              'class': 'axis-label',
+              'x': (d,i) => { return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) * Math.sin(this.cfg.angleSlice * i + Math.PI/2)},
+              'y': (d,i) => { return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) * Math.cos(this.cfg.angleSlice * i + Math.PI/2)},
+              'font-size': '0.8em',
+              'fill': 'grey',
+              'opacity': 0.4,
+              'text-anchor': "middle"
+            })
+            .html((d) => { return this.wrap(d.axis)})
 
-      //text indicating % for each level
+
+
     } else if(this.cfg.shape == 'polygon'){
       //TODO
     } else if(this.cfg.shape =='square'){
       //TODO
     }
     return globalGroup
-  }
+  }//setupRadar
 
   //customize this function to fit data model you want
   formatData(data){
@@ -146,42 +183,27 @@ class Radar {
       })
     })
     return data
-  }
+  } // formatData
+
+  wrap(text) {
+    return text.split(' ').join('\n')
+  }//wrap
 }
 
 
 let a;
 function test(data){
-  a = new Radar('svg', data)
+  a = new Radar('svg', data, {
+    size: 800,
+    margins: {top: 70, right: 70, bottom: 70, left: 70},
+    colors: ["#EDC951","#CC333F","#00A0B0"],
+    units: '%',
+    levels: 5,
+    opacityArea: 0.4,
+    labelFactor: 50,
+    shape: 'circle',
+  })
   a.draw()
-
-  // let g = a.globalGroup.append('g').attr('class', 'lines')
-  //       g.append('path')
-  //                 .datum(data[1])
-  //                 .attrs({
-  //                   'stroke-width': 1.5,
-  //                   'fill': 'red',
-  //                   'opacity': 1,
-  //                   'd' : a.line,
-  //                   'class': 'iphone'
-  //                 })
-  //       g.append('path')
-  //                 .datum(data[2])
-  //                 .attrs({
-  //                   'stroke-width': 1.5,
-  //                   'fill': 'blue',
-  //                   'opacity': 1,
-  //                   'd' : a.line
-  //                 })
-  //       g.append('path')
-  //                 .datum(data[0])
-  //                 .attrs({
-  //                   'stroke-width': 1.5,
-  //                   'fill': 'green',
-  //                   'opacity': 1,
-  //                   'd' : a.line,
-  //                   'class': 'iphone'
-  //                 })
 }
 
 
