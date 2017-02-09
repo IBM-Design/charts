@@ -3,7 +3,6 @@ import React, { PropTypes } from 'react';
 export default class Legend extends React.PureComponent {
 
   static propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
     labels: PropTypes.shape({
       text: PropTypes.string,
       color: PropTypes.string,
@@ -12,8 +11,10 @@ export default class Legend extends React.PureComponent {
     // eslint-disable-next-line react/forbid-prop-types
     style: PropTypes.object,
   }
-  static defaultProps = {}
 
+  static defaultProps = {
+    width: 200,
+  }
 
   render() {
     const { labels, style, width } = this.props;

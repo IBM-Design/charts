@@ -97,7 +97,8 @@ export default class LineChart extends React.PureComponent {
   render() {
     const { line, props } = this;
     const { margin, strokes, width, height, legend } = props;
-    const legendWidth = legend.width || 200;
+    const showLegend = !!legend.labels.length;
+    const legendWidth = showLegend ? (legend.width || 200) : 0;
     const lines = this.props.lines.map((data, index) =>
       <Line
         line = {line}
@@ -109,7 +110,7 @@ export default class LineChart extends React.PureComponent {
 
     return (
       <div style={{width}}>
-        <Legend labels={legend.labels} width={legendWidth}/>
+        {showLegend && <Legend labels={legend.labels} width={legendWidth}/>}
         <Chart width={width - legendWidth} height={height} margin={margin}>
           <LeftAxis tickCount={5} />
           <BottomAxis tickCount={5} />
