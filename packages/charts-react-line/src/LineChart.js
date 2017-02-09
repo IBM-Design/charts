@@ -10,6 +10,11 @@ export default class LineChart extends React.PureComponent {
   static propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
     lines: PropTypes.array.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
+    legend: PropTypes.shape({
+      labels: PropTypes.array,
+      width: PropTypes.number,
+    }),
     width: PropTypes.number,
     height: PropTypes.number,
     margin: PropTypes.shape({
@@ -38,6 +43,10 @@ export default class LineChart extends React.PureComponent {
     lines: [],
     width: 960,
     height: 500,
+    legend: {
+      labels: [],
+      width: 200,
+    },
     margin: {
       top: 20,
       right: 20,
@@ -87,7 +96,8 @@ export default class LineChart extends React.PureComponent {
 
   render() {
     const { line, props } = this;
-    const { margin, strokes, width, height } = props;
+    const { margin, strokes, width, height, legend } = props;
+    const legendWidth = legend.width || 200;
     const lines = this.props.lines.map((data, index) =>
       <Line
         line = {line}
@@ -98,12 +108,14 @@ export default class LineChart extends React.PureComponent {
     );
 
     return (
-      <Chart width={width} height={height} margin={margin}>
-        <Legend offset={600} categories={['Category 1', 'Category 2', 'Category 3']}/>
-        <LeftAxis tickCount={5} />
-        <BottomAxis tickCount={5} />
-        {lines}
-      </Chart>
+      <div style={{width}}>
+        <Legend labels={legend.labels} width={legendWidth}/>
+        <Chart width={width - legendWidth} height={height} margin={margin}>
+          <LeftAxis tickCount={5} />
+          <BottomAxis tickCount={5} />
+          {lines}
+        </Chart>
+      </div>
     );
   }
 }
