@@ -4,7 +4,10 @@ export default class Legend extends React.PureComponent {
 
   static propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
-    labels: PropTypes.array,
+    labels: PropTypes.shape({
+      text: PropTypes.string,
+      color: PropTypes.string,
+    }),
     width: PropTypes.number,
     // eslint-disable-next-line react/forbid-prop-types
     style: PropTypes.object,
@@ -13,10 +16,15 @@ export default class Legend extends React.PureComponent {
 
 
   render() {
-    const { labels } = this.props;
+    const { labels, style, width } = this.props;
 
     return (
-      <div className="legend" style={this.getStyles(this.props)}>
+      <div className="legend" style={{
+        width,
+        float: 'right',
+        padding: 20,
+        ...style,
+      }}>
         <h4 style={{ margin: '0 0 10px' }}>Legend</h4>
         <ul style={{ padding: 0, margin: 0, listStyle: 'none' }}>
           {labels.map(this.renderLabel)}
@@ -25,7 +33,7 @@ export default class Legend extends React.PureComponent {
     );
   }
 
-  renderLabel(item, i) {
+  renderLabel({text, color}, i) {
     return (
       <li
         style={{marginBottom: 10}}
@@ -35,22 +43,13 @@ export default class Legend extends React.PureComponent {
             width: 12,
             height: 12,
             marginRight: 10,
-            background: '#AAA',
+            background: color || '#AAA',
             display: 'inline-block',
             borderRadius: '50%',
           }}
         />
-        {item}
+        {text}
       </li>
     );
-  }
-
-  getStyles(props) {
-    return {
-      width: props.width,
-      float: 'right',
-      padding: 20,
-      ...props.style,
-    };
   }
 }
