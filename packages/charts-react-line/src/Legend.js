@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 export default class Legend extends React.PureComponent {
 
   static propTypes = {
+    title: PropTypes.string,
     labels: PropTypes.shape({
       text: PropTypes.string,
       color: PropTypes.string,
@@ -13,11 +14,12 @@ export default class Legend extends React.PureComponent {
   }
 
   static defaultProps = {
+    title: 'Legend',
     width: 200,
   }
 
   render() {
-    const { labels, style, width } = this.props;
+    const { labels, style, width, title } = this.props;
 
     return (
       <div className="legend" style={{
@@ -26,7 +28,7 @@ export default class Legend extends React.PureComponent {
         padding: 20,
         ...style,
       }}>
-        <h4 style={{ margin: '0 0 10px' }}>Legend</h4>
+        <h4 style={{ margin: '0 0 10px' }}>{title}</h4>
         <ul style={{ padding: 0, margin: 0, listStyle: 'none' }}>
           {labels.map(this.renderLabel)}
         </ul>

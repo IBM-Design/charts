@@ -12,6 +12,7 @@ export default class LineChart extends React.PureComponent {
     lines: PropTypes.array.isRequired,
     // eslint-disable-next-line react/forbid-prop-types
     legend: PropTypes.shape({
+      title: PropTypes.string,
       labels: PropTypes.array,
       width: PropTypes.number,
     }),
@@ -110,7 +111,13 @@ export default class LineChart extends React.PureComponent {
 
     return (
       <div style={{width}}>
-        {isLegendVisible && <Legend labels={legend.labels} width={legendWidth}/>}
+        {isLegendVisible &&
+          <Legend
+            labels={legend.labels}
+            width={legendWidth}
+            title={legend.title}
+          />
+        }
         <Chart width={width - legendWidth} height={height} margin={margin}>
           <LeftAxis tickCount={5} />
           <BottomAxis tickCount={5} />

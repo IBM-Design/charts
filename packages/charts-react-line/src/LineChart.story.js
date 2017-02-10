@@ -18,7 +18,14 @@ storiesOf('LineChart', module)
   .add('default', () => (
     <LineChart
       lines={[data]}
-      legend={{ labels: [{ text: 'Category 1', color: '#648fff' }, { text: 'Category 2' }] }}
+      legend={{
+        title: 'Legend',
+        width: 200,
+        labels: [
+          { text: 'Category 1', color: '#648fff' },
+          { text: 'Category 2' },
+        ],
+      }}
       width={960}
       height={500}
       margin={{
