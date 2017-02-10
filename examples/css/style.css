@@ -26,8 +26,10 @@ body {
 
 .menu {
     margin: 0 auto;
-    margin-bottom: 10px;
     border-bottom: 1px solid #F6F6F6;
+    height: 40px;
+    position: relative;
+    padding: 0;
 }
 
 .label {
@@ -57,6 +59,14 @@ body {
 .scatterplot .erase {
   justify-content: center;
   align-items: center;
+  height: 30px;
+}
+.scatterplot .erase:focus a {
+  outline: 0;
+}
+.scatterplot .erase:hover .erase-fill-element,
+.scatterplot .erase:focus .erase-fill-element {
+  fill: #5a3ec8;
 }
 
 .scatterplot .erase svg {
@@ -64,19 +74,12 @@ body {
 }
 
 .scatterplot .menuEl, .scatterplot .menuEl2 {
-    display: inline-block;
-    width: 170px;
-    font-size: 14px;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.scatterplot .menuEl.active, .menuEl2.active {
-    border-bottom: 3px solid #000;
-    opacity: 1;
+  display: inline-block;
+  width: 170px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .scatterplot .search {
@@ -102,7 +105,7 @@ body {
 }
 
 .scatterplot .focus-line.active {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #5a3ec8;
 }
 
 .scatterplot .label {
@@ -302,7 +305,6 @@ body {
     height: 60vw;
     background: url('./move_chart.gif') no-repeat center center;
     background-size: contain;
-    display: none;
 }
 
 .scatterplot .move2-gif {
@@ -310,7 +312,6 @@ body {
     height: 60vw;
     background: url('./move2_chart.gif') no-repeat center center;
     background-size: contain;
-    display: none;
 }
 
 .scatterplot .frame-gif {
@@ -318,7 +319,6 @@ body {
     height: 60vw;
     background: url('./frame_chart.gif') no-repeat center center;
     background-size: contain;
-    display: none;
 }
 
 .scatterplot .find-gif {
@@ -326,7 +326,6 @@ body {
     height: 60vw;
     background: url('./find_chart.gif') no-repeat center center;
     background-size: contain;
-    display: none;
 }
 
 .scatterplot .filter-gif {
@@ -334,7 +333,6 @@ body {
     height: 60vw;
     background: url('./filter_chart.gif') no-repeat center center;
     background-size: contain;
-    display: none;
 }
 
 .scatterplot .details-gif {
@@ -342,7 +340,6 @@ body {
     height: 60vw;
     background: url('./details_chart.gif') no-repeat center center;
     background-size: contain;
-    display: none;
 }
 
 
@@ -618,12 +615,144 @@ body {
     background-size: contain;
     height: 484px;
 }
+/* Tabs */
 
+/* specify the translate from each origin to each destination */
+
+
+.scatterplot .menuEl,
+.scatterplot .menuEl2 {
+  display: inline-block;
+  width: 150px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0;
+  height: 100%;
+  line-height: 40px;
+}
+
+.ease {
+  -webkit-transition: left .5s;
+     -moz-transition: left .5s;
+     -o-transition: left .5s;
+      transition: left .5s;
+}
+
+.tabs {
+  background: #fff;
+  position: relative;
+  height: inherit;
+}
+
+.tabs > input,
+.tabs > span {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+}
+
+.tabs > input {
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  position: absolute;
+  z-index: 99;
+  height: inherit;
+  margin: 0;
+}
+
+.tabs > span {
+  text-align: center;
+  overflow: hidden;
+}
+
+.tabs > span i,
+.tabs > span {
+  -webkit-transition: left .5s;
+     -moz-transition: left .5s;
+     -o-transition: left .5s;
+      transition: left .5s;
+}
+
+.tabs > input:hover + span {
+  background: rgba(255,255,255,.1);
+}
+
+.tabs > input:checked + span {
+  background: #eaeaea;
+}
+
+.tabs > input:checked + span,
+.tabs > input:hover + span {
+  color: #323232;
+}
+
+.tab-1, .tab-1 + span {
+  left: 0;
+}
+
+.tab-2, .tab-2 + span {
+  left: 150px;
+}
+
+.tab-3, .tab-3 + span {
+  left: 300px;
+}
+
+.tab-container .line{
+  background: #5a3ec8;
+  width: 150px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+}
+
+.tab-1:checked ~ .line {
+  left: 0;
+}
+.tab-2:checked ~ .line {
+  left: 150px;
+}
+.tab-3:checked ~ .line {
+  left: 300px;
+}
+
+.tab-1:focus ~ .span-1, 
+.tab-2:focus ~ .span-2,
+.tab-3:focus ~ .span-3 {
+  background: #eaeaea;
+}
+.tab-1:focus ~ .line{
+  left: 0;
+}
+.tab-2:focus ~ .line{
+  left: 150px;
+}
+.tab-3:focus ~ .line{
+  left: 300px;
+}
+
+.tab-1:hover ~ .line {
+  left: 0;
+}
+.tab-2:hover ~ .line {
+  left: 150px;
+}
+.tab-3:hover ~ .line {
+  left: 300px;
+}
 
 /* MEDIA QUERIES */
 
 .gif-container, .gif-container2 {
-    display: none;
+    visibility: hidden;
+    height: 0;
+    position: relative;
 }
 
 .brush-gif-container {
@@ -642,6 +771,11 @@ body {
     display: none;
 }
 
+.scatterplot .move-gif, .scatterplot .move2-gif, .scatterplot .frame-gif, .scatterplot .find-gif, .scatterplot .filter-gif, .scatterplot .details-gif {
+  visibility: hidden;
+  height: 0;
+}
+
 @media (max-width: 800px) {
     .title {
         width: 100%;
@@ -651,45 +785,88 @@ body {
         width: 100%;
         margin: 0 auto;
     }
+    .scatterplot .gif-container,
+    .scatterplot .gif-container2 {
+      height: 60vw;
+    }
     .scatterplot .gif-container, .scatterplot .gif-container2 {
         display: block;
     }
+    .scatterplot .move-gif, .scatterplot .move2-gif, .scatterplot .frame-gif, .scatterplot .find-gif, .scatterplot .filter-gif, .scatterplot .details-gif {
+      position: absolute;
+      height: 60vw;
+    }
+    .scatterplot .move-gif,
+    .scatterplot .move2-gif {
+      visibility: initial;
+    }
+
     .scatterplot .search-container {
       display: none;
     }
     .scatterplot .svg-container, .scatterplot .svg-container2 {
-        display: none;
+        visibility: hidden;
+        height: 0;
     }
     .scatterplot .menuEl, .scatterplot .menuEl2 {
         width: 26%;
         font-size: 12px;
     }
+    .tab-container .line {
+      width: 26%;
+    }
     .scatterplot .slider {
-      display: none;
+      visibility: hidden;
+      height: 0;
     }
     .brush .container {
-        display: none;
+        visibility: hidden;
+        height: 0;
     }
     .brush-gif-container {
         display: block;
     }
     .radar .container {
-        display: none;
+        visibility: hidden;
+        height: 0;
     }
     .radar-gif-container {
         display: block;
     }
     .parallel-coordinates .container {
-        display: none;
+        visibility: hidden;
+        height: 0;
     }
     .parallel-coordinates-gif-container {
         display: block;
     }
     .smart-tooltips .container {
-        display: none;
+        visibility: hidden;
+        height: 0;
     }
     .smart-tooltips-gif-container {
         display: block;
+    }
+    .tab-container span {
+      width: 26%;
+    }
+    .tab-2, .tab-2 + span {
+      left: 26%;
+    }
+    .tab-3, .tab-3 + span {
+      left: 52%;
+    }
+    .tab-2:checked ~ .line {
+      left: 26%;
+    }
+    .tab-3:checked ~ .line {
+      left: 52%;
+    }
+    .tab-2:hover ~ .line {
+      left: 26%;
+    }
+    .tab-3:hover ~ .line {
+      left: 52%;
     }
 }
 
@@ -717,22 +894,27 @@ body {
     width: 800px !important;
     height: 600px !important;
     margin: 0 auto;
+    visibility: visible;
   }
   .scatterplot .search-container {
-    display: none;
+    visibility: hidden;
+    height: 0;
   }
   .scatterplot .svg-container, .scatterplot .svg-container2 {
-      display: none;
+    visibility: hidden;
+    height: 0;
   }
   .scatterplot .menuEl, .scatterplot .menuEl2 {
       width: 26%;
       font-size: 12px;
   }
   .scatterplot .slider {
-    display: none;
+    visibility: hidden;
+    height: 0
   }
   .brush .container {
-      display: none;
+    visibility: hidden;
+    height: 0
   }
   .brush-gif-container {
       display: block;
@@ -743,7 +925,8 @@ body {
     margin: 0 auto;
   }
   .radar .container {
-      display: none;
+      visibility: hidden;
+      height: 0;
   }
   .radar-gif-container {
       display: block;
@@ -754,7 +937,8 @@ body {
     margin: 0 auto;
   }
   .parallel-coordinates .container {
-      display: none;
+      visibility: hidden;
+      height: 0;
   }
   .parallel-coordinates-gif-container {
       display: block;
@@ -765,7 +949,8 @@ body {
     margin: 0 auto;
   }
   .smart-tooltips .container {
-      display: none;
+      visibility: hidden;
+      height: 0;
   }
   .smart-tooltips-gif-container {
       display: block;
