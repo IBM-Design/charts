@@ -7,7 +7,6 @@ describe('Tick Component', () => {
     const tree = renderer.create(
       <Tick
         dy={0.71}
-        offset="translate(0, 0)"
         height={500}
         label="Label"
         offset="translate(0, 0)"
