@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { BottomAxis, LeftAxis } from '@ibm-design/charts-react-axis';
+import { Axis } from '@ibm-design/charts-react-axis';
 
 export default class Chart extends React.PureComponent {
   static propTypes = {
@@ -75,11 +75,13 @@ export default class Chart extends React.PureComponent {
         height={height}
         className={className}>
         <g transform={transform}>
-          <LeftAxis
+          <Axis
             {...y}
+            type="left"
           />
-          <BottomAxis
+          <Axis
             {...x}
+            type="bottom"
           />
           {children}
         </g>

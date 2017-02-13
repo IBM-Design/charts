@@ -1,14 +1,19 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import XTick from '../XTick';
+import Tick from '../Tick';
 
-describe('XTick Component', () => {
+describe('Tick Component', () => {
   it('should render', () => {
     const tree = renderer.create(
-      <XTick
+      <Tick
+        dy={0.71}
+        offset="translate(0, 0)"
         height={500}
         label="Label"
-        offset={250}
+        offset="translate(0, 0)"
+        path="M0,0 L0,-500"
+        x={0.5}
+        y={9}
       />
     ).toJSON();
     expect(tree).toMatchSnapshot();
