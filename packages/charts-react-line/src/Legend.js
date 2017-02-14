@@ -28,8 +28,8 @@ export default class Legend extends React.PureComponent {
         padding: 20,
         ...style,
       }}>
-        <h4 style={{ margin: '0 0 10px' }}>{title}</h4>
-        <ul style={{ padding: 0, margin: 0, listStyle: 'none' }}>
+        <h4 style={{ margin: '0 0 15px' }}>{title}</h4>
+        <ul style={{ padding: '0 0 0 22px', margin: 0, listStyle: 'none' }}>
           {labels.map(this.renderLabel)}
         </ul>
       </div>
@@ -46,6 +46,7 @@ export default class Legend extends React.PureComponent {
             width: 12,
             height: 12,
             marginRight: 10,
+            marginLeft: -22,
             background: color || '#AAA',
             display: 'inline-block',
             borderRadius: '50%',
