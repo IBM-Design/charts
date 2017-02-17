@@ -1,0 +1,11 @@
+{
+  "name": "@ibm-design/charts-colors",
+  "version": "0.0.0",
+  "description": "IBM Charts color palettes based on the IBM Design Colors",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Design/charts/tree/master/packages/charts-colors"
+  }
+}
