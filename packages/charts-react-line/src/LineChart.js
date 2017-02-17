@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import * as shape from 'd3-shape';
+import { palettes } from '@ibm-design/charts-colors';
 import Chart from '@ibm-design/charts-react-chart';
-import Colors from 'ibm-design-colors/ibm-colors';
 import { LeftAxis, BottomAxis } from '@ibm-design/charts-react-axis';
 import Line from './Line';
 
@@ -43,16 +43,7 @@ export default class LineChart extends React.PureComponent {
       bottom: 30,
       left: 50,
     },
-    strokes: [
-      Colors.blue['40'],
-      Colors.aqua['20'],
-      Colors.green['30'],
-      Colors.lime['20'],
-      Colors.gold['20'],
-      Colors.peach['30'],
-      Colors.magenta['40'],
-      Colors.indigo['40'],
-    ],
+    strokes: palettes.qualitative,
   }
 
   componentWillMount() {
