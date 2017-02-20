@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Axis } from '@ibm-design/charts-react-axis';
 
 export default class Chart extends React.PureComponent {
   static propTypes = {
@@ -11,6 +12,18 @@ export default class Chart extends React.PureComponent {
       right: PropTypes.number,
       bottom: PropTypes.number,
       left: PropTypes.number,
+    }),
+    x: PropTypes.shape({
+      max: PropTypes.number,
+      min: PropTypes.number,
+      text: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+      tickCount: PropTypes.number,
+    }),
+    y: PropTypes.shape({
+      max: PropTypes.number,
+      min: PropTypes.number,
+      text: PropTypes.array, // eslint-disable-line react/forbid-prop-types
+      tickCount: PropTypes.number,
     }),
   }
 
@@ -53,7 +66,7 @@ export default class Chart extends React.PureComponent {
   }
 
   render() {
-    const { children, className, width, height, margin } = this.props;
+    const { children, className, width, height, margin, x, y } = this.props;
     const transform = `translate(${margin.left},${margin.top})`;
 
     return (
@@ -62,6 +75,14 @@ export default class Chart extends React.PureComponent {
         height={height}
         className={className}>
         <g transform={transform}>
+          <Axis
+            {...y}
+            type="left"
+          />
+          <Axis
+            {...x}
+            type="bottom"
+          />
           {children}
         </g>
       </svg>

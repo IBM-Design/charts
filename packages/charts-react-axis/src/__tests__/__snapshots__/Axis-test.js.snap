@@ -1,0 +1,106 @@
+exports[`Axis Component should render 1`] = `
+<g
+  className="axis axis--x"
+  fill="none"
+  fontFamily="sans-serif"
+  fontSize="10"
+  textAnchor="middle"
+  transform="translate(0,500)">
+  <g
+    className="tick"
+    transform="translate(0, 0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x={0.5}
+      y={9}>
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(100, 0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x={0.5}
+      y={9}>
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(200, 0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x={0.5}
+      y={9}>
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(300, 0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x={0.5}
+      y={9}>
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(400, 0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x={0.5}
+      y={9}>
+      NaN
+    </text>
+  </g>
+  <g
+    className="tick"
+    transform="translate(500, 0)">
+    <path
+      d="M0,0 L0,-500"
+      fill="none"
+      stroke="#CDDBF1"
+      strokeWidth="1" />
+    <text
+      dy="0.71em"
+      fill="#000"
+      x={0.5}
+      y={9}>
+      NaN
+    </text>
+  </g>
+</g>
+`;

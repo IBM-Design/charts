@@ -4,6 +4,311 @@ exports[`Chart Component should render 1`] = `
   height={500}
   width={960}>
   <g
-    transform="translate(50,20)" />
+    transform="translate(50,20)">
+    <g
+      className="axis axis--x"
+      fill="none"
+      fontFamily="sans-serif"
+      fontSize="10"
+      textAnchor="middle"
+      transform="">
+      <g
+        className="tick"
+        transform="translate(0, 450)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x={-9}
+          y={0.5}>
+          0
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0, 360)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x={-9}
+          y={0.5}>
+          100
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0, 270)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x={-9}
+          y={0.5}>
+          200
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0, 180)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x={-9}
+          y={0.5}>
+          300
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0, 90)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x={-9}
+          y={0.5}>
+          400
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(0, 0)">
+        <path
+          d="M0,0 L890,0"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.32em"
+          fill="#000"
+          x={-9}
+          y={0.5}>
+          500
+        </text>
+      </g>
+    </g>
+    <g
+      className="axis axis--x"
+      fill="none"
+      fontFamily="sans-serif"
+      fontSize="10"
+      textAnchor="middle"
+      transform="translate(0,450)">
+      <g
+        className="tick"
+        transform="translate(0, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Jan
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(80.9090909090909, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Feb
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(161.8181818181818, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Mar
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(242.72727272727272, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Apr
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(323.6363636363636, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          May
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(404.5454545454545, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          June
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(485.45454545454544, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          July
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(566.3636363636364, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Aug
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(647.2727272727273, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Sep
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(728.1818181818181, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Oct
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(809.090909090909, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Nov
+        </text>
+      </g>
+      <g
+        className="tick"
+        transform="translate(890, 0)">
+        <path
+          d="M0,0 L0,-450"
+          fill="none"
+          stroke="#CDDBF1"
+          strokeWidth="1" />
+        <text
+          dy="0.71em"
+          fill="#000"
+          x={0.5}
+          y={9}>
+          Dec
+        </text>
+      </g>
+    </g>
+  </g>
 </svg>
 `;

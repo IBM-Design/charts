@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import * as shape from 'd3-shape';
 import Chart from '@ibm-design/charts-react-chart';
 import Colors from 'ibm-design-colors/ibm-colors';
-import { LeftAxis, BottomAxis } from '@ibm-design/charts-react-axis';
 import Line from './Line';
 import Legend from './Legend';
 
@@ -97,7 +96,7 @@ export default class LineChart extends React.PureComponent {
 
   render() {
     const { line, props } = this;
-    const { margin, strokes, width, height, legend } = props;
+    const { grid, height, legend, margin, strokes, width } = props;
     const isLegendVisible = !!legend.labels.length;
     const legendWidth = isLegendVisible ? (legend.width || 200) : 0;
     const lines = this.props.lines.map((data, index) =>
@@ -118,9 +117,12 @@ export default class LineChart extends React.PureComponent {
             title={legend.title}
           />
         }
-        <Chart width={width - legendWidth} height={height} margin={margin}>
-          <LeftAxis tickCount={5} />
-          <BottomAxis tickCount={5} />
+        <Chart
+          height={height}
+          margin={margin}
+          width={width - legendWidth}
+          x={grid[0]}
+          y={grid[1]}>
           {lines}
         </Chart>
       </div>
