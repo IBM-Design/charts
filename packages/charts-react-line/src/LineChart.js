@@ -123,8 +123,6 @@ export default class LineChart extends React.PureComponent {
           width={width - legendWidth}
           x={grid[0]}
           y={grid[1]}>
-          <LeftAxis tickCount={5} />
-          <BottomAxis tickCount={5} />
           {lines}
         </Chart>
       </div>
