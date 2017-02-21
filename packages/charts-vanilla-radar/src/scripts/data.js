@@ -6,14 +6,18 @@ const data = [
     {axis:'Memory', value:0.54},
     {axis:'CPU', value:0.38},
     {axis:'Disk', value:0.23},
+    {axis:'Network', value:0.23},
+    {axis:'Heap', value:0.16},
   ],
   [//Samsung
-    {axis:'Apdex', value:0.80},
+    {axis:'Apdex', value:0.58},
     {axis:'Alerts', value:0.66},
     {axis:'Request Volume', value:0.35},
     {axis:'Memory', value:0.23},
     {axis:'CPU', value:0.36},
     {axis:'Disk', value:0.13},
+    {axis:'Network', value:0.11},
+    {axis:'Heap', value:0.35},
   ],
   [//Nokia Smartphone
     {axis:'Apdex', value:0.26},
@@ -22,5 +26,7 @@ const data = [
     {axis:'Memory', value:0.14},
     {axis:'CPU', value:0.22},
     {axis:'Disk', value:0.04},
+    {axis:'Network', value:0.23},
+    {axis:'Heap', value:0.41},
   ],
 ];
