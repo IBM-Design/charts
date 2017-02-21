@@ -56,7 +56,7 @@ class Radar {
       let g = blobs.append('g').attr('class', 'blob-' + i);
       g.append('path').datum(data[i]).attrs({
         'stroke-width': 1.5,
-        'd' : a.line,
+        'd' : this.line,
         'fill': () => { return this.color(i); },
       });
 
@@ -101,7 +101,7 @@ class Radar {
 
     // draws the axis
     if (this.cfg.axisStyle) {
-      this.axisGroup = globalGroup.append('g').attr('class','axis-lines');
+      this.axisGroup = globalGroup.append('g').attr('class', 'axis-lines');
       this.axisGroup.selectAll('.axis-line').data(this.axis.names).enter().append('line')
              .attrs({
                'x1': 0,
@@ -121,7 +121,7 @@ class Radar {
     if (this.cfg.shape == 'circle') {
       //draw rings
       let ringInterval = this.cfg.max / this.cfg.levels;
-      var ringRadiusValues = d3.range(ringInterval, this.cfg.max + 1, ringInterval).reverse() //add 1 so you include the MAX
+      let ringRadiusValues = d3.range(ringInterval, this.cfg.max + 1, ringInterval).reverse();
 
       let g = globalGroup.append('g').attr('class', 'grid-circle');
       g.append('g').attr('class', 'rings')
@@ -197,16 +197,16 @@ class Radar {
   //Wraps SVG text
   wrap(text, width) {
     text.each(function() {
-      var text = d3.select(this),
-        words = text.text().split(/\s+/).reverse(),
-        word,
-        line = [],
-        lineNumber = 0,
-        lineHeight = 1.4, // ems
-        y = text.attr('y'),
-        x = text.attr('x'),
-        dy = parseFloat(text.attr('dy')) || 0,
-        tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('dy', dy + 'em');
+      let text = d3.select(this);
+      let words = text.text().split(/\s+/).reverse();
+      let word;
+      let line = [];
+      let lineNumber = 0;
+      let lineHeight = 1.4; // ems
+      let y = text.attr('y');
+      let x = text.attr('x');
+      let dy = parseFloat(text.attr('dy')) || 0;
+      let tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('dy', dy + 'em');
 
       while (word = words.pop()) {
         line.push(word);
