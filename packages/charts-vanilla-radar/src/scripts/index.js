@@ -51,6 +51,7 @@ class Radar {
     //draw blobs & dots
     let blobs = this.wrapper.append('g').attr('class', 'blobs');
     for (let i = 0; i < data.length; i++) {
+
       //blob
       let g = blobs.append('g').attr('class', 'blob-' + i);
       g.append('path').datum(data[i]).attrs({
@@ -58,6 +59,7 @@ class Radar {
         'd' : a.line,
         'fill': () => { return this.color(i); },
       });
+
       //dots
       g.selectAll('.dot').data(data[i]).enter().append('circle').attrs({
         'stroke-width': 1.5,
@@ -97,10 +99,6 @@ class Radar {
     this.axis.names = data[0].map( el => el.axis);
     this.axis.length = this.axis.names.length;
 
-
-    //puts 0,0 in the center of the svg
-
-
     // draws the axis
     if (this.cfg.axisStyle) {
       this.axisGroup = globalGroup.append('g').attr('class','axis-lines');
@@ -109,8 +107,12 @@ class Radar {
                'x1': 0,
                'y1': 0,
                // `+ Math.PI/2 to make the Axis line up with the correct Data`
-               'x2': (d, i) => { return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice*i + Math.PI/2);},
-               'y2': (d, i)=>{ return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice*i + Math.PI/2);},
+               'x2': (d, i) => {
+                 return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice * i + Math.PI / 2);
+               },
+               'y2': (d, i) => {
+                 return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice * i + Math.PI / 2);
+               },
                'opacity': 0.3,
                'class': 'axis-line',
              }).styles(this.cfg.axisStyle);
@@ -153,8 +155,14 @@ class Radar {
       g.append('g').attr('class', 'legend')
             .selectAll('.axis-label').data(data[0]).enter().append('text').attrs({
               'class': 'axis-label',
-              'x': (d, i) => { return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) * Math.sin(this.cfg.angleSlice * i + Math.PI / 2);},
-              'y': (d, i) => { return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) * Math.cos(this.cfg.angleSlice * i + Math.PI / 2);},
+              'x': (d, i) => {
+                return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) *
+                        Math.sin(this.cfg.angleSlice * i + Math.PI / 2);
+              },
+              'y': (d, i) => {
+                return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) *
+                        Math.cos(this.cfg.angleSlice * i + Math.PI / 2);
+              },
               'font-size': '0.8em',
               'fill': 'grey',
               'opacity': 0.4,
@@ -175,13 +183,13 @@ class Radar {
   }//setupRadar
 
   //customize this function to fit data model you want
-  formatData(data){
-    data.map((d)=>{
-      d.map((v)=>{
-        v.value  = Math.round(v.value*100)
-      })
-    })
-    return data
+  formatData(data) {
+    data.map((d) => {
+      d.map((v) => {
+        v.value  = Math.round(v.value * 100);
+      });
+    });
+    return data;
   } // formatData
 
 
@@ -189,47 +197,54 @@ class Radar {
   //Wraps SVG text
   wrap(text, width) {
     text.each(function() {
-        var text = d3.select(this),
-          words = text.text().split(/\s+/).reverse(),
-          word,
-          line = [],
-          lineNumber = 0,
-          lineHeight = 1.4, // ems
-          y = text.attr("y"),
-          x = text.attr("x"),
-          dy = parseFloat(text.attr("dy")) || 0,
-          tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dy", dy + "em");
+      var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.4, // ems
+        y = text.attr('y'),
+        x = text.attr('x'),
+        dy = parseFloat(text.attr('dy')) || 0,
+        tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('dy', dy + 'em');
 
-        while (word = words.pop()) {
-          line.push(word);
-          tspan.text(line.join(" "));
-          if (tspan.node().getComputedTextLength() > width) {
+      while (word = words.pop()) {
+        line.push(word);
+        tspan.text(line.join(' '));
+        if (tspan.node().getComputedTextLength() > width) {
           line.pop();
-          tspan.text(line.join(" "));
+          tspan.text(line.join(' '));
           line = [word];
-          tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-          }
+          tspan = text.append('tspan')
+                      .attrs({
+                        'x': x,
+                        'y': y,
+                        'dy': ++lineNumber * lineHeight + dy + 'em',
+                      })
+                      .text(word);
         }
-        });
+      }
+    });
   }//wrap
 }
 
 
 let a;
-function test(data){
+function test(data) {
   a = new Radar('svg', data, {
     size: 800,
     margins: {top: 70, right: 70, bottom: 70, left: 70},
-    colors: ["#EDC951","#CC333F","#00A0B0"],
+    colors: ['#EDC951', '#CC333F', '#00A0B0'],
     units: '%',
     levels: 5,
     opacityArea: 0.4,
     labelFactor: 30,
     shape: 'circle',
-    wrapWidth: 60
-  })
-  a.draw()
+    wrapWidth: 60,
+  });
+
+  a.draw();
 }
 
 
-test(data)
+test(data);
