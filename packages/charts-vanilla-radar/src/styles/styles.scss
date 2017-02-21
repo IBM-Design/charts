@@ -8,12 +8,8 @@ body {
 .radar {
   border: 1px solid black;
 
-  g[class*='blob-'] {
-    mix-blend-mode: multiply;
-
-    path {
-      opacity: 0.5;
-    }
+  path {
+    opacity: 0.5;
   }
 }
 
