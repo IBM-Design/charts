@@ -110,14 +110,18 @@ export default class Radar {
 
     // draws the axis
     if (this.cfg.axisStyle) {
-      this.axisGroup = globalGroup.append('g').attr('class','axis-lines');
+      this.axisGroup = globalGroup.append('g').attr('class', 'axis-lines');
       this.axisGroup.selectAll('.axis-line').data(this.axis.names).enter().append('line')
              .attrs({
                'x1': 0,
                'y1': 0,
                // `+ Math.PI/2 to make the Axis line up with the correct Data`
-               'x2': (d, i) => { return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice*i + Math.PI/2);},
-               'y2': (d, i)=>{ return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice*i + Math.PI/2);},
+               'x2': (d, i) => {
+                 return this.scale(this.cfg.max * 1.05) * Math.sin( this.cfg.angleSlice * i + Math.PI / 2);
+               },
+               'y2': (d, i) => {
+                 return this.scale(this.cfg.max * 1.05) * Math.cos( this.cfg.angleSlice * i + Math.PI / 2);
+               },
                'opacity': 0.3,
                'class': 'axis-line',
              }).styles(this.cfg.axisStyle);
@@ -125,8 +129,9 @@ export default class Radar {
 
     if (this.cfg.shape == 'circle') {
       //draw rings
-      let ringInterval = this.cfg.max / this.cfg.levels;
-      var ringRadiusValues = range(ringInterval, this.cfg.max + 1, ringInterval).reverse() //add 1 so you include the MAX
+      const ringInterval = this.cfg.max / this.cfg.levels;
+      //add 1 so you include the MAX
+      const ringRadiusValues = range(ringInterval, this.cfg.max + 1, ringInterval).reverse();
 
       let g = globalGroup.append('g').attr('class', 'grid-circle');
       g.append('g').attr('class', 'rings')
@@ -160,8 +165,14 @@ export default class Radar {
       g.append('g').attr('class', 'legend')
             .selectAll('.axis-label').data(this.data[0]).enter().append('text').attrs({
               'class': 'axis-label',
-              'x': (d, i) => { return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) * Math.sin(this.cfg.angleSlice * i + Math.PI / 2);},
-              'y': (d, i) => { return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) * Math.cos(this.cfg.angleSlice * i + Math.PI / 2);},
+              'x': (d, i) => {
+                return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) *
+                  Math.sin(this.cfg.angleSlice * i + Math.PI / 2);
+              },
+              'y': (d, i) => {
+                return (this.scale(this.cfg.max) * 1.05 + this.cfg.labelFactor ) *
+                  Math.cos(this.cfg.angleSlice * i + Math.PI / 2);
+              },
               'font-size': '0.8em',
               'fill': 'grey',
               'opacity': 0.4,
@@ -183,12 +194,13 @@ export default class Radar {
 
   //customize this function to fit data model you want
   formatData(data) {
-    data.map((d)=>{
-      d.map((v)=>{
-        v.value  = Math.round(v.value*100)
-      })
-    })
-    return data
+    data.map(d => {
+      d.map(v => {
+        v.value  = Math.round(v.value * 100);
+      });
+    });
+
+    return data;
   } // formatData
 
 
@@ -196,27 +208,32 @@ export default class Radar {
   //Wraps SVG text
   wrap(text, width) {
     text.each(function() {
-        var text = select(this),
-          words = text.text().split(/\s+/).reverse(),
-          word,
-          line = [],
-          lineNumber = 0,
-          lineHeight = 1.4, // ems
-          y = text.attr('y'),
-          x = text.attr('x'),
-          dy = parseFloat(text.attr('dy')) || 0,
-          tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('dy', dy + 'em');
+      const text = select(this);
+      const words = text.text().split(/\s+/).reverse();
+      const lineHeight = 1.4; // ems
+      const y = text.attr('y');
+      const x = text.attr('x');
+      const dy = parseFloat(text.attr('dy')) || 0;
 
-        while (word = words.pop()) {
-          line.push(word);
-          tspan.text(line.join(' '));
-          if (tspan.node().getComputedTextLength() > width) {
+      let word;
+      let line = [];
+      let lineNumber = 0;
+      let tspan = text.text(null).append('tspan').attr('x', x).attr('y', y).attr('dy', dy + 'em');
+
+      while (word = words.pop()) {
+        line.push(word);
+        tspan.text(line.join(' '));
+        if (tspan.node().getComputedTextLength() > width) {
           line.pop();
           tspan.text(line.join(' '));
           line = [word];
-          tspan = text.append('tspan').attr('x', x).attr('y', y).attr('dy', ++lineNumber * lineHeight + dy + 'em').text(word);
-          }
+          tspan = text.append('tspan')
+            .attr('x', x)
+            .attr('y', y)
+            .attr('dy', ++lineNumber * lineHeight + dy + 'em')
+            .text(word);
         }
-        });
+      }
+    });
   }//wrap
 }

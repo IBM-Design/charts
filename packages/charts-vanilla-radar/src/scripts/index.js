@@ -1,5 +1,5 @@
 import data from './data';
-import Radar from '../';
+import Radar from '../index';
 
 const a = new Radar('svg', data, {
   'size': 800,
