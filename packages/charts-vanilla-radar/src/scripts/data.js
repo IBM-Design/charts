@@ -1,4 +1,4 @@
-const data = [
+export default [
   [//iPhone
     {axis:'Apdex', value:0.80},
     {axis:'Alerts', value:0.66},
