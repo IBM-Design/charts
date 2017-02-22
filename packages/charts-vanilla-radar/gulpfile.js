@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var plumber = require('gulp-plumber');
-var sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const plumber = require('gulp-plumber');
+const sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('compile-scss', function() {
+gulp.task('compile-scss', () => {
   return gulp.src('src/styles/*.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
