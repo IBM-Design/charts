@@ -44,7 +44,7 @@ const Axis = (props, context) => {
     text,
     tickCount,
     type,
-    animation
+    animation,
   } = props;
   const { chart } = context;
   const length = type === 'bottom'
