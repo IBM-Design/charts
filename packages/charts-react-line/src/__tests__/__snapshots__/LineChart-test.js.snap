@@ -5,6 +5,16 @@ exports[`LineChart Component should render 1`] = `
       "width": 960,
     }
   }>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "
+            @keyframes dashoffset {
+              to { stroke-dashoffset: 0; }
+            }
+          ",
+      }
+    } />
   <svg
     className={undefined}
     height={500}
@@ -25,7 +35,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L890,0"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 890,
+                "strokeDashoffset": 890,
+              }
+            } />
           <text
             dy="0.32em"
             fill="#000"
@@ -41,7 +58,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L890,0"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 890,
+                "strokeDashoffset": 890,
+              }
+            } />
           <text
             dy="0.32em"
             fill="#000"
@@ -57,7 +81,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L890,0"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 890,
+                "strokeDashoffset": 890,
+              }
+            } />
           <text
             dy="0.32em"
             fill="#000"
@@ -73,7 +104,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L890,0"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 890,
+                "strokeDashoffset": 890,
+              }
+            } />
           <text
             dy="0.32em"
             fill="#000"
@@ -89,7 +127,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L890,0"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 890,
+                "strokeDashoffset": 890,
+              }
+            } />
           <text
             dy="0.32em"
             fill="#000"
@@ -105,7 +150,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L890,0"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 890,
+                "strokeDashoffset": 890,
+              }
+            } />
           <text
             dy="0.32em"
             fill="#000"
@@ -129,7 +181,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -145,7 +204,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -161,7 +227,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -177,7 +250,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -193,7 +273,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -209,7 +296,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -225,7 +319,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -241,7 +342,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -257,7 +365,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -273,7 +388,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -289,7 +411,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
@@ -305,7 +434,14 @@ exports[`LineChart Component should render 1`] = `
             d="M0,0 L0,-450"
             fill="none"
             stroke="#CDDBF1"
-            strokeWidth="1" />
+            strokeWidth="1"
+            style={
+              Object {
+                "animation": "dashoffset forwards",
+                "strokeDasharray": 450,
+                "strokeDashoffset": 450,
+              }
+            } />
           <text
             dy="0.71em"
             fill="#000"
