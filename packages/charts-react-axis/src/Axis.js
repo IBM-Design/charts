@@ -16,6 +16,7 @@ const renderTickWith = (height, interval, labels, length, type) => (_, i) => {
       path: `M0,0 L0,-${length}`,
       x: 0.5,
       y: 9,
+      animationDelay: 0.3 + i / 20,
     }
     : {
       dy: 0.32,
@@ -23,12 +24,14 @@ const renderTickWith = (height, interval, labels, length, type) => (_, i) => {
       path: `M0,0 L${length},0`,
       x: -9,
       y: 0.5,
+      animationDelay: i / 10,
     };
 
   return (
     <Tick
       key={i}
       label={labels[i].toString()}
+      length={length}
       {...props}
     />
   );

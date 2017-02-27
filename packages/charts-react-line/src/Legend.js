@@ -4,10 +4,10 @@ export default class Legend extends React.PureComponent {
 
   static propTypes = {
     title: PropTypes.string,
-    labels: PropTypes.shape({
+    labels: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string,
       color: PropTypes.string,
-    }),
+    })),
     width: PropTypes.number,
     // eslint-disable-next-line react/forbid-prop-types
     style: PropTypes.object,

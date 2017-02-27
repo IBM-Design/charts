@@ -110,6 +110,12 @@ export default class LineChart extends React.PureComponent {
 
     return (
       <div style={{width}}>
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes dash {
+            to { stroke-dashoffset: 0; }
+          }
+        `}}
+        />
         {isLegendVisible &&
           <Legend
             labels={legend.labels}
