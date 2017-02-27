@@ -8,7 +8,7 @@ const calcLabels = (max, min, tickCount) => {
   });
 };
 
-const renderTickWith = (height, interval, labels, length, type) => (_, i) => {
+const renderTickWith = (height, interval, labels, length, type, animation) => (_, i) => {
   const props = type === 'bottom'
     ? {
       dy: 0.71,
@@ -16,7 +16,6 @@ const renderTickWith = (height, interval, labels, length, type) => (_, i) => {
       path: `M0,0 L0,-${length}`,
       x: 0.5,
       y: 9,
-      animationDelay: 0.3 + i / 20,
     }
     : {
       dy: 0.32,
@@ -24,7 +23,6 @@ const renderTickWith = (height, interval, labels, length, type) => (_, i) => {
       path: `M0,0 L${length},0`,
       x: -9,
       y: 0.5,
-      animationDelay: i / 10,
     };
 
   return (
@@ -32,6 +30,7 @@ const renderTickWith = (height, interval, labels, length, type) => (_, i) => {
       key={i}
       label={labels[i].toString()}
       length={length}
+      animation={animation(i)}
       {...props}
     />
   );
@@ -45,6 +44,7 @@ const Axis = (props, context) => {
     text,
     tickCount,
     type,
+    animation
   } = props;
   const { chart } = context;
   const length = type === 'bottom'
@@ -63,7 +63,7 @@ const Axis = (props, context) => {
     ? `translate(0,${chart.height})`
     : '';
 
-  const renderTick = renderTickWith(chart.height, interval, labels, length, type);
+  const renderTick = renderTickWith(chart.height, interval, labels, length, type, animation);
 
   return (
     <g
@@ -84,6 +84,7 @@ Axis.propTypes = {
   text: PropTypes.array, // eslint-disable-line react/forbid-prop-types
   tickCount: PropTypes.number,
   type: PropTypes.string.isRequired,
+  animation: PropTypes.func,
 };
 
 Axis.contextTypes = {
@@ -93,6 +94,7 @@ Axis.contextTypes = {
 Axis.defaultProps = {
   min: 0,
   type: 'bottom',
+  animation: _ => 'dashoffset forwards',
 };
 
 export default Axis;

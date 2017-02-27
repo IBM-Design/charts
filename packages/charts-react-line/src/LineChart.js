@@ -4,6 +4,7 @@ import Chart from '@ibm-design/charts-react-chart';
 import Colors from 'ibm-design-colors/ibm-colors';
 import Line from './Line';
 import Legend from './Legend';
+import Animation from './Animation';
 
 export default class LineChart extends React.PureComponent {
   static propTypes = {
@@ -110,12 +111,7 @@ export default class LineChart extends React.PureComponent {
 
     return (
       <div style={{width}}>
-        <style dangerouslySetInnerHTML={{__html: `
-          @keyframes dash {
-            to { stroke-dashoffset: 0; }
-          }
-        `}}
-        />
+        <Animation/>
         {isLegendVisible &&
           <Legend
             labels={legend.labels}

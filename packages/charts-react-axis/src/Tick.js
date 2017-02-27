@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const Tick = (props) => {
-  const { dy, label, offset, path, x, y, animationDelay, length } = props;
+  const { dy, label, offset, path, x, y, animation, length } = props;
 
   return (
     <g className="tick" transform={offset}>
@@ -13,7 +13,7 @@ const Tick = (props) => {
         style={{
           strokeDasharray: length,
           strokeDashoffset: length,
-          animation: `dash 0.4s linear ${animationDelay}s forwards`,
+          animation,
         }}
       />
       <text fill="#000" x={x} y={y} dy={`${dy}em`}>
@@ -30,7 +30,7 @@ Tick.propTypes = {
   path: PropTypes.string.isRequired,
   x: PropTypes.number.isRequired,
   y: PropTypes.number.isRequired,
-  animationDelay: PropTypes.number,
+  animation: PropTypes.string,
   length: PropTypes.number,
 };
 
