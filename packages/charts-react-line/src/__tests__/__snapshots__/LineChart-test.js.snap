@@ -38,7 +38,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0s forwards",
                 "strokeDasharray": 890,
                 "strokeDashoffset": 890,
               }
@@ -61,7 +61,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.1s forwards",
                 "strokeDasharray": 890,
                 "strokeDashoffset": 890,
               }
@@ -84,7 +84,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.2s forwards",
                 "strokeDasharray": 890,
                 "strokeDashoffset": 890,
               }
@@ -107,7 +107,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.3s forwards",
                 "strokeDasharray": 890,
                 "strokeDashoffset": 890,
               }
@@ -130,7 +130,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.4s forwards",
                 "strokeDasharray": 890,
                 "strokeDashoffset": 890,
               }
@@ -153,7 +153,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.5s forwards",
                 "strokeDasharray": 890,
                 "strokeDashoffset": 890,
               }
@@ -184,7 +184,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.3s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -207,7 +207,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.35s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -230,7 +230,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.4s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -253,7 +253,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.44999999999999996s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -276,7 +276,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.5s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -299,7 +299,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.55s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -322,7 +322,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.6s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -345,7 +345,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.6499999999999999s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -368,7 +368,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.7s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -391,7 +391,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.75s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -414,7 +414,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.8s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }
@@ -437,7 +437,7 @@ exports[`LineChart Component should render 1`] = `
             strokeWidth="1"
             style={
               Object {
-                "animation": "dashoffset forwards",
+                "animation": "dashoffset 0.4s linear 0.8500000000000001s forwards",
                 "strokeDasharray": 450,
                 "strokeDashoffset": 450,
               }

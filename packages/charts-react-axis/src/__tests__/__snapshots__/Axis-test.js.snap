@@ -16,7 +16,7 @@ exports[`Axis Component should render 1`] = `
       strokeWidth="1"
       style={
         Object {
-          "animation": "dashoffset forwards",
+          "animation": "dashoffset 0.4s linear 0.3s forwards",
           "strokeDasharray": 500,
           "strokeDashoffset": 500,
         }
@@ -39,7 +39,7 @@ exports[`Axis Component should render 1`] = `
       strokeWidth="1"
       style={
         Object {
-          "animation": "dashoffset forwards",
+          "animation": "dashoffset 0.4s linear 0.35s forwards",
           "strokeDasharray": 500,
           "strokeDashoffset": 500,
         }
@@ -62,7 +62,7 @@ exports[`Axis Component should render 1`] = `
       strokeWidth="1"
       style={
         Object {
-          "animation": "dashoffset forwards",
+          "animation": "dashoffset 0.4s linear 0.4s forwards",
           "strokeDasharray": 500,
           "strokeDashoffset": 500,
         }
@@ -85,7 +85,7 @@ exports[`Axis Component should render 1`] = `
       strokeWidth="1"
       style={
         Object {
-          "animation": "dashoffset forwards",
+          "animation": "dashoffset 0.4s linear 0.44999999999999996s forwards",
           "strokeDasharray": 500,
           "strokeDashoffset": 500,
         }
@@ -108,7 +108,7 @@ exports[`Axis Component should render 1`] = `
       strokeWidth="1"
       style={
         Object {
-          "animation": "dashoffset forwards",
+          "animation": "dashoffset 0.4s linear 0.5s forwards",
           "strokeDasharray": 500,
           "strokeDashoffset": 500,
         }
@@ -131,7 +131,7 @@ exports[`Axis Component should render 1`] = `
       strokeWidth="1"
       style={
         Object {
-          "animation": "dashoffset forwards",
+          "animation": "dashoffset 0.4s linear 0.55s forwards",
           "strokeDasharray": 500,
           "strokeDashoffset": 500,
         }
