@@ -43,13 +43,11 @@ storiesOf('LineChart', module)
       grid={[
         {
           text: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-          animation: (i) => `dashoffset 0.4s linear ${0.3 + i / 20}s forwards`,
         },
         {
           min: 0,
           max: 500,
           tickCount: 5,
-          animation: (i) => `dashoffset 0.4s linear ${i / 10}s forwards`,
         },
       ]}
     />
