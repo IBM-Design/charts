@@ -7,7 +7,7 @@ yarn add @ibm-design/charts-react-line
 ```
 
 ### Example
-```
+```jsx
 <LineChart
   lines={[data]}
   legend={{
