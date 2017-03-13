@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Code implementations of the IBM Design Language's data visualization guidance.",
   "repository": {
-    "url": "https://github.com/IBM-Design/data-vis.git",
+    "url": "https://github.com/IBM-Design/charts.git",
     "type": "git"
   },
   "license": "Apache-2.0",

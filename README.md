@@ -27,4 +27,4 @@ At the moment, we only have `./examples` to show what our desired output is. Thi
 1. `git clone https://github.com/IBM-Design/charts.git`
 2. `cd charts`
 3. `yarn install`
-4. `npm run examples`
+4. `yarn run examples`
