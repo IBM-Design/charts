@@ -1,0 +1,9 @@
+{
+  "name": "@ibm-design/charts-line",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {}
+}
