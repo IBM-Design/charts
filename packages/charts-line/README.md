@@ -5,3 +5,9 @@
 ```bash
 yarn add @ibm-design/charts-line
 ```
+
+## Development
+
+```bash
+yarn start:dev
+```
