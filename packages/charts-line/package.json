@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build:js": "babel src -d dist",
-    "build:css": "node-sass --output-style compressed src/*.scss > dist/line-chart.css",
+    "build:css": "node-sass --output-style compressed src/*.scss > dist/ibm-charts-line.css",
     "build": "npm run clean && yarn build:js && yarn build:css",
     "watch:scss": "nodemon -e scss -x \"yarn build:css\"",
     "watch:js": "babel src --watch -d dist",
