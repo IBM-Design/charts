@@ -1,6 +1,8 @@
 const ibmChart = function(options = {}) {
   const id = options.id;
 
+  document.querySelector('#' + id).classList.add('chart');
+
   // Animated grid
   const newWidth = function() {
     const width = document.querySelector('#' + id).offsetWidth;
@@ -100,16 +102,3 @@ const ibmChart = function(options = {}) {
     ...options,
   });
 };
-
-document.addEventListener('DOMContentLoaded', function() {
-  ibmChart({
-    data: {
-      columns: [
-        ['data1', 200, 300, 150, 400, 275, 360],
-        ['data2', 210, 170, 240, 120, 160, 130],
-        ['data3', 370, 350, 375, 340, 350, 340],
-      ],
-    },
-    id: 'myChart',
-  });
-}, false);
