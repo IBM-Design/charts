@@ -1,0 +1,18 @@
+{
+  "name": "@ibm-design/charts-bar",
+  "version": "0.1.0",
+  "description": "Sample implementation of the charts bar from the IBM Design Language",
+  "author": "Abby Starnes & Stephane Rodet",
+  "license": "Apache-2.0",
+  "scripts": {
+    "clean": "rm -Rf dist/*",
+    "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed src/charts-bar.scss > dist/charts-bar.css",
+    "copy": "cp src/*.html src/*.js dist/",
+    "build": "npm run clean && npm run sass && npm run copy",
+    "start": "./node_modules/http-server/bin/http-server dist/"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "node-sass": "^4.5.0"
+  }
+}
