@@ -1,0 +1,13 @@
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# CSV files
+*.csv
+
+# Dependency directory
+node_modules
+
+dist
