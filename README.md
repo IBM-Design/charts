@@ -9,8 +9,7 @@
   - [Yarn Package Manager](https://yarnpkg.com/en/docs/install)
 - run `yarn` to install dependencies
 - run `yarn run bootstrap` to bootstrap the project, link dependencies, and do the initial build step for each package
-- run `yarn test -- --watch` to run the test suite and place your terminal in `watch` mode
-- run `yarn run lint` to lint the codebase
+- run `yarn test` to run the tests that will run during PRs
 
 ## Design
 
