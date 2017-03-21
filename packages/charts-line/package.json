@@ -9,9 +9,7 @@
     "build": "npm run clean && yarn build:js && yarn build:css",
     "watch:scss": "nodemon -e scss -x \"yarn build:css\"",
     "watch:js": "babel src --watch -d dist",
-    "watch": "yarn watch:js & yarn watch:scss & live-server --watch=\"index.html,dist\" --wait=1000",
-    "start": "http-server -c-1 ./",
-    "start:dev": "yarn watch"
+    "start": "yarn watch:js & yarn watch:scss & live-server --watch=\"index.html,dist\" --wait=1000"
   },
   "license": "Apache-2.0",
   "peerDependencies": {
@@ -22,9 +20,12 @@
     "babel-cli": "^6.24.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-latest": "^6.24.0",
-    "http-server": "^0.9.0",
     "live-server": "^1.2.0",
     "nodemon": "^1.11.0",
     "rimraf": "^2.6.1"
+  },
+  "babel": {
+    "presets": ["latest"],
+    "plugins": ["transform-object-rest-spread"]
   }
 }

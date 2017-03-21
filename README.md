@@ -9,8 +9,7 @@
   - [Yarn Package Manager](https://yarnpkg.com/en/docs/install)
 - run `yarn` to install dependencies
 - run `yarn run bootstrap` to bootstrap the project, link dependencies, and do the initial build step for each package
-- run `yarn test -- --watch` to run the test suite and place your terminal in `watch` mode
-- run `yarn run lint` to lint the codebase
+- run `yarn test` to run the tests that will run during PRs
 
 ## Design
 
@@ -27,4 +26,4 @@ At the moment, we only have `./examples` to show what our desired output is. Thi
 1. `git clone https://github.com/IBM-Design/charts.git`
 2. `cd charts`
 3. `yarn install`
-4. `npm run examples`
+4. `yarn run examples`
