@@ -1,17 +1,37 @@
 const ibmChart = function(options = {}) {
   const id = options.id;
-
   document.querySelector('#' + id).classList.add('chart');
 
-  // Animated grid
-  const newWidth = function() {
+  const animateGrid = function() {
     const width = document.querySelector('#' + id).offsetWidth;
     const lines = document.querySelectorAll('#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
+    const linesX = [];
+    const linesY = [];
 
-    for (var line of lines) {
-      line.style['stroke-dasharray'] = width;
-      line.style['stroke-dashoffset'] = width;
+    for (let i = 0; i < lines.length; i++) {
+      switch (lines[i].classList[0]) {
+        case 'c3-xgrid':
+          linesX.push(lines[i]);
+          break;
+        case 'c3-ygrid':
+          linesY.push(lines[i]);
+          break;
+      }
     }
+
+    const addAnimation = (lines, grid) => {
+      for (let i = 0; i < lines.length; i++) {
+        lines[i].style['stroke-dasharray'] = width;
+        lines[i].style['stroke-dashoffset'] = grid === 'y'
+          ? width
+          : -width;
+        lines[i].style['animation-delay'] = `${i * 200 + 100}ms`;
+      }
+      return;
+    };
+
+    addAnimation(linesX, 'x');
+    addAnimation(linesY, 'y');
   };
 
   const formatAxis = function() {
@@ -29,7 +49,7 @@ const ibmChart = function(options = {}) {
     axisX.setAttribute('d', pathX);
   };
 
-  const chart = c3.generate({
+  c3.generate({
     axis: {
       x: {
         height: 55,
@@ -85,10 +105,10 @@ const ibmChart = function(options = {}) {
     },
     onrendered: function() {
       formatAxis();
-      newWidth();
+      animateGrid();
     },
     onresized: function() {
-      newWidth();
+      animateGrid();
     },
     padding: {
       right: 10,
