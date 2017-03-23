@@ -1,4 +1,5 @@
 const ibmChart = function(options = {}) {
+  const animationDuration = 250;
   const id = options.id;
   let columns = options.data.columns.map((column) => {
     return column.map((point) => {
@@ -29,8 +30,8 @@ const ibmChart = function(options = {}) {
 
     const addAnimation = (lines, grid) => {
       for (let i = 0; i < lines.length; i++) {
-        lines[i].style['animation-delay'] = `${i * 200 + 100}ms`;
-        lines[i].style['animation-duration'] = '500ms';
+        lines[i].style['animation-delay'] = `${i * animationDuration}ms`;
+        lines[i].style['animation-duration'] = `${animationDuration}ms`;
         lines[i].style['stroke-dasharray'] = width;
         lines[i].style['stroke-dashoffset'] = grid === 'y'
           ? width
@@ -134,6 +135,10 @@ const ibmChart = function(options = {}) {
     }
   });
 
+
+  // Line entrance animation
+  const axisLineCounts = options.data.columns.map(function(a){return a.length;});
+  const maxAxisLines = Math.max.apply(Math, axisLineCounts) - 3;
   setTimeout(() => {
     let timeIndex = 0;
     const timer = setInterval(() => {
@@ -162,6 +167,6 @@ const ibmChart = function(options = {}) {
       if (timeIndex >= Math.max.apply(null, lengths)) {
         clearInterval(timer);
       }
-    }, 250);
-  }, 1000);
+    }, animationDuration);
+  }, maxAxisLines * animationDuration);
 };
