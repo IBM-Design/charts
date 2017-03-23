@@ -29,6 +29,7 @@
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "live-server": "^1.2.0",
+    "node-sass": "^4.5.1",
     "nodemon": "^1.11.0",
     "rimraf": "^2.6.1"
   },
@@ -38,12 +39,13 @@
     ],
     "env": {
       "production": {
-        "presets": ["babili"]
+        "presets": [
+          "babili"
+        ]
       }
     },
     "plugins": [
       "transform-object-rest-spread"
     ]
   }
-
 }
