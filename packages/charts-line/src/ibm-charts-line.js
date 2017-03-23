@@ -5,8 +5,8 @@ const ibmChart = function(options = {}) {
     return column.map((point) => {
       return typeof point === 'number'
         ? 0
-        : point
-    })
+        : point;
+    });
   });
 
   document.querySelector('#' + id).classList.add('chart');
@@ -59,7 +59,7 @@ const ibmChart = function(options = {}) {
     axisX.setAttribute('d', pathX);
   };
 
-  ibmChart[id] = c3.generate({
+  ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
     axis: {
       x: {
         height: 55,
@@ -131,20 +131,17 @@ const ibmChart = function(options = {}) {
     },
     ...options,
     data: {
-      columns
-    }
+      columns,
+    },
   });
 
 
   // Line entrance animation
-  const axisLineCounts = options.data.columns.map(function(a){return a.length;});
-  const maxAxisLines = Math.max.apply(Math, axisLineCounts) - 3;
+  const axisLineCounts = options.data.columns.map((a) => a.length);
+  const maxAxisLines = Math.max.apply(Math, axisLineCounts);
   setTimeout(() => {
     let timeIndex = 0;
     const timer = setInterval(() => {
-      let lengths = options.data.columns.map(function(a){return a.length;});
-      lengths.indexOf(Math.max.apply(Math, lengths));
-
       columns = options.data.columns.map((column, columnIndex) => {
         return column.map((point, pointIndex) => {
           let newPoint = typeof point === 'number'
@@ -156,17 +153,17 @@ const ibmChart = function(options = {}) {
             : newPoint;
 
           return newPoint;
-        })
+        });
       });
 
       ibmChart[id].load({
         columns,
       });
 
-      timeIndex = timeIndex + 1;
-      if (timeIndex >= Math.max.apply(null, lengths)) {
+      timeIndex += 1;
+      if (timeIndex >= maxAxisLines) {
         clearInterval(timer);
       }
     }, animationDuration);
-  }, maxAxisLines * animationDuration);
+  }, (maxAxisLines - 3) * animationDuration);
 };
