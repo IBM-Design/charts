@@ -6,11 +6,11 @@
 }
 
 .c3 svg {
-    font-family: "Helvetica Neue for IBM", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Noto Sans", Noto, sans-serif;
+  font-family: "Helvetica Neue for IBM", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Noto Sans", Noto, sans-serif;
 }
 
 .c3-axis path, .c3-grid line {
-  animation: dash 3s linear .1s forwards;
+  animation: dash 1s forwards;
   stroke: #CDDBF1;
 }
 

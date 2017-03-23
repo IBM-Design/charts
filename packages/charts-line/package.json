@@ -1,17 +1,16 @@
 {
   "name": "@ibm-design/charts-line",
   "version": "0.0.0",
-  "main": "dist/charts-line.js",
+  "main": "lib/charts-line.js",
   "scripts": {
-    "clean": "rimraf dist",
-    "build:js": "babel src -d dist",
-    "build:css": "node-sass --output-style compressed src/*.scss > dist/line-chart.css",
+    "clean": "rimraf lib",
+    "build:js": "BABEL_ENV=production babel src -d lib",
+    "build:css": "node-sass --output-style compressed src/*.scss > lib/ibm-charts-line.css",
     "build": "npm run clean && yarn build:js && yarn build:css",
     "watch:scss": "nodemon -e scss -x \"yarn build:css\"",
-    "watch:js": "babel src --watch -d dist",
-    "watch": "yarn watch:js & yarn watch:scss",
-    "start": "http-server -c-1 ./",
-    "start:dev": "yarn start & yarn watch"
+    "watch:js": "babel src --watch -d lib",
+    "start": "yarn watch:js & yarn watch:scss & live-server --watch=\"index.html,lib\" --wait=1000",
+    "test": "eslint lib"
   },
   "license": "Apache-2.0",
   "peerDependencies": {
@@ -19,11 +18,30 @@
     "d3": "^4.7.3"
   },
   "devDependencies": {
+    "@ibm-design/charts-eslint-config": "^0.0.0",
     "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.1.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-babili": "^0.0.12",
     "babel-preset-latest": "^6.24.0",
-    "http-server": "^0.9.0",
+    "eslint": "^3.13.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "live-server": "^1.2.0",
     "nodemon": "^1.11.0",
     "rimraf": "^2.6.1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "env": {
+      "production": {
+        "presets": ["babili"]
+      }
+    },
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
   }
 }
