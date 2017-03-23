@@ -1,8 +1,16 @@
 const ibmChart = function(options = {}) {
   const id = options.id;
+  let columns = options.data.columns.map((column) => {
+    return column.map((point) => {
+      return typeof point === 'number'
+        ? 0
+        : point
+    })
+  });
+
   document.querySelector('#' + id).classList.add('chart');
 
-  const animateGrid = function() {
+  const animateGrid = () => {
     const width = document.querySelector('#' + id).offsetWidth;
     const lines = document.querySelectorAll('#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
     const linesX = [];
@@ -21,11 +29,12 @@ const ibmChart = function(options = {}) {
 
     const addAnimation = (lines, grid) => {
       for (let i = 0; i < lines.length; i++) {
+        lines[i].style['animation-delay'] = `${i * 200 + 100}ms`;
+        lines[i].style['animation-duration'] = '500ms';
         lines[i].style['stroke-dasharray'] = width;
         lines[i].style['stroke-dashoffset'] = grid === 'y'
           ? width
           : -width;
-        lines[i].style['animation-delay'] = `${i * 200 + 100}ms`;
       }
       return;
     };
@@ -49,7 +58,7 @@ const ibmChart = function(options = {}) {
     axisX.setAttribute('d', pathX);
   };
 
-  c3.generate({
+  ibmChart[id] = c3.generate({
     axis: {
       x: {
         height: 55,
@@ -120,5 +129,39 @@ const ibmChart = function(options = {}) {
       show: false,
     },
     ...options,
+    data: {
+      columns
+    }
   });
+
+  setTimeout(() => {
+    let timeIndex = 0;
+    const timer = setInterval(() => {
+      let lengths = options.data.columns.map(function(a){return a.length;});
+      lengths.indexOf(Math.max.apply(Math, lengths));
+
+      columns = options.data.columns.map((column, columnIndex) => {
+        return column.map((point, pointIndex) => {
+          let newPoint = typeof point === 'number'
+            ? 0
+            : point;
+
+          newPoint = pointIndex <= timeIndex
+            ? options.data.columns[columnIndex][pointIndex]
+            : newPoint;
+
+          return newPoint;
+        })
+      });
+
+      ibmChart[id].load({
+        columns,
+      });
+
+      timeIndex = timeIndex + 1;
+      if (timeIndex >= Math.max.apply(null, lengths)) {
+        clearInterval(timer);
+      }
+    }, 250);
+  }, 1000);
 };

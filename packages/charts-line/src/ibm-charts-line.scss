@@ -10,12 +10,15 @@
 }
 
 .c3-axis path, .c3-grid line {
-  animation: dash 1s forwards;
+  animation: dash forwards;
   stroke: #CDDBF1;
 }
 
 .c3 .tick line {
   display: none;
+}
+
+.c3-axis-x {
 }
 
 @keyframes dash {
