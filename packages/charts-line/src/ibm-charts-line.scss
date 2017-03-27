@@ -24,3 +24,33 @@
     stroke-dashoffset: 0;
   }
 }
+
+.legend {
+  font-family: 'Helvetica Neue for IBM', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  &__title {
+    margin: 0 0 1em;
+    font-size: 1em;
+  }
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+  &__list-item {
+    cursor: pointer;
+    margin-bottom: 0.75em;
+  }
+  &__list-item.inactive {
+    opacity: 0.5;
+  }
+  &__list-dot {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+  }
+}

@@ -59,6 +59,41 @@ const ibmChart = function(options = {}) {
     axisX.setAttribute('d', pathX);
   };
 
+  const addLegend = function(id, chart, columns) {
+    d3.select(`#${id}`)
+      .insert('div', '.chart')
+      .attr('class', 'legend')
+      .append('h3')
+      .attr('class', 'legend__title')
+      .text('Legend');
+    d3.select('.legend')
+      .append('ul')
+      .attr('class', 'legend__list')
+      .selectAll('span')
+      .data(columns.map(col => col[0]))
+      .enter()
+      .append('li')
+      .attr('data-id', id => id)
+      .attr('class', 'legend__list-item')
+      .html(id => `
+        <span class="legend__list-dot" style="background-color: ${chart.color(id)}">
+        </span>
+        ${id}
+      `)
+      .on('mouseover', id => chart.focus(id))
+      .on('mouseout', id => chart.revert())
+      .on('click', function(id) {
+        const el = d3.select(this);
+        el.classed('inactive', !el.classed('inactive'));
+        chart.toggle(id)
+      });
+  };
+
+  const showLegend = function(options) {
+    return !(options.legend !== undefined && !options.legend.show);
+  }
+
+  const width = document.querySelector('#' + id).offsetWidth;
   ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
     axis: {
       x: {
@@ -129,12 +164,18 @@ const ibmChart = function(options = {}) {
     tooltip: {
       show: false,
     },
+    size: {
+      width: showLegend(options) ? width * 0.75 : width,
+    },
     ...options,
     data: {
       columns,
     },
   });
 
+  if (showLegend(options)) {
+    addLegend(id, ibmChart[id], columns);
+  }
 
   // Line entrance animation
   const axisLineCounts = options.data.columns.map((a) => a.length);
