@@ -10,11 +10,12 @@
 }
 
 .c3-axis path, .c3-grid line {
-  animation: dash 1s forwards;
+  animation: dash forwards;
+  opacity: 1 !important;
   stroke: #CDDBF1;
 }
 
-.c3 .tick line {
+.c3 .tick line, path.domain {
   display: none;
 }
 

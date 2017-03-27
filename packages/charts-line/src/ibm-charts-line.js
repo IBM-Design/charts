@@ -1,8 +1,17 @@
 const ibmChart = function(options = {}) {
+  const animationDuration = 250;
   const id = options.id;
+  let columns = options.data.columns.map((column) => {
+    return column.map((point) => {
+      return typeof point === 'number'
+        ? 0
+        : point;
+    });
+  });
+
   document.querySelector('#' + id).classList.add('chart');
 
-  const animateGrid = function() {
+  const animateGrid = () => {
     const width = document.querySelector('#' + id).offsetWidth;
     const lines = document.querySelectorAll('#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
     const linesX = [];
@@ -21,11 +30,12 @@ const ibmChart = function(options = {}) {
 
     const addAnimation = (lines, grid) => {
       for (let i = 0; i < lines.length; i++) {
+        lines[i].style['animation-delay'] = `${i * animationDuration}ms`;
+        lines[i].style['animation-duration'] = `${animationDuration}ms`;
         lines[i].style['stroke-dasharray'] = width;
         lines[i].style['stroke-dashoffset'] = grid === 'y'
           ? width
           : -width;
-        lines[i].style['animation-delay'] = `${i * 200 + 100}ms`;
       }
       return;
     };
@@ -49,7 +59,7 @@ const ibmChart = function(options = {}) {
     axisX.setAttribute('d', pathX);
   };
 
-  c3.generate({
+  ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
     axis: {
       x: {
         height: 55,
@@ -120,5 +130,40 @@ const ibmChart = function(options = {}) {
       show: false,
     },
     ...options,
+    data: {
+      columns,
+    },
   });
+
+
+  // Line entrance animation
+  const axisLineCounts = options.data.columns.map((a) => a.length);
+  const maxAxisLines = Math.max.apply(Math, axisLineCounts);
+  setTimeout(() => {
+    let timeIndex = 0;
+    const timer = setInterval(() => {
+      columns = options.data.columns.map((column, columnIndex) => {
+        return column.map((point, pointIndex) => {
+          let newPoint = typeof point === 'number'
+            ? 0
+            : point;
+
+          newPoint = pointIndex <= timeIndex
+            ? options.data.columns[columnIndex][pointIndex]
+            : newPoint;
+
+          return newPoint;
+        });
+      });
+
+      ibmChart[id].load({
+        columns,
+      });
+
+      timeIndex += 1;
+      if (timeIndex >= maxAxisLines) {
+        clearInterval(timer);
+      }
+    }, animationDuration);
+  }, (maxAxisLines - 3) * animationDuration);
 };
