@@ -1,0 +1,32 @@
+{
+   "children":[
+      {
+         "name":"Missouri",
+         "value":60
+      },
+      {
+         "name":"Colorado",
+         "value":8,
+         "children":[
+            {
+               "name":"Nebraska",
+               "value":12
+            }
+         ]
+      },
+      {
+         "name":"South Dakota",
+         "value":6,
+         "children":[
+            {
+               "name":"Arkansas",
+               "value":2
+            },
+            {
+               "name":"Oklahoma",
+               "value":3
+            }
+         ]
+      }
+   ]
+}
