@@ -60,13 +60,13 @@ const ibmChart = function(options = {}) {
   };
 
   const addLegend = function(id, chart, columns) {
-    d3.select(`#${id}`)
+    d3.select(`#${id}`) // eslint-disable-line no-undef
       .insert('div', '.chart')
       .attr('class', 'legend')
       .append('h3')
       .attr('class', 'legend__title')
       .text('Legend');
-    d3.select('.legend')
+    d3.select('.legend') // eslint-disable-line no-undef
       .append('ul')
       .attr('class', 'legend__list')
       .selectAll('span')
@@ -83,15 +83,15 @@ const ibmChart = function(options = {}) {
       .on('mouseover', id => chart.focus(id))
       .on('mouseout', id => chart.revert())
       .on('click', function(id) {
-        const el = d3.select(this);
+        const el = d3.select(this);  // eslint-disable-line no-undef
         el.classed('inactive', !el.classed('inactive'));
-        chart.toggle(id)
+        chart.toggle(id);
       });
   };
 
   const showLegend = function(options) {
     return !(options.legend !== undefined && !options.legend.show);
-  }
+  };
 
   const width = document.querySelector('#' + id).offsetWidth;
   ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
