@@ -1,0 +1,27 @@
+{
+  "name": "@ibm-design/charts-vanilla-radar",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run clean && webpack && gulp",
+    "start": "npm run build && webpack-dev-server --progress --colors",
+    "clean": "rimraf lib"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "rimraf": "^2.5.4",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "d3-array": "^1.0.2",
+    "d3-scale": "^1.0.4",
+    "d3-selection": "^1.0.3",
+    "d3-selection-multi": "^1.0.1",
+    "d3-shape": "^1.0.4"
+  }
+}
