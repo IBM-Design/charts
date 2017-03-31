@@ -48,19 +48,7 @@ const ibmChart = function(options = {}) {
       .replace('V6', '');
     axisX.setAttribute('d', pathX);
   };
-/*
-  bar: {
-    width: {
-      ratio: 0.2667
-    }
-  },
-  axis: {
-    x: {
-      type: 'category',
-      categories: ['category 1', 'category 2', 'category 3', 'category 4', 'category 5', 'category 6'], 
-    },
-  },
-*/  
+
   c3.generate({
     axis: {
       x: {
@@ -97,8 +85,8 @@ const ibmChart = function(options = {}) {
     },
     bar: {
       width: {
-        ratio: 0.2667
-      }
+        ratio: 0.2667,
+      },
     },
     bindto: document.getElementById(id),
     color: {
