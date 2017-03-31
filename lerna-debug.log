@@ -1,0 +1,157 @@
+lerna(verbose) GitUtilities.isInitialized    ()
+lerna(verbose) GitUtilities.isInitialized    () => true
+lerna(verbose) GitUtilities.getTopLevelDirectory()
+lerna(verbose) GitUtilities.getTopLevelDirectory() => "."
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.readFileSync("./lerna.json") => "{\n  \"lerna\": \"2.0.0-beta.32\",\n  \"packages\": [\n    \"packages/*\"\n  ],\n  \"version\": \"0.0.0\",\n  \"independent\": \"true\"\n}"
+lerna(verbose) FileSystemUtilities.existsSync("./package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./package.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("./package.json")
+lerna(verbose) FileSystemUtilities.readFileSync("./package.json") => "{\n  \"name\": \"@ibm-design/charts\",\n  \"version\": \"0.0.0\",\n  \"description\": \"Code implementations of the IBM Design Language's data visualization guidance.\",\n  \"repository\": {\n    \"url\": \"https://github.com/IBM-Design/charts.git\",\n    \"type\": \"git\"\n  },\n  \"license\": \"Apache-2.0\",\n  \"scripts\": {\n    \"bootstrap\": \"lerna bootstrap && lerna run build\",\n    \"examples\": \"node examples/server.js\",\n    \"gh-pages\": \"yarn run gh-pages:clean && yarn run gh-pages:build && yarn run gh-pages:copy && yarn run gh-pages:publish\",\n    \"gh-pages:build\": \"lerna run storybook:build\",\n    \"gh-pages:clean\": \"rimraf _gh-pages\",\n    \"gh-pages:copy\": \"cp public/* _gh-pages/$1\",\n    \"gh-pages:publish\": \"git-directory-deploy --directory _gh-pages\",\n    \"lerna\": \"lerna\",\n    \"lint\": \"eslint packages\",\n    \"test\": \"jest\"\n  },\n  \"devDependencies\": {\n    \"babel-eslint\": \"^7.1.1\",\n    \"babel-jest\": \"^18.0.0\",\n    \"babel-preset-es2015\": \"^6.18.0\",\n    \"babel-preset-flow\": \"^1.0.0\",\n    \"babel-preset-react\": \"^6.16.0\",\n    \"babel-preset-stage-2\": \"^6.18.0\",\n    \"eslint\": \"^3.13.1\",\n    \"eslint-plugin-babel\": \"^4.0.0\",\n    \"eslint-plugin-flowtype\": \"^2.29.2\",\n    \"eslint-plugin-import\": \"^2.2.0\",\n    \"eslint-plugin-jsx-a11y\": \"^3.0.2\",\n    \"eslint-plugin-react\": \"^6.9.0\",\n    \"express\": \"^4.14.0\",\n    \"git-directory-deploy\": \"^1.5.1\",\n    \"jest-cli\": \"^18.1.0\",\n    \"lerna\": \"2.0.0-beta.32\",\n    \"rimraf\": \"^2.5.4\"\n  }\n}"
+lerna(info)    Lerna v2.0.0-beta.32
+lerna(verbose) FileSystemUtilities.existsSync("./package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./VERSION")
+lerna(verbose) FileSystemUtilities.existsSync("./VERSION") => false
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-bar/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-bar/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-colors/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-colors/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-line/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-line/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-axis/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-axis/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-chart/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-chart/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-line/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-line/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-test-helpers/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/charts-react-test-helpers/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/eslint-config-charts/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/eslint-config-charts/package.json") => true
+lerna(verbose) Attempting running RunCommand.initialize
+lerna(verbose) Successfully ran RunCommand.initialize
+lerna(verbose) Attempting running RunCommand.execute
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-bar")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-bar")
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-colors")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-colors")
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-line")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-line")
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-react-axis")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-react-axis")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-colors") => "\n> @ibm-design/charts-colors@0.0.0 build ./packages/charts-colors\n> npm run clean && babel -d lib src\n\n\n> @ibm-design/charts-colors@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-colors\n> rimraf lib\n\nsrc/index.js -> lib/index.js\nsrc/palettes/colorBlindSafe.js -> lib/palettes/colorBlindSafe.js\nsrc/palettes/index.js -> lib/palettes/index.js\nsrc/palettes/qualitative.js -> lib/palettes/qualitative.js\n"
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-colors") => "\n> @ibm-design/charts-colors@0.0.0 build ./packages/charts-colors\n> npm run clean && babel -d lib src\n\n\n> @ibm-design/charts-colors@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-colors\n> rimraf lib\n\nsrc/index.js -> lib/index.js\nsrc/palettes/colorBlindSafe.js -> lib/palettes/colorBlindSafe.js\nsrc/palettes/index.js -> lib/palettes/index.js\nsrc/palettes/qualitative.js -> lib/palettes/qualitative.js\n"
+lerna(info)    
+> @ibm-design/charts-colors@0.0.0 build /Users/abbymariestarnes/charts/charts/packages/charts-colors
+> npm run clean && babel -d lib src
+
+
+> @ibm-design/charts-colors@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-colors
+> rimraf lib
+
+src/index.js -> lib/index.js
+src/palettes/colorBlindSafe.js -> lib/palettes/colorBlindSafe.js
+src/palettes/index.js -> lib/palettes/index.js
+src/palettes/qualitative.js -> lib/palettes/qualitative.js
+
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-react-chart")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-react-chart")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-bar") => "\n> @ibm-design/charts-bar@0.1.0 build ./packages/charts-bar\n> npm run clean && npm run sass && npm run copy\n\n\n> @ibm-design/charts-bar@0.1.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-bar\n> rm -Rf dist/*\n\n\n> @ibm-design/charts-bar@0.1.0 sass /Users/abbymariestarnes/charts/charts/packages/charts-bar\n> ./node_modules/node-sass/bin/node-sass --output-style compressed src/charts-bar.scss > dist/charts-bar.css\n\n\n> @ibm-design/charts-bar@0.1.0 copy /Users/abbymariestarnes/charts/charts/packages/charts-bar\n> cp src/*.html src/*.js dist/\n\n"
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-bar") => "\n> @ibm-design/charts-bar@0.1.0 build ./packages/charts-bar\n> npm run clean && npm run sass && npm run copy\n\n\n> @ibm-design/charts-bar@0.1.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-bar\n> rm -Rf dist/*\n\n\n> @ibm-design/charts-bar@0.1.0 sass /Users/abbymariestarnes/charts/charts/packages/charts-bar\n> ./node_modules/node-sass/bin/node-sass --output-style compressed src/charts-bar.scss > dist/charts-bar.css\n\n\n> @ibm-design/charts-bar@0.1.0 copy /Users/abbymariestarnes/charts/charts/packages/charts-bar\n> cp src/*.html src/*.js dist/\n\n"
+lerna(info)    
+> @ibm-design/charts-bar@0.1.0 build /Users/abbymariestarnes/charts/charts/packages/charts-bar
+> npm run clean && npm run sass && npm run copy
+
+
+> @ibm-design/charts-bar@0.1.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-bar
+> rm -Rf dist/*
+
+
+> @ibm-design/charts-bar@0.1.0 sass /Users/abbymariestarnes/charts/charts/packages/charts-bar
+> ./node_modules/node-sass/bin/node-sass --output-style compressed src/charts-bar.scss > dist/charts-bar.css
+
+
+> @ibm-design/charts-bar@0.1.0 copy /Users/abbymariestarnes/charts/charts/packages/charts-bar
+> cp src/*.html src/*.js dist/
+
+
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-react-line")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-react-line")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-react-axis") => "\n> @ibm-design/charts-react-axis@0.0.0 build ./packages/charts-react-axis\n> npm run clean && babel -d lib src\n\n\n> @ibm-design/charts-react-axis@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-react-axis\n> rimraf lib\n\nsrc/BottomAxis.js -> lib/BottomAxis.js\nsrc/LeftAxis.js -> lib/LeftAxis.js\nsrc/XTick.js -> lib/XTick.js\nsrc/YTick.js -> lib/YTick.js\nsrc/__tests__/BottomAxis-test.js -> lib/__tests__/BottomAxis-test.js\nsrc/__tests__/LeftAxis-test.js -> lib/__tests__/LeftAxis-test.js\nsrc/__tests__/XTick.js -> lib/__tests__/XTick.js\nsrc/__tests__/YTick.js -> lib/__tests__/YTick.js\nsrc/index.js -> lib/index.js\n"
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-react-axis") => "\n> @ibm-design/charts-react-axis@0.0.0 build ./packages/charts-react-axis\n> npm run clean && babel -d lib src\n\n\n> @ibm-design/charts-react-axis@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-react-axis\n> rimraf lib\n\nsrc/BottomAxis.js -> lib/BottomAxis.js\nsrc/LeftAxis.js -> lib/LeftAxis.js\nsrc/XTick.js -> lib/XTick.js\nsrc/YTick.js -> lib/YTick.js\nsrc/__tests__/BottomAxis-test.js -> lib/__tests__/BottomAxis-test.js\nsrc/__tests__/LeftAxis-test.js -> lib/__tests__/LeftAxis-test.js\nsrc/__tests__/XTick.js -> lib/__tests__/XTick.js\nsrc/__tests__/YTick.js -> lib/__tests__/YTick.js\nsrc/index.js -> lib/index.js\n"
+lerna(info)    
+> @ibm-design/charts-react-axis@0.0.0 build /Users/abbymariestarnes/charts/charts/packages/charts-react-axis
+> npm run clean && babel -d lib src
+
+
+> @ibm-design/charts-react-axis@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-react-axis
+> rimraf lib
+
+src/BottomAxis.js -> lib/BottomAxis.js
+src/LeftAxis.js -> lib/LeftAxis.js
+src/XTick.js -> lib/XTick.js
+src/YTick.js -> lib/YTick.js
+src/__tests__/BottomAxis-test.js -> lib/__tests__/BottomAxis-test.js
+src/__tests__/LeftAxis-test.js -> lib/__tests__/LeftAxis-test.js
+src/__tests__/XTick.js -> lib/__tests__/XTick.js
+src/__tests__/YTick.js -> lib/__tests__/YTick.js
+src/index.js -> lib/index.js
+
+lerna(verbose) NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-react-test-helpers")
+lerna(verbose) NpmUtilities.execInDir        ("run build", [], "./packages/charts-react-test-helpers")
+lerna(error)   NpmUtilities.execInDir        ("run build", [], "./packages/charts-line")
+    Error: Command failed: npm run build 
+    sh: node-sass: command not found
+    error Command failed with exit code 127.
+    
+    npm ERR! Darwin 15.6.0
+    npm ERR! argv "/Users/abbymariestarnes/.nvm/versions/node/v6.9.1/bin/node" "/Users/abbymariestarnes/.nvm/versions/node/v6.9.1/bin/npm" "run" "build"
+    npm ERR! node v6.9.1
+    npm ERR! npm  v3.10.9
+    npm ERR! code ELIFECYCLE
+    npm ERR! @ibm-design/charts-line@0.0.0 build: `npm run clean && yarn build:js && yarn build:css`
+    npm ERR! Exit status 1
+    npm ERR! 
+    npm ERR! Failed at the @ibm-design/charts-line@0.0.0 build script 'npm run clean && yarn build:js && yarn build:css'.
+    npm ERR! Make sure you have the latest version of node.js and npm installed.
+    npm ERR! If you do, this is most likely a problem with the @ibm-design/charts-line package,
+    npm ERR! not with npm itself.
+    npm ERR! Tell the author that this fails on your system:
+    npm ERR!     npm run clean && yarn build:js && yarn build:css
+    npm ERR! You can get information on how to open an issue for this project with:
+    npm ERR!     npm bugs @ibm-design/charts-line
+    npm ERR! Or if that isn't available, you can get their info via:
+    npm ERR!     npm owner ls @ibm-design/charts-line
+    npm ERR! There is likely additional logging output above.
+    
+    npm ERR! Please include the following file with any support request:
+    npm ERR!     /Users/abbymariestarnes/charts/charts/packages/charts-line/npm-debug.log
+    
+        at ChildProcess.exithandler (child_process.js:206:12)
+        at emitTwo (events.js:106:13)
+        at ChildProcess.emit (events.js:191:7)
+        at maybeClose (internal/child_process.js:877:16)
+        at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+lerna(error)   NpmUtilities.runScriptInDir   ("build", [], "./packages/charts-line")
+lerna(info)    
+> @ibm-design/charts-line@0.0.0 build /Users/abbymariestarnes/charts/charts/packages/charts-line
+> npm run clean && yarn build:js && yarn build:css
+
+
+> @ibm-design/charts-line@0.0.0 clean /Users/abbymariestarnes/charts/charts/packages/charts-line
+> rimraf dist
+
+yarn build:js v0.20.3
+$ babel src -d dist 
+src/charts-line.js -> dist/charts-line.js
+Done in 1.57s.
+yarn build:css v0.20.3
+$ node-sass --output-style compressed src/*.scss > dist/line-chart.css 
+
+lerna(error)   Errored while running npm script 'build' in '@ibm-design/charts-line'
+lerna(error)   Errored while running RunCommand.execute

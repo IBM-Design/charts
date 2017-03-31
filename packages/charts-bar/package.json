@@ -47,5 +47,8 @@
     "plugins": [
       "transform-object-rest-spread"
     ]
+  },
+  "dependencies": {
+    "lint": "^1.1.2"
   }
 }
