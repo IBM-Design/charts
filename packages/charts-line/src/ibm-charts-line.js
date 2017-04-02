@@ -67,12 +67,12 @@ const ibmChart = function(options = {}) {
       .attr('class', 'legend__title')
       .text('Legend');
     d3.select('.legend') // eslint-disable-line no-undef
-      .append('ul')
+      .append('div')
       .attr('class', 'legend__list')
       .selectAll('span')
       .data(columns.map(col => col[0]))
       .enter()
-      .append('li')
+      .append('button')
       .attr('data-id', id => id)
       .attr('class', 'legend__list-item')
       .html(id => `
@@ -81,7 +81,9 @@ const ibmChart = function(options = {}) {
         ${id}
       `)
       .on('mouseover', id => chart.focus(id))
+      .on('focus', id => chart.focus(id))
       .on('mouseout', id => chart.revert())
+      .on('blur', id => chart.revert(id))
       .on('click', function(id) {
         const el = d3.select(this);  // eslint-disable-line no-undef
         el.classed('inactive', !el.classed('inactive'));
