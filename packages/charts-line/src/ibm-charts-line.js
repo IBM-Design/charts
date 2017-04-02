@@ -1,4 +1,5 @@
 const ibmChart = function(options = {}) {
+  const showLegend = !(options.legend !== undefined && !options.legend.show);
   const animationDuration = 250;
   const id = options.id;
   let columns = options.data.columns.map((column) => {
@@ -91,9 +92,6 @@ const ibmChart = function(options = {}) {
       });
   };
 
-  const showLegend = function(options) {
-    return !(options.legend !== undefined && !options.legend.show);
-  };
 
   const width = document.querySelector('#' + id).offsetWidth;
   ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
@@ -155,10 +153,14 @@ const ibmChart = function(options = {}) {
       animateGrid();
     },
     onresized: function() {
+      if (showLegend) {
+        const width = document.querySelector('#' + id).offsetWidth;
+        this.api.resize({ width: width * 0.8 });
+      }
       animateGrid();
     },
     padding: {
-      right: 10,
+      right: 30,
     },
     point: {
       show: false,
@@ -166,16 +168,14 @@ const ibmChart = function(options = {}) {
     tooltip: {
       show: false,
     },
-    size: {
-      width: showLegend(options) ? width * 0.75 : width,
-    },
+    ...(showLegend ? { size: { width: width * 0.8 } } : {}),
     ...options,
     data: {
       columns,
     },
   });
 
-  if (showLegend(options)) {
+  if (showLegend) {
     addLegend(id, ibmChart[id], columns);
   }
 
