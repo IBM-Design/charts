@@ -9,6 +9,7 @@ const ibmChart = function(options = {}) {
         : point;
     });
   });
+  const minWidth = (columns[columns.reduce((p, c, i, a) => a[p].length > c.length ? i : p, 0)].length - 1) * 40;
 
   document.querySelector(`#${id}`).classList.add('chart');
 
@@ -101,7 +102,7 @@ const ibmChart = function(options = {}) {
       legend.style.left = '80%';
       legend.style.position = 'absolute';
     }
-  }
+  };
 
 
   const width = document.querySelector(`#${id}`).offsetWidth;
