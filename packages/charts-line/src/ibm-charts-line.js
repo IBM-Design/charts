@@ -10,11 +10,11 @@ const ibmChart = function(options = {}) {
     });
   });
 
-  document.querySelector('#' + id).classList.add('chart');
+  document.querySelector(`#${id}`).classList.add('chart');
 
   const animateGrid = () => {
-    const width = document.querySelector('#' + id).offsetWidth;
-    const lines = document.querySelectorAll('#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
+    const width = document.querySelector(`#${id}`).offsetWidth;
+    const lines = document.querySelectorAll(`#${id} .c3-axis path, #${id} .c3-grid line`);
     const linesX = [];
     const linesY = [];
 
@@ -46,14 +46,14 @@ const ibmChart = function(options = {}) {
   };
 
   const formatAxis = function() {
-    const axisY = document.querySelector('#' + id + ' .c3-axis-y .domain');
+    const axisY = document.querySelector(`#${id} .c3-axis-y .domain`);
     const pathY = axisY.getAttribute('d')
       .replace('-6', '0')
       .replace('H-6', '');
     axisY.setAttribute('d', pathY);
 
     // Remove end ticks on x axis
-    const axisX = document.querySelector('#' + id + ' .c3-axis-x .domain');
+    const axisX = document.querySelector(`#${id} .c3-axis-x .domain`);
     const pathX = axisX.getAttribute('d')
       .replace('6V', '')
       .replace('V6', '');
@@ -92,8 +92,19 @@ const ibmChart = function(options = {}) {
       });
   };
 
+  const layoutLegend = function(width) {
+    const legend = document.querySelector(`#${id} .legend`);
+    if (width <= minWidth) {
+      legend.style.left = 0;
+      legend.style.position = 'relative';
+    } else {
+      legend.style.left = '80%';
+      legend.style.position = 'absolute';
+    }
+  }
 
-  const width = document.querySelector('#' + id).offsetWidth;
+
+  const width = document.querySelector(`#${id}`).offsetWidth;
   ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
     axis: {
       x: {
@@ -154,7 +165,8 @@ const ibmChart = function(options = {}) {
     },
     onresized: function() {
       if (showLegend) {
-        const width = document.querySelector('#' + id).offsetWidth;
+        const width = document.querySelector(`#${id}`).offsetWidth;
+        layoutLegend(width);
         this.api.resize({ width: width * 0.8 });
       }
       animateGrid();
