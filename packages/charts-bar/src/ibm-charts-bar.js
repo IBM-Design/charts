@@ -4,7 +4,8 @@ const ibmChart = function(options = {}) {
 
   const animateGrid = function() {
     const width = document.querySelector('#' + id).offsetWidth;
-    const lines = document.querySelectorAll('#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
+    const lines = document.querySelectorAll(
+                        '#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
     const linesX = [];
     const linesY = [];
 
@@ -22,9 +23,7 @@ const ibmChart = function(options = {}) {
     const addAnimation = (lines, grid) => {
       for (let i = 0; i < lines.length; i++) {
         lines[i].style['stroke-dasharray'] = width;
-        lines[i].style['stroke-dashoffset'] = grid === 'y'
-          ? width
-          : -width;
+        lines[i].style['stroke-dashoffset'] = grid === 'y' ? width : -width;
         lines[i].style['animation-delay'] = `${i * 200 + 100}ms`;
       }
       return;
@@ -49,11 +48,11 @@ const ibmChart = function(options = {}) {
     axisX.setAttribute('d', pathX);
   };
 
-  c3.generate({
+  ibmChart[id] = c3.generate({   // eslint-disable-line no-undef
     axis: {
       x: {
         type: 'category',
-        categories: ['Coffee', 'Tea', 'Hot Chocolate', 'Biscuits', 'Fun'], 
+        categories: ['Coffee', 'Tea', 'Hot Chocolate', 'Biscuits', 'Fun'],
         height: 55,
         label: {
           position: 'outer-center',
