@@ -1,0 +1,53 @@
+{
+  "name": "@ibm-design/charts-bar",
+  "version": "0.1.0",
+  "description": "Sample implementation of the charts bar from the IBM Design Language",
+  "author": "Abby Starnes & Stephane Rodet",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build:js": "BABEL_ENV=production babel src -d lib",
+    "build:css": "node-sass --output-style compressed src/*.scss > lib/ibm-charts-bar.css",
+    "build": "npm run clean && yarn build:js && yarn build:css",
+    "watch:scss": "nodemon -e scss -x \"yarn build:css\"",
+    "watch:js": "babel src --watch -d lib",
+    "start": "yarn watch:js & yarn watch:scss & live-server --watch=\"index.html,lib\" --wait=1000",
+    "test": "eslint lib"
+  },
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "c3": "^0.4.11",
+    "d3": "^4.7.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-babili": "^0.0.12",
+    "babel-preset-latest": "^6.24.0",
+    "eslint": "^3.13.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "live-server": "^1.2.0",
+    "node-sass": "^4.5.1",
+    "nodemon": "^1.11.0",
+    "rimraf": "^2.6.1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ],
+    "env": {
+      "production": {
+        "presets": [
+          "babili"
+        ]
+      }
+    },
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "lint": "^1.1.2"
+  }
+}
