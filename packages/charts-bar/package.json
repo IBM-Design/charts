@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Sample implementation of the charts bar from the IBM Design Language",
   "author": "Abby Starnes & Stephane Rodet",
-  "main": "lib/charts-bar.js",
   "scripts": {
     "clean": "rimraf lib",
     "build:js": "BABEL_ENV=production babel src -d lib",
