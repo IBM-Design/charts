@@ -22,6 +22,29 @@
               },
               id: 'myChart',
             });
+
+            var columnsA = [
+                ['data1', 200, 300, 150, 400, 275, 360],
+                ['data2', 210, 170, 240, 120, 160, 130],
+                ['data3', 370, 350, 375, 340, 350, 340],
+            ];
+            var columnsB = [
+                ['data1', 100, 530, 120, 120, 100, 150],
+                ['data2', 240, 540, 430, 230, 190, 160],
+                ['data3', 310, 320, 100, 380, 500, 600],
+            ];
+            var columns = columnsA;
+            setInterval(function () {
+                ibmChart.myChart.load({
+                  columns: columns,
+                });
+
+                if (columns === columnsA) {
+                    columns = columnsB;
+                } else {
+                    columns = columnsA;
+                }
+            }, 5000);
         </script>
     </body>
 </html>
