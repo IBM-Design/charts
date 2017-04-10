@@ -93,14 +93,16 @@ const ibmChart = function(options = {}) {
       });
   };
 
-  const layoutLegend = function(width) {
+  const layoutLegend = function(width, api) {
     const legend = document.querySelector(`#${id} .legend`);
     if (width <= minWidth) {
       legend.style.left = 0;
       legend.style.position = 'relative';
+      api.resize({ width });
     } else {
       legend.style.left = '80%';
       legend.style.position = 'absolute';
+      api.resize({ width: width * 0.8 });
     }
   };
 
@@ -167,8 +169,7 @@ const ibmChart = function(options = {}) {
     onresized: function() {
       if (showLegend) {
         const width = document.querySelector(`#${id}`).offsetWidth;
-        layoutLegend(width);
-        this.api.resize({ width: width * 0.8 });
+        layoutLegend(width, this.api);
       }
       animateGrid();
     },
@@ -190,6 +191,7 @@ const ibmChart = function(options = {}) {
 
   if (showLegend) {
     addLegend(id, ibmChart[id], columns);
+    layoutLegend(width, ibmChart[id]);
   }
 
   // Line entrance animation
