@@ -2,6 +2,8 @@
 ## @ibm-design/charts-line
 An implementation of the IBM Design Language's [line chart](https://www.ibm.com/design/language/experience/data-visualization/chart-models/linechart/) using [C3.js](http://c3js.org/).
 
+![Alt text](/charts-line.gif?raw=true "Optional Title")
+
 ## Usage
 This add-on to C3.js uses the exact same [arguements](http://c3js.org/reference.html). Be sure to add the `ibm-charts-line.css` and `ibm-charts-line.js` files after the D3 and C3 files are referenced:
 
