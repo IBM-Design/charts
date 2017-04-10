@@ -1,4 +1,5 @@
 const ibmChart = function(options = {}) {
+  const showLegend = !(options.legend !== undefined && !options.legend.show);
   const animationDuration = 250;
   const id = options.id;
   let columns = options.data.columns.map((column) => {
@@ -8,12 +9,13 @@ const ibmChart = function(options = {}) {
         : point;
     });
   });
+  const minWidth = (columns[columns.reduce((p, c, i, a) => a[p].length > c.length ? i : p, 0)].length - 1) * 40;
 
-  document.querySelector('#' + id).classList.add('chart');
+  document.querySelector(`#${id}`).classList.add('chart');
 
   const animateGrid = () => {
-    const width = document.querySelector('#' + id).offsetWidth;
-    const lines = document.querySelectorAll('#' + id + ' .c3-axis path, #' + id + ' .c3-grid line');
+    const width = document.querySelector(`#${id}`).offsetWidth;
+    const lines = document.querySelectorAll(`#${id} .c3-axis path, #${id} .c3-grid line`);
     const linesX = [];
     const linesY = [];
 
@@ -45,20 +47,67 @@ const ibmChart = function(options = {}) {
   };
 
   const formatAxis = function() {
-    const axisY = document.querySelector('#' + id + ' .c3-axis-y .domain');
+    const axisY = document.querySelector(`#${id} .c3-axis-y .domain`);
     const pathY = axisY.getAttribute('d')
       .replace('-6', '0')
       .replace('H-6', '');
     axisY.setAttribute('d', pathY);
 
     // Remove end ticks on x axis
-    const axisX = document.querySelector('#' + id + ' .c3-axis-x .domain');
+    const axisX = document.querySelector(`#${id} .c3-axis-x .domain`);
     const pathX = axisX.getAttribute('d')
       .replace('6V', '')
       .replace('V6', '');
     axisX.setAttribute('d', pathX);
   };
 
+  const addLegend = function(id, chart, columns) {
+    d3.select(`#${id}`) // eslint-disable-line no-undef
+      .insert('div', '.chart')
+      .attr('class', 'legend')
+      .append('h3')
+      .attr('class', 'legend__title')
+      .text('Legend');
+    d3.select('.legend') // eslint-disable-line no-undef
+      .append('div')
+      .attr('class', 'legend__list')
+      .selectAll('span')
+      .data(columns.map(col => col[0]))
+      .enter()
+      .append('button')
+      .attr('data-id', id => id)
+      .attr('class', 'legend__list-item')
+      .html(id => `
+        <span class="legend__list-dot" style="background-color: ${chart.color(id)}">
+        </span>
+        ${id}
+      `)
+      .on('mouseover', id => chart.focus(id))
+      .on('focus', id => chart.focus(id))
+      .on('mouseout', id => chart.revert())
+      .on('blur', id => chart.revert(id))
+      .on('click', function(id) {
+        const el = d3.select(this);  // eslint-disable-line no-undef
+        el.classed('inactive', !el.classed('inactive'));
+        chart.toggle(id);
+      });
+  };
+
+  const layoutLegend = function(width, api) {
+    const legend = document.querySelector(`#${id} .legend`);
+    if (width <= minWidth) {
+      legend.style.left = 0;
+      legend.style.position = 'relative';
+      api.resize({ width });
+    } else {
+      legend.style.left = '80%';
+      legend.style.position = 'absolute';
+      api.resize({ width: width * 0.8 });
+    }
+  };
+
+
+  const width = document.querySelector(`#${id}`).offsetWidth;
   ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
     axis: {
       x: {
@@ -118,10 +167,14 @@ const ibmChart = function(options = {}) {
       animateGrid();
     },
     onresized: function() {
+      if (showLegend) {
+        const width = document.querySelector(`#${id}`).offsetWidth;
+        layoutLegend(width, this.api);
+      }
       animateGrid();
     },
     padding: {
-      right: 10,
+      right: 30,
     },
     point: {
       show: false,
@@ -129,12 +182,17 @@ const ibmChart = function(options = {}) {
     tooltip: {
       show: false,
     },
+    ...(showLegend ? { size: { width: width * 0.8 } } : {}),
     ...options,
     data: {
       columns,
     },
   });
 
+  if (showLegend) {
+    addLegend(id, ibmChart[id], columns);
+    layoutLegend(width, ibmChart[id]);
+  }
 
   // Line entrance animation
   const axisLineCounts = options.data.columns.map((a) => a.length);
