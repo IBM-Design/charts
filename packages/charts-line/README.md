@@ -2,10 +2,10 @@
 ## @ibm-design/charts-line
 An implementation of the IBM Design Language's [line chart](https://www.ibm.com/design/language/experience/data-visualization/chart-models/linechart/) using [C3.js](http://c3js.org/).
 
-![Alt text](/charts-line.gif?raw=true "Optional Title")
+![Line chart transitioning in](/packages/charts-line/charts-line.gif?raw=true "IBM Line Chart")
 
 ## Usage
-This add-on to C3.js uses the exact same [arguements](http://c3js.org/reference.html). Be sure to add the `ibm-charts-line.css` and `ibm-charts-line.js` files after the D3 and C3 files are referenced:
+This add-on to C3.js uses the exact same [arguments](http://c3js.org/reference.html). Be sure to add the `ibm-charts-line.css` and `ibm-charts-line.js` files after the D3 and C3 files are referenced:
 
 ```
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ This add-on to C3.js uses the exact same [arguements](http://c3js.org/reference.
 </html>
 ```
 
-To use the [C3.js API](http://c3js.org/reference.html#api-focus), prefix the function with `ibmChart` and then your chart's unique identifier:
+To use the [C3.js API](http://c3js.org/reference.html#api-focus), call it through `ibmChart` and your chart's unique identifier:
 
 ```
 var newData = [
