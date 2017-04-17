@@ -108,42 +108,19 @@ const ibmChart = function(options = {}) {
 
 
   const width = document.querySelector(`#${id}`).offsetWidth;
-  ibmChart[id] = c3.generate({  // eslint-disable-line no-undef
+  const defaults = {  // eslint-disable-line no-undef
     axis: {
       x: {
         height: 55,
-        label: {
-          position: 'outer-center',
-          text: 'Customers Served',
-        },
         padding: {
           left: 0,
           right: 0,
         },
-        tick: {
-          count: 6,
-          format: (d) => {
-            let tick = d;
-            if (d > 0) {
-              tick = (d * 10) + 'k';
-            }
-            return tick;
-          },
-        },
       },
       y: {
-        label: {
-          position: 'outer-middle',
-          text: 'Reports Filed',
-        },
-        max: 600,
-        min: 0,
         padding: {
           bottom: 0,
           top: 0,
-        },
-        tick: {
-          count: 7,
         },
       },
     },
@@ -183,11 +160,15 @@ const ibmChart = function(options = {}) {
       show: false,
     },
     ...(showLegend ? { size: { width: width * 0.8 } } : {}),
-    ...options,
+  };
+
+  const postDefaults = {
     data: {
       columns,
     },
-  });
+  };
+
+  ibmChart[id] = c3.generate(_.merge(defaults, options, postDefaults));
 
   if (showLegend) {
     addLegend(id, ibmChart[id], columns);

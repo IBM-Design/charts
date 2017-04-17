@@ -15,6 +15,7 @@ This add-on to C3.js uses the exact same [arguments](http://c3js.org/reference.h
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
         <link rel="stylesheet" href="PATH-TO-YOUR/lib/ibm-charts-line.css" />
         <script src="PATH-TO-YOUR/lib/ibm-charts-line.js"></script>
         <script>
@@ -27,6 +28,26 @@ This add-on to C3.js uses the exact same [arguments](http://c3js.org/reference.h
                 ],
               },
               id: 'myChart',
+              axis: {
+                x: {
+                  tick: {
+                    format: (d) => {
+                      let tick = d;
+                      if (d > 0) {
+                        tick = (d * 10) + 'k';
+                      }
+                      return tick;
+                    },
+                  },
+                },
+                y: {
+                  min: 0,
+                  max: 600,
+                  tick: {
+                    count: 7,
+                  },
+                }
+              },
             });
         </script>
     </body>
