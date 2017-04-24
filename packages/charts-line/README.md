@@ -4,6 +4,16 @@ An implementation of the IBM Design Language's [line chart](https://www.ibm.com/
 
 ![Line chart transitioning in](/packages/charts-line/charts-line.gif?raw=true "IBM Line Chart")
 
+
+## Install
+This project is currently in beta. Revisions to the visual style need to be made. If you find other problems, please make a pull request to help us out.
+
+`npm install @ibm-design/charts-line`
+
+or
+
+`yarn add @ibm-design/charts-line`
+
 ## Usage
 This add-on to C3.js uses the exact same [arguments](http://c3js.org/reference.html). Be sure to add the `ibm-charts-line.css` and `ibm-charts-line.js` files after the D3 and C3 files are referenced:
 

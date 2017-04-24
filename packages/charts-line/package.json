@@ -1,6 +1,6 @@
 {
   "name": "@ibm-design/charts-line",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "main": "lib/charts-line.js",
   "scripts": {
     "clean": "rimraf lib",
