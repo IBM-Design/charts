@@ -1,3 +1,4 @@
+/* global c3, _ */
 const ibmChart = function(options = {}) {
   const showLegend = options.legend === undefined
     || options.legend.show;
