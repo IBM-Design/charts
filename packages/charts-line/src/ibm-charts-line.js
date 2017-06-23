@@ -1,14 +1,22 @@
+/* global c3, _ */
 const ibmChart = function(options = {}) {
-  const showLegend = !(options.legend !== undefined && !options.legend.show);
-  const animationDuration = 250;
+  const showLegend = options.legend === undefined
+    || options.legend.show;
+  const showGridAnimation = options.transition === undefined
+    || options.transition.animateGrid;
+  const showLineEntranceAnimation = options.transition === undefined
+    || options.transition.animateLineEntrance;
+  const animationDuration = options.transition
+    && options.transition.duration !== undefined
+    ? options.transition.duration : 250;
   const id = options.id;
-  let columns = options.data.columns.map((column) => {
+  let columns = showLineEntranceAnimation ? options.data.columns.map((column) => {
     return column.map((point) => {
       return typeof point === 'number'
         ? 0
         : point;
     });
-  });
+  }) : options.data.columns;
   const minWidth = (columns[columns.reduce((p, c, i, a) => a[p].length > c.length ? i : p, 0)].length - 1) * 40;
 
   document.querySelector(`#${id}`).classList.add('chart');
@@ -140,15 +148,25 @@ const ibmChart = function(options = {}) {
       show: false,
     },
     onrendered: function() {
-      formatAxis();
-      animateGrid();
+      if (showGridAnimation) {
+        formatAxis();
+        animateGrid();
+      }
+      if (options.onrendered) {
+        options.onrendered.apply(this, arguments);
+      }
     },
     onresized: function() {
       if (showLegend) {
         const width = document.querySelector(`#${id}`).offsetWidth;
         layoutLegend(width, this.api);
       }
-      animateGrid();
+      if (showGridAnimation) {
+        animateGrid();
+      }
+      if (options.onresized) {
+        options.onresized.apply(this, arguments);
+      }
     },
     padding: {
       right: 30,
@@ -176,33 +194,35 @@ const ibmChart = function(options = {}) {
   }
 
   // Line entrance animation
-  const axisLineCounts = options.data.columns.map((a) => a.length);
-  const maxAxisLines = Math.max.apply(Math, axisLineCounts);
-  setTimeout(() => {
-    let timeIndex = 0;
-    const timer = setInterval(() => {
-      columns = options.data.columns.map((column, columnIndex) => {
-        return column.map((point, pointIndex) => {
-          let newPoint = typeof point === 'number'
-            ? 0
-            : point;
+  if (showLineEntranceAnimation) {
+    const axisLineCounts = options.data.columns.map((a) => a.length);
+    const maxAxisLines = Math.max.apply(Math, axisLineCounts);
+    setTimeout(() => {
+      let timeIndex = 0;
+      const timer = setInterval(() => {
+        columns = options.data.columns.map((column, columnIndex) => {
+          return column.map((point, pointIndex) => {
+            let newPoint = typeof point === 'number'
+              ? 0
+              : point;
 
-          newPoint = pointIndex <= timeIndex
-            ? options.data.columns[columnIndex][pointIndex]
-            : newPoint;
+            newPoint = pointIndex <= timeIndex
+              ? options.data.columns[columnIndex][pointIndex]
+              : newPoint;
 
-          return newPoint;
+            return newPoint;
+          });
         });
-      });
 
-      ibmChart[id].load({
-        columns,
-      });
+        ibmChart[id].load({
+          columns,
+        });
 
-      timeIndex += 1;
-      if (timeIndex >= maxAxisLines) {
-        clearInterval(timer);
-      }
-    }, animationDuration);
-  }, (maxAxisLines - 3) * animationDuration);
+        timeIndex += 1;
+        if (timeIndex >= maxAxisLines) {
+          clearInterval(timer);
+        }
+      }, animationDuration);
+    }, showGridAnimation ? (maxAxisLines - 3) * animationDuration : 0);
+  }
 };

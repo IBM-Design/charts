@@ -22,6 +22,11 @@
                 ],
               },
               id: 'myChart',
+              transition: {
+                duration: 150,
+                animateGrid: true,
+                animateLineEntrance: true
+              },
               axis: {
                 x: {
                   tick: {
@@ -54,6 +59,7 @@
                 ['data2', 240, 540, 430, 230, 190, 160],
                 ['data3', 310, 320, 100, 380, 500, 600],
             ];
+            /*
             var columns = columnsA;
             setInterval(function () {
                 ibmChart.myChart.load({
@@ -66,6 +72,7 @@
                     columns = columnsA;
                 }
             }, 5000);
+            */
         </script>
     </body>
 </html>
