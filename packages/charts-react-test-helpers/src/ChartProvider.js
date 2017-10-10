@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * It's helpful to leverage component in test scenarios where you're relying on
@@ -9,11 +10,11 @@ import React from 'react';
 export default class ChartProvider extends React.PureComponent {
   static propTypes = {
     // eslint-disable-next-line react/forbid-prop-types
-    children: React.PropTypes.any,
+    children: PropTypes.any,
   }
 
   static childContextTypes = {
-    chart: React.PropTypes.object,
+    chart: PropTypes.object,
   }
 
   getChildContext() {
